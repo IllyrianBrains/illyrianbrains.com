@@ -87,11 +87,11 @@ extra:
                 "basics/why-privacy-matters/",
               ]
             class: md-button md-button--primary
-          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Kontributi ynë për diasporën"]
+          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Kontributi ynë për diasporën!"]
             title:
               !ENV [
                 HOMEPAGE_BUTTON_TOOLS_TITLE,
-                "Kontributi ynë për diasporën",
+                "Kontributi ynë për diasporën!",
               ]
             link: !ENV [HOMEPAGE_BUTTON_TOOLS_LINK, "tools/"]
             class: md-button
@@ -253,11 +253,12 @@ markdown_extensions:
     toc_depth: 4
 
 nav:
-  - !ENV [NAV_HOME, "Hyrje"]: "index.md"
   - !ENV [NAV_KNOWLEDGE_BASE, "HappyHours"]:
       - "happyhours/happyhours.md"
-  - !ENV [NAV_RECOMMENDATIONS, "Profesionistët"]:
+  - !ENV [NAV_COMMUNICATION, "Komunikimi"]:
       - "profesionistet/profesionistet.md"
+  #- !ENV [NAV_RECOMMENDATIONS, "Profesionistët"]:
+  #    - "profesionistet/profesionistet.md"
   - !ENV [NAV_BLOG, "Nismat"]:
       - "nismat/nismat.md"
   - !ENV [NAV_FORUM, "Forumi"]:
