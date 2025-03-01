@@ -469,11 +469,13 @@
             "version": "==1.3.7"
         },
         "mkdocs-material": {
-            "extras": [
-                "imaging"
+            "hashes": [
+                "sha256:aad3e6fb860c20870f75fb2a69ef901f1be727891e41adb60b753efcae19453b",
+                "sha256:b714679a8c91b0ffe2188e11ed58c44d2523e9c2ae26a29cc652fa7478faa21f"
             ],
+            "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "path": "./modules/mkdocs-material"
+            "version": "==9.6.5"
         },
         "mkdocs-material-extensions": {
             "hashes": [

@@ -20,11 +20,10 @@ RUN \
     libffi-dev \
     musl-dev
 
-# Install python dependencies in /.venv
-COPY modules/mkdocs-material ./modules/mkdocs-material
+# Install python dependencies in /.venv using Pipenv
 COPY Pipfile .
 COPY Pipfile.lock .
-RUN PIPENV_VENV_IN_PROJECT=1 pipenv install --deploy
+RUN PIPENV_VENV_IN_PROJECT=1 pipenv install
 
 FROM base AS runtime
 
@@ -48,7 +47,6 @@ RUN \
 
 # Copy virtual env from python-deps stage
 COPY --from=python-deps /.venv /.venv
-COPY --from=python-deps /modules/mkdocs-material /modules/mkdocs-material
 ENV PATH="/.venv/bin:$PATH"
 
 # Create and switch to a new user
@@ -59,7 +57,6 @@ COPY docs docs
 COPY theme theme
 COPY includes includes
 COPY *.yml .
-COPY .cache/plugin/social/fonts .cache/plugin/social/fonts
 COPY run.sh .
 
 EXPOSE 8000
@@ -69,4 +66,5 @@ ENV MKDOCS_INHERIT mkdocs-production.yml
 HEALTHCHECK NONE
 
 ENTRYPOINT ["./run.sh"]
-CMD ["--cmd=mkdocs", "--insiders", "--cmd_flags=--dev-addr=0.0.0.0:8000"]
+CMD ["--cmd=mkdocs", "--cmd_flags=--dev-addr=0.0.0.0:8000"]
+
