@@ -41,7 +41,7 @@ extra:
       intro:
         !ENV [
           FOOTER_INTRO,
-          "IllyrianBrains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, trevat dhe diaspora.",
+          "IllyrianBrains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora.",
         ]
       note:
         !ENV [
