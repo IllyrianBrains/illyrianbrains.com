@@ -66,5 +66,5 @@ ENV MKDOCS_INHERIT mkdocs-production.yml
 HEALTHCHECK NONE
 
 ENTRYPOINT ["./run.sh"]
-CMD ["--cmd=mkdocs", "--cmd_flags=--dev-addr=0.0.0.0:8000"]
+CMD ["--cmd=mkdocs", "--cmd_flags=--dev-addr=0.0.0.0:8082"]
 
