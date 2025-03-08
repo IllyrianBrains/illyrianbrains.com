@@ -81,14 +81,17 @@ extra:
             class: md-button
   social:
     - icon: simple/discourse
-      link: https://discuss.privacyguides.net/
-      name: !ENV [SOCIAL_FORUM, "Forumi"]
+      link: https://forum.illyrianbrains.dev/
+      name: "Forumi"
     - icon: simple/github
-      link: https://github.com/privacyguides
-      name: !ENV [SOCIAL_GITHUB, "GitHub"]
-    - icon: simple/torbrowser
-      link: http://www.xoe4vn5uwdztif6goazfbmogh6wh5jc4up35bqdflu6bkdc5cas5vjqd.onion/
-      name: !ENV [SOCIAL_TOR_SITE, "Hidden service"]
+      link: https://github.com/illyrianbrains
+      name: "GitHub"
+    - icon: simple/instagram
+      link: https://instagram.com/illyrianbrains
+      name: "Instagram"
+    # - icon: simple/linkedin
+    #  link: https://www.linkedin.com/company/illyrian-brains
+    #  name: "LinkedIn"
 
 theme:
   name: material
@@ -101,19 +104,19 @@ theme:
   palette:
     - media: "(prefers-color-scheme)"
       scheme: default
-      accent: red
+      accent: deep purple
       toggle:
         icon: material/brightness-auto
-        name:  "Switch to dark mode"
+        name: "Switch to dark mode"
     - media: "(prefers-color-scheme: dark)"
-      scheme: default
-      accent: red
+      scheme: slate
+      accent: amber
       toggle:
         icon: material/brightness-2
         name: "Switch to light mode"
     - media: "(prefers-color-scheme: light)"
-      accent: red
-      scheme: slate
+      scheme: default
+      accent: deep purple
       toggle:
         icon: material/brightness-5
         name: "Switch to system theme"
@@ -217,6 +220,7 @@ markdown_extensions:
     toc_depth: 4
 
 nav:
+  - "Hyrje": "index.md"
   - "Happy Hours":
       - "happyhours/happyhours.md"
   - "Nismat":

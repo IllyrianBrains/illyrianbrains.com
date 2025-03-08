@@ -80,7 +80,6 @@ if [ ! -f "$destination" ]; then
   exit 1
 fi
 
-cp "$destination" "$destination.bak"
 
 # Insert new content after "## Ndër diskutimet e fundit!"
 awk -v new_content="$markdown_output" '
@@ -88,9 +87,9 @@ awk -v new_content="$markdown_output" '
   /^## Ndër diskutimet e fundit!/ {
     print; print new_content; inside_section=1; next
   }
-  inside_section && /^## / {inside_section=0} 
+  inside_section && /^<br><br>/ {inside_section=0} 
   !inside_section {print}
-' "$destination.bak" > "$destination_final"
+' "$destination" > "$destination_final"
 
 # DEBUG: Show final index.md
 echo "✅ Updated index.md Preview:"
