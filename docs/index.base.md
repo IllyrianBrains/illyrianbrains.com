@@ -35,7 +35,7 @@ schema:
 ---
 
 
-## Happy Hours 
+## 🌍 Happy Hours 
 --------
 
 <div class="gallery-grid">
@@ -135,7 +135,7 @@ schema:
 <br><br>
 
 
-## Ndër diskutimet e fundit!
+## 🌍 Ndër diskutimet e fundit!
 -----
 
 

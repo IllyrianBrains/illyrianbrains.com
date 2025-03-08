@@ -27,7 +27,8 @@
     background-size: contain;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(212, 209, 209);
+    border-top: 1px solid rgb(228, 228, 228);
 }
 [data-md-color-scheme="slate"] .mdx-container {
     background: white;

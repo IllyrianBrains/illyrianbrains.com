@@ -22,11 +22,11 @@ docs_dir: !ENV [BUILD_DOCS_DIR, "docs"]
 site_url: !ENV [BUILD_SITE_URL, "https://forum.illyrianbrains.dev"]
 site_dir: !ENV [BUILD_SITE_DIR, "site/en"]
 
-site_name: Illyrian Brains Network
+site_name: IllyrianBrains Network
 site_description:
   !ENV [
     SITE_DESCRIPTION,
-    "Illyrian Brains, rrjeti juaj i profesionistëve shqipfolës.",
+    "IllyrianBrains, rrjeti juaj i profesionistëve shqipfolës.",
   ]
 edit_uri_template:
   !ENV [BUILD_EDIT_URI_TEMPLATE, "blob/main/docs/{path}?plain=1"]
@@ -38,46 +38,28 @@ extra:
   deploy: !ENV DEPLOY_ID
   privacy_guides:
     footer:
-      intro:
-        !ENV [
-          FOOTER_INTRO,
-          "Illyrian Brains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora.",
-        ]
-      note:
-        !ENV [
-          FOOTER_NOTE,
-          "Ne nuk kemi përfitime monetare nga rrjeti dhe nuk kemi ndërmend që ta bëjmë këtë gjë në të ardhmen.",
-        ]
+      intro: "IllyrianBrains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora."
+      note: "Ne nuk kemi përfitime monetare nga rrjeti dhe nuk kemi ndërmend që ta bëjmë këtë gjë në të ardhmen."
       copyright:
-        author:
-          !ENV [FOOTER_COPYRIGHT_AUTHOR, "Kontribuesit e IllyrianBrains."]
-        date: !ENV [FOOTER_COPYRIGHT_DATE, "2020-2025"]
+        author: "Kontribuesit e IllyrianBrains."
+        date: "2020-2025"
       license:
         - fontawesome/brands/creative-commons
         - fontawesome/brands/creative-commons-by
         - fontawesome/brands/creative-commons-sa
     homepage:
-      description:
-        !ENV [
-          HOMEPAGE_DESCRIPTION, "Rrjeti i profesionistëve shqipfolës në diasporë.",
-          ".",
-        ]
+      description: "Rrjeti i profesionistëve shqipfolës në diasporë."
       hero:
-        header:
-          !ENV [HOMEPAGE_HEADER, "Rrjeti i profesionistëve shqipfolës në diasporë."]
-        subheader:
-          !ENV [
-            HOMEPAGE_SUBHEADER,
-            "Krijo ura komunikimi me profesionistë shqiptarë në mbarë mbotën. Bëhu pjesë e komunitetit dhe krijo bashkëpunime profesionale, kulturore dhe shoqërore me anëtarët e grupit.",
-          ]
+        header: "Rrjeti i profesionistëve shqipfolës në diasporë."
+        subheader: "Krijo ura komunikimi me profesionistë shqiptarë në mbarë mbotën. Bëhu pjesë e komunitetit dhe krijo bashkëpunime profesionale, kulturore dhe shoqërore me anëtarët e grupit."
         buttons:
-          - name: "Nis udhëtimin me IB"
+          - name: "Nis udhëtimin me IB!"
             title: "Nis udhëtimin me IB!"
-            link: "happyhours/"
+            link: "happyhours/happyhours/"
             class: md-button md-button--primary
           - name: "Mëso mbi nismat tona!"
             title: "Kontributi ynë për diasporën!"
-            link: "nismat/"
+            link: "nismat/nismat/"
             class: md-button
   social:
     - icon: simple/discourse
@@ -228,7 +210,7 @@ nav:
   - "Forumi":
       - "https://forum.illyrianbrains.dev/"
   - "Rreth Nesh":
-      - "rrethnesh/about.md"
+      - "about.md"
       - "about/contributors.md"
       - "about/criteria.md"
       - "about/executive-policy.md"

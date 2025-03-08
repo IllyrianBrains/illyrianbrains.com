@@ -9,7 +9,7 @@ fi
 
 # Defaults
 source="https://forum.illyrianbrains.dev/top.json?period=monthly"
-tag="## Ndër diskutimet e fundit!"
+tag="## 🌍 Ndër diskutimet e fundit!"
 
 destination="./docs/index.base.md"  # Base Markdown file for MkDocs
 destination_final="./docs/index.md"  # Final updated file
@@ -44,26 +44,24 @@ DISCOURSE_URL="$source"
 # Fetch the JSON data
 json_data=$(curl -s "$DISCOURSE_URL")
 
-# Extract topics
-topics=$(echo "$json_data" | jq -r ".topic_list.topics[:$count]")
-users=$(echo "$json_data" | jq -r ".users")
+# Extract topics and users
+topics=$(echo "$json_data" | jq -c ".topic_list.topics[:$count]")
+users=$(echo "$json_data" | jq -c ".users")
 
 # Initialize markdown output
 markdown_output="\n<div class=\"grid cards\" markdown>\n"
-for row in $(echo "${topics}" | jq -r '.[] | @base64'); do
-  _jq() {
-    echo "$row" | base64 --decode | jq -r "${1}"
-  }
 
-  title=$(_jq '.title')
-  id=$(_jq '.id')
-  like_count=$(_jq '.like_count')
-  reply_count=$(_jq '.posts_count')
-  views=$(_jq '.views')
+# Loop through topics safely
+echo "$topics" | jq -c '.[]' | while read -r row; do
+  title=$(echo "$row" | jq -r '.title')
+  id=$(echo "$row" | jq -r '.id')
+  like_count=$(echo "$row" | jq -r '.like_count')
+  reply_count=$(echo "$row" | jq -r '.posts_count')
+  views=$(echo "$row" | jq -r '.views')
+  author_id=$(echo "$row" | jq -r '.posters[0].user_id')
 
-  author_id=$(_jq '.posters[0].user_id')
-  author_info=$(echo "$users" | jq -r ".[] | select(.id==$author_id)")
-  author_username=$(echo "$author_info" | jq -r ".username")
+  # Get author username safely
+  author_username=$(echo "$users" | jq -r --argjson id "$author_id" '.[] | select(.id==$id) | .username')
 
   markdown_output+="\n<div class=\"card\" markdown>\n"
   markdown_output+="### [$title](https://forum.illyrianbrains.dev/t/${id})\n"
@@ -74,17 +72,18 @@ done
 
 markdown_output+="\n</div>\n"
 
+echo "$markdown_output"
+
 # Ensure a backup exists
 if [ ! -f "$destination" ]; then
   echo "Error: $destination does not exist!"
   exit 1
 fi
 
-
 # Insert new content after "## Ndër diskutimet e fundit!"
 awk -v new_content="$markdown_output" '
   BEGIN {inside_section=0}
-  /^## Ndër diskutimet e fundit!/ {
+  /^## 🌍 Ndër diskutimet e fundit!/ {
     print; print new_content; inside_section=1; next
   }
   inside_section && /^<br><br>/ {inside_section=0} 
@@ -92,4 +91,5 @@ awk -v new_content="$markdown_output" '
 ' "$destination" > "$destination_final"
 
 # DEBUG: Show final index.md
-echo "✅ Updated index.md Preview:"
+echo "✅ Updated index.md."
+cat "$destination_final"
