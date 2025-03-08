@@ -136,32 +136,4 @@ schema:
 
 
 ## Ndër diskutimet e fundit!
-
-<div class="grid cards" markdown>
-
-<div class="card" markdown>
-### [Siguria kibernetike për individë](https://forum.illyrianbrains.dev/t/365)
-**👤 Author:** Gazidedjadoni  
-**👀 Views:** 178  ❤️ Likes: 1   💬 Replies: 1
-</div>
-
-<div class="card" markdown>
-### [Think Cyber Foundation](https://forum.illyrianbrains.dev/t/364)
-**👤 Author:** endribasha  
-**👀 Views:** 65  ❤️ Likes: 1   💬 Replies: 1
-</div>
-
-<div class="card" markdown>
-### [IB-Tech Anniversary Celebration](https://forum.illyrianbrains.dev/t/367)
-**👤 Author:** adriankodja  
-**👀 Views:** 38  ❤️ Likes: 1   💬 Replies: 1
-</div>
-
-<div class="card" markdown>
-### [Shëndeti mendor dhe burnout](https://forum.illyrianbrains.dev/t/366)
-**👤 Author:** albabakiasi94  
-**👀 Views:** 10  ❤️ Likes: 0   💬 Replies: 1
-</div>
-
-</div>
-
+-----

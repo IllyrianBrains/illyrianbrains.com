@@ -22,11 +22,11 @@ docs_dir: !ENV [BUILD_DOCS_DIR, "docs"]
 site_url: !ENV [BUILD_SITE_URL, "https://forum.illyrianbrains.dev"]
 site_dir: !ENV [BUILD_SITE_DIR, "site/en"]
 
-site_name: IllyrianBrains
+site_name: Illyrian Brains Network
 site_description:
   !ENV [
     SITE_DESCRIPTION,
-    "IllyrianBrains, rrjeti juaj i profesionistëve shqipfolës.",
+    "Illyrian Brains, rrjeti juaj i profesionistëve shqipfolës.",
   ]
 edit_uri_template:
   !ENV [BUILD_EDIT_URI_TEMPLATE, "blob/main/docs/{path}?plain=1"]
@@ -41,7 +41,7 @@ extra:
       intro:
         !ENV [
           FOOTER_INTRO,
-          "IllyrianBrains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora.",
+          "Illyrian Brains është një bashkëpunim shoqëror midis profesionistëve që ndajnë origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora.",
         ]
       note:
         !ENV [
@@ -68,53 +68,18 @@ extra:
         subheader:
           !ENV [
             HOMEPAGE_SUBHEADER,
-            "Krijuar dhe zhvilluar nga grupe të rinjsh shqipfolës, IB synon të jetë një hapësirë për zhvillimin e mëtejshëm profesional duke kultivuar një kulturë bashkëpunimi me njëri-tjetrin, duke nxitur ndihmën reciproke, dhe duke forcuar lidhjen me rrënjët tona.",
+            "Krijo ura komunikimi me profesionistë shqiptarë në mbarë mbotën. Bëhu pjesë e komunitetit dhe krijo bashkëpunime profesionale, kulturore dhe shoqërore me anëtarët e grupit.",
           ]
         buttons:
-          - name:
-              !ENV [
-                HOMEPAGE_BUTTON_GET_STARTED_NAME,
-                "Nis udhëtimin me IB",
-              ]
-            title:
-              !ENV [
-                HOMEPAGE_BUTTON_GET_STARTED_TITLE,
-                 "Nis udhëtimin me IB",
-              ]
-            link:
-              !ENV [
-                HOMEPAGE_BUTTON_GET_STARTED_LINK,
-                "basics/why-privacy-matters/",
-              ]
+          - name: "Nis udhëtimin me IB"
+            title: "Nis udhëtimin me IB!"
+            link: "happyhours/"
             class: md-button md-button--primary
-          - name: !ENV [HOMEPAGE_BUTTON_TOOLS_NAME, "Kontributi ynë për diasporën!"]
-            title:
-              !ENV [
-                HOMEPAGE_BUTTON_TOOLS_TITLE,
-                "Kontributi ynë për diasporën!",
-              ]
-            link: !ENV [HOMEPAGE_BUTTON_TOOLS_LINK, "tools/"]
+          - name: "Mëso mbi nismat tona!"
+            title: "Kontributi ynë për diasporën!"
+            link: "nismat/"
             class: md-button
-
-
-    translation_notice:
-      notice: !ENV TRANSLATION_NOTICE
-      cta: !ENV [TRANSLATION_NOTICE_CTA, "Visit Crowdin"]
-      language: !ENV SITE_LANGUAGE_ENGLISH
-    translation_stylesheet: !ENV [TRANSLATION_STYLESHEET]
   social:
-    - icon: simple/mastodon
-      link: https://mastodon.neat.computer/@privacyguides
-      name: !ENV [SOCIAL_MASTODON, "Mastodon"]
-    - icon: simple/bluesky
-      link: https://bsky.app/profile/privacyguides.org
-      name: !ENV [SOCIAL_BLUESKY, "Bluesky"]
-    - icon: simple/peertube
-      link: https://neat.tube/c/privacyguides
-      name: !ENV [SOCIAL_PEERTUBE, "PeerTube"]
-    - icon: simple/matrix
-      link: https://matrix.to/#/#privacyguides:matrix.org
-      name: !ENV [SOCIAL_MATRIX, "Matrix"]
     - icon: simple/discourse
       link: https://discuss.privacyguides.net/
       name: !ENV [SOCIAL_FORUM, "Forumi"]
@@ -125,37 +90,36 @@ extra:
       link: http://www.xoe4vn5uwdztif6goazfbmogh6wh5jc4up35bqdflu6bkdc5cas5vjqd.onion/
       name: !ENV [SOCIAL_TOR_SITE, "Hidden service"]
 
-repo_url:
-  !ENV [BUILD_REPO_URL, "https://github.com/IllyrianBrains/network"]
-repo_name: "Ndiq IB në Github"
-
 theme:
   name: material
-  language: !ENV [BUILD_THEME_LANGUAGE, "en"]
+  logo: assets/logo_big.png
+  language: "en"
   custom_dir: theme
   font:
-    text: !ENV [BUILD_THEME_FONT_TEXT, "Public Sans"]
-    code: !ENV [BUILD_THEME_FONT_CODE, "DM Mono"]
+    text: "Public Sans"
+    code: "DM Mono"
   palette:
     - media: "(prefers-color-scheme)"
       scheme: default
-      accent: deep purple
+      accent: red
       toggle:
         icon: material/brightness-auto
-        name: !ENV [THEME_DARK, "Switch to dark mode"]
+        name:  "Switch to dark mode"
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      accent: amber
+      scheme: default
+      accent: red
       toggle:
         icon: material/brightness-2
-        name: !ENV [THEME_LIGHT, "Switch to light mode"]
+        name: "Switch to light mode"
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      accent: deep purple
+      accent: red
+      scheme: slate
       toggle:
         icon: material/brightness-5
-        name: !ENV [THEME_AUTO, "Switch to system theme"]
+        name: "Switch to system theme"
+
   favicon: assets/logo_small.png
+  
   icon:
     repo: simple/github
   features:
@@ -172,11 +136,11 @@ theme:
     - search.highlight
 
 extra_css:
-  - assets/stylesheets/extra.css?v=20240802
+  - assets/stylesheets/extra.css
 extra_javascript:
-  - path: assets/javascripts/randomize-element.js?v=20240801
+  - path: assets/javascripts/randomize-element.js
     defer: true
-  - path: assets/javascripts/feedback.js?v=20240801
+  - path: assets/javascripts/feedback.js
     defer: true
 
 watch:
@@ -253,25 +217,20 @@ markdown_extensions:
     toc_depth: 4
 
 nav:
-  - !ENV [NAV_KNOWLEDGE_BASE, "HappyHours"]:
+  - "Happy Hours":
       - "happyhours/happyhours.md"
-  - !ENV [NAV_COMMUNICATION, "Komunikimi"]:
-      - "profesionistet/profesionistet.md"
-  #- !ENV [NAV_RECOMMENDATIONS, "Profesionistët"]:
-  #    - "profesionistet/profesionistet.md"
-  - !ENV [NAV_BLOG, "Nismat"]:
+  - "Nismat":
       - "nismat/nismat.md"
-  - !ENV [NAV_FORUM, "Forumi"]:
-      !ENV [NAV_FORUM_LINK, "https://forum.illyrianbrains.dev/"]
-  - !ENV [NAV_ABOUT, "Rreth Nesh"]:
+  - "Forumi":
+      - "https://forum.illyrianbrains.dev/"
+  - "Rreth Nesh":
       - "rrethnesh/about.md"
-      - !ENV [NAV_ABOUT_TEAM_MEMBERS, "Team Members"]:
-          https://discuss.privacyguides.net/u?group=team&order=solutions&period=all
       - "about/contributors.md"
       - "about/criteria.md"
       - "about/executive-policy.md"
       - "about/notices.md"
       - "about/privacy-policy.md"
+
 validation:
   nav:
     not_found: info

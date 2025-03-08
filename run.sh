@@ -38,14 +38,6 @@ do
     language="${arg#*=}"
     shift
     ;;
-    --insiders)
-    insiders=true
-    shift
-    ;;
-    --cmd=*)
-    base_cmd="${arg#*=}"
-    shift
-    ;;
     --build)
     build=true
     shift
@@ -86,58 +78,6 @@ if [ "$language" != "en" ]; then
   export BUILD_SITE_DIR="site/$language"
   export BUILD_SITE_URL="https://www.privacyguides.org/$language"
   export BUILD_THEME_LANGUAGE="$language"
-fi
-
-# Source per-language strings
-set -a
-  # shellcheck disable=SC1090
-  source "$PWD/includes/strings.$language.env"
-set +a
-
-# Set font if hebrew
-if [ "$language" == "he" ]; then
-  export BUILD_THEME_FONT_CODE="Cousine"
-  export BUILD_THEME_FONT_TEXT="Open Sans"
-fi
-
-# Set font if chinese
-if [ "$language" == "zh-Hant" ]; then
-  export BUILD_THEME_FONT_CODE="Noto Sans TC"
-  export BUILD_THEME_FONT_TEXT="Noto Sans TC"
-fi
-
-# Set stylesheet if hebrew or russian or chinese
-if [[ "he ru zh-Hant" =~ $language ]]; then
-  export TRANSLATION_STYLESHEET="assets/stylesheets/lang-$language.css?v=20240410"
-fi
-
-# Set theme if insiders
-if $insiders ; then
-  random_num=$RANDOM
-  export BUILD_INSIDERS=true
-  cmd_flags+=("--config-file=$PWD/.mkdocs-insiders-$random_num.yml")
-  touch "$PWD/.mkdocs-insiders-$random_num.yml"
-  cat <<EOT >> "$PWD/.mkdocs-insiders-$random_num.yml"
-INHERIT: mkdocs.yml
-
-watch:
-  - theme
-  - includes
-  - mkdocs.yml
-
-markdown_extensions:
-  material.extensions.preview:
-    sources:
-      exclude:
-        - index.md
-        - tools.md
-        - about.md
-        - about/*
-    targets:
-      exclude:
-        - about/contributors.md
-EOT
-  trap 'rm $PWD/.mkdocs-insiders-$random_num.yml' EXIT
 fi
 
 # Run the command with the specified language

@@ -23,13 +23,14 @@
 
 /* Homepage hero section */
 .mdx-container {
-    background: rgba(212, 20, 20, 0.40);
+    background: white;
     background-size: contain;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: 1px solid grey;
 }
 [data-md-color-scheme="slate"] .mdx-container {
-    background: rgba(9, 9, 9, 0.95);
+    background: white;
 }
 
 .mdx-hero {
