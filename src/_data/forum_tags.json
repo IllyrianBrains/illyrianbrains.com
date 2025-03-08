@@ -1,0 +1,137 @@
+{
+  "bashkohu-ekipit": {
+    "name": "bashkohu-ekipit",
+    "description": "",
+    "topics": [
+      {
+        "title": "Menaxhues/e për rrjetet sociale",
+        "slug": "menaxhues-e-per-rrjetet-sociale",
+        "url": "https://forum.illyrianbrains.dev/t/menaxhues-e-per-rrjetet-sociale/476",
+        "created_at": "2025-05-15T21:32:53.676Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "VullnetVeliaj",
+          "name": "Vullnet Veliaj",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/vullnetveliaj/120/29_2.png"
+        }
+      },
+      {
+        "title": "Redaktues/e dhe krijues/e për komunikimet",
+        "slug": "redaktues-e-dhe-krijues-e-per-komunikimet",
+        "url": "https://forum.illyrianbrains.dev/t/redaktues-e-dhe-krijues-e-per-komunikimet/475",
+        "created_at": "2025-05-15T21:30:23.287Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "VullnetVeliaj",
+          "name": "Vullnet Veliaj",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/vullnetveliaj/120/29_2.png"
+        }
+      },
+      {
+        "title": "Kontribues/e për dizajnin grafik",
+        "slug": "kontribues-e-per-dizajnin-grafik",
+        "url": "https://forum.illyrianbrains.dev/t/kontribues-e-per-dizajnin-grafik/474",
+        "created_at": "2025-05-15T21:27:37.267Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "algertpateqi",
+          "name": "Algert Pateqi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/120/84_2.png"
+        }
+      },
+      {
+        "title": "Zhvillues Php për akademinë",
+        "slug": "zhvillues-php-per-akademine",
+        "url": "https://forum.illyrianbrains.dev/t/zhvillues-php-per-akademine/415",
+        "created_at": "2025-04-15T06:24:24.301Z",
+        "tags": [
+          "onhold",
+          "bashkohu-ekipit"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "ionianFury",
+          "name": "ionianFury",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/120/337_2.png"
+        }
+      }
+    ]
+  },
+  "event": {
+    "name": "event",
+    "description": "",
+    "topics": [
+      {
+        "title": "02/05/25 Vienna Evening Organisation",
+        "slug": "02-05-25-vienna-evening-organisation",
+        "url": "https://forum.illyrianbrains.dev/t/02-05-25-vienna-evening-organisation/430",
+        "created_at": "2025-04-23T06:04:01.020Z",
+        "tags": [
+          "event",
+          "vjene2025"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/d37b088f11e34af74d514fb4cf4f5db82c92edba.jpeg",
+        "poster": {
+          "username": "Arbereshe",
+          "name": "Arbëreshë",
+          "avatar": "/letter_avatar_proxy/v4/letter/a/f1d935/120.png"
+        }
+      },
+      {
+        "title": "Personal Finance in Germany",
+        "slug": "personal-finance-in-germany",
+        "url": "https://forum.illyrianbrains.dev/t/personal-finance-in-germany/464",
+        "created_at": "2025-05-05T21:07:11.299Z",
+        "tags": [
+          "event",
+          "dusseldorf"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/848199cc99970736d403279db4e5ac9209b5ea3c.jpeg",
+        "poster": {
+          "username": "ariona.jupi",
+          "name": "Ariona Jupi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ariona.jupi/120/23_2.png"
+        }
+      },
+      {
+        "title": "#HackingFatherhood takim online! 👶",
+        "slug": "hackingfatherhood-takim-online",
+        "url": "https://forum.illyrianbrains.dev/t/hackingfatherhood-takim-online/391",
+        "created_at": "2025-03-25T18:08:36.223Z",
+        "tags": [
+          "event"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/c7567e7f7af2c999ead45289960ab26f82479cde_2_819x1024.jpeg",
+        "poster": {
+          "username": "ariona.jupi",
+          "name": "Ariona Jupi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ariona.jupi/120/23_2.png"
+        }
+      },
+      {
+        "title": "[2024] Takimet e IB-Tech - lista",
+        "slug": "2024-takimet-e-ib-tech-lista",
+        "url": "https://forum.illyrianbrains.dev/t/2024-takimet-e-ib-tech-lista/27",
+        "created_at": "2024-09-15T17:36:58.675Z",
+        "tags": [
+          "event"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/ed788b4e8fb81e1c3dafd4ce0380a341240e6ea4_2_1024x350.jpeg",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      }
+    ]
+  }
+}

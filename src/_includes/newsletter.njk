@@ -1,0 +1,53 @@
+<section class="newsletter">
+  <div>
+    <div>
+      <h2>Merr përditësimet më të fundit nga IllyrianBrains.</h2>
+      <p>Lajmërime mbi organizimet dhe nismat e ndërmarra nga pjesëmarrësit.</p>
+    </div>
+    <form id="newsletter" class="form" action="/thanks" method="get">
+      <div style="position: absolute !important;left: -999em !important;">
+        <label for="name">We use the following field to detect spam bots. If you fill this in, your subscription will be ignored. If you're using a voice over assistant make sure to exit the following text field and move to the "name" field.</label>
+        <input type="text" id="name" name="name">
+      </div>
+
+      <div>
+        <label><span>Emri</span><input name="first_name"></label>
+        <label><span>E-mail</span><input type="email" name="email"></label>
+        <button class="pill-button" type="submit">Nënshkruhu</button>
+        <input hidden name="last_name" value="">
+
+      </div>
+    </form>
+    <script>
+      (() => {
+        const target = 'https://mail.leftlogic.com/subscribe/6784a6a3-4975-409d-975b-64df4672ca9c';
+        const form = document.querySelector('#newsletter');
+
+        form.addEventListener('submit', (event) => {
+          if (form.method === 'post') {
+            return;
+          }
+
+          const spamCheck = form.querySelector('[name="name"]');
+          const firstName = form.querySelector('[name="first_name"]');
+          const lastName = form.querySelector('[name="last_name"]');
+
+          if (spamCheck.value || lastName.value) {
+            // falls into the thanks page ignoring the submit
+            return;
+          }
+
+          event.preventDefault();
+
+          let [first, ...last] = firstName.value.split(' ');
+          lastName.value = last.join(' ');
+          firstName.value = first;
+
+          form.method = 'post';
+          form.action = target;
+          form.submit();
+        });
+      })();
+    </script>
+  </div>
+</section>

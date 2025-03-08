@@ -1,0 +1,139 @@
+.history a {
+  font-weight: 500;
+  color: var(--primary);
+  transition: color 150ms ease-out;
+}
+
+.history a:hover {
+  color: var(--salmon);
+}
+
+.history {
+  margin: 0px;
+  margin-top: 0;
+}
+
+.col {
+  column-gap: 48px;
+}
+
+.col > div {
+  break-inside: avoid-column;
+  margin-bottom: 40px;
+}
+
+.pill-list a {
+  background: var(--salmon);
+  color: white;
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.pill-list a:hover {
+  background: var(--salmon-dark);
+  color: white;
+}
+
+.team {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.involved {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.involved li {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.involved header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.involved p {
+  margin: 4px 0 8px 0;
+  font-size: 16px;
+}
+
+.involved img {
+  margin-right: 8px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+.logo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 50ms ease-out;
+}
+
+.logo-list a:hover {
+  transform: translateY(-2px);
+}
+
+.logo-list a span {
+  font-weight: bold;
+}
+
+.logo-list img {
+  padding: 8px;
+}
+
+@media only screen and (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .col {
+    columns: 2;
+  }
+}
+
+  .group-block {
+    margin-bottom: 1rem;
+  }
+
+  .involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .involved-grid li {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1);
+  }
+
+  .involved-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+  

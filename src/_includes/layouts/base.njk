@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en" class="{{ pageClass }}" id="ib.com">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="source" content="https://github.com/IllyrianBrains">
+    <link rel="preload" href="/assets/fonts/BasierSquare-Medium-custom.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/BasierSquare-Regular-custom.woff2" as="font" type="font/woff2" crossorigin>
+    <title>IllyrianBrains Network</title>
+
+    <link rel="stylesheet" href="/assets/css/base.css">
+
+    {% if css %}
+      {% if css.length %}
+        {% for stylesheet in css %}
+          <link rel="stylesheet" href="/assets/css/{{ stylesheet }}">
+        {% endfor %}
+      {% else %}
+        <link rel="stylesheet" href="/assets/css/{{ css }}">
+      {% endif %}
+    {% endif %}
+
+    <link rel="stylesheet" href="/assets/css/mq.css">
+    <meta name="description" content="Komuniteti i profesionisteve shqiptare."/>
+
+    {%- include "favicons.njk" -%}
+    {%- include "social.njk" %}
+
+    <script defer async>
+      const $$ = s => Array.from(document.querySelectorAll(s));
+      const $ = s => document.querySelector(s);
+    </script>
+
+    <script defer data-domain="forum.illyrianbrains.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
+    <script>
+      window.plausible = window.plausible || function () {
+        (window.plausible.q = window.plausible.q || []).push(arguments)
+      }
+    </script>
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Bubble Tea -->
+    <script src="/assets/js/nodes.mjs" type="module"></script>
+
+  </head>
+<body style="max-width: 1200px;">
+    {% if home %}
+      {% include 'partials/introhero.njk' %}
+    {% endif %}
+
+    <a href="#main-content" class="skip">Skip to main content</a>
+
+    <network-graph background="/assets/images/network-bg.jpg"></network-graph>
+
+    <div class="body" style="position: relative; z-index: 1;">
+
+      {% include 'header.njk' %}
+
+      <main id="main-content">
+        {%- block content %}
+          {{ content | safe }}
+        {%- endblock %}
+        {%- block credits %}{%- endblock %}
+      </main>
+
+      {% if not hide_newsletter %}
+        {% include "newsletter.njk" %}
+      {% endif %}
+
+      <footer>
+        <ul class="footer-links">
+          <li>
+            <a href="/support/inclusion">Përfshirja</a>
+          </li>
+          <li>
+            <a href="/support/code-of-conduct">Kodi i sjelljes</a>
+          </li>
+          <li>
+            <a href="/support/contact">Contact Us</a>
+          </li>
+        </ul>
+        <div>
+          <p>IllyrianBrains është një rrjet profesional nga persona me origjinë nga Shqipëria, Kosova, Maqedonia e Veriut, trevat dhe diaspora. Ne nuk 
+          kemi përfitime monetare nga rrjeti, dhe nuk kemi ndërmend ta bëjmë këtë gjë në të ardhmen.
+        </div>
+        </footer>
+      </div>
+
+      <script async defer>
+        const talks = $$('.talk-card');
+
+        function observerImages() {
+          if (typeof IntersectionObserver !== 'undefined') {
+            var observer = new IntersectionObserver(function (changes) {
+              if ('connection' in navigator && navigator.connection.saveData === true) {
+                return;
+              }
+              changes.forEach(function (change) {
+                if (change.isIntersecting) {
+                  change
+                    .target
+                    .setAttribute('style', `background-image: url(${change.target.getAttribute('data-image')})`);
+                  observer.unobserve(change.target);
+                }
+              });
+            });
+
+            document
+              .querySelectorAll('li[data-image]')
+              .forEach(function (img) {
+                observer.observe(img);
+              });
+          }
+        }
+
+        observerImages();
+
+        $('details').onchange = () => {
+          let reset = true;
+
+          let count = talks.length;
+
+          let title = (
+            count === 1
+            ? '1 Talk'
+            : `${count} Talks`);
+          if (!reset) {
+            title += " (filtered)";
+          }
+
+          $('#count').innerHTML = title;
+        }
+
+        try {
+          const qs = new URLSearchParams(window.location.search);
+          const options = (qs.get('filter') || '')
+            .split(',')
+            .concat((qs.get('years') || '').split(','))
+            .filter(Boolean);
+
+          options.forEach(value => {
+            $('details .pill-list input[value="' + value + '"').checked = true;
+          });
+          if (options.length) 
+            $('details').onchange();
+          }
+        catch (e) {
+          console.log(e);
+        }
+      </script>
+
+    </body>
+  </html>

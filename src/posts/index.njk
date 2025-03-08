@@ -1,0 +1,19 @@
+---
+layout: layouts/base.njk
+css:
+- posts.css
+---
+
+<section class="posts">
+  <header class="with-filter">
+    <h1><span id="count">Postime sociale</span></h1>
+  </header>
+
+  <div class="post-list" id="grid">
+  {% for post in posts | sortBy("-date") %}
+    {% include "partials/post.njk" %}
+  {% endfor %}
+  </div>
+</section>
+
+

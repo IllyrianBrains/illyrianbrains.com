@@ -1,70 +1,34 @@
-FROM python:3.13-alpine as base
+# === Build Stage ===
+FROM node:20-alpine as builder
 
-LABEL org.opencontainers.image.source="https://github.com/privacyguides/privacyguides.org"
+# Install Eleventy globally
+RUN npm install -g @11ty/eleventy
 
-# Setup env
-ENV LANG C.UTF-8
-ENV LC_ALL C.UTF-8
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONFAULTHANDLER 1
+WORKDIR /app
 
-FROM base AS python-deps
+# Copy package files and install deps
+COPY package.json package-lock.json ./
+RUN npm ci
 
-# Install pipenv and compilation dependencies
-RUN pip install pipenv
-RUN \
-  apk upgrade --update-cache -a \
-&& \
-  apk add --no-cache \
-    gcc \
-    libffi-dev \
-    musl-dev
+# Copy source files for Eleventy build
+COPY src ./src
+COPY redirects.js .      
+COPY .eleventy.js .
 
-# Install python dependencies in /.venv using Pipenv
-COPY Pipfile .
-COPY Pipfile.lock .
-RUN PIPENV_VENV_IN_PROJECT=1 pipenv install
+# Build the static site from src to _site
+RUN eleventy --input=src --output=_site
 
-FROM base AS runtime
+# === Final Stage ===
+FROM node:20-alpine
 
-# Install runtime dependencies
-RUN \
-  apk upgrade --update-cache -a \
-&& \
-  apk add --no-cache \
-    cairo \
-    freetype-dev \
-    git \
-    git-fast-import \
-    jpeg-dev \
-    openssh \
-    pngquant \
-    tini \
-    zlib-dev \
-    libffi-dev \
-    musl-dev \
-    bash
+# Install a lightweight static file server
+RUN npm install -g http-server
 
-# Copy virtual env from python-deps stage
-COPY --from=python-deps /.venv /.venv
-ENV PATH="/.venv/bin:$PATH"
-
-# Create and switch to a new user
-RUN mkdir /site
 WORKDIR /site
 
-COPY docs docs
-COPY theme theme
-COPY includes includes
-COPY *.yml .
-COPY run.sh .
+# Copy generated static site
+COPY --from=builder /app/_site .
 
-EXPOSE 8000
+EXPOSE 8082
 
-ENV MKDOCS_INHERIT mkdocs-production.yml
-
-HEALTHCHECK NONE
-
-ENTRYPOINT ["./run.sh"]
-CMD ["--cmd=mkdocs", "--cmd_flags=--dev-addr=0.0.0.0:8082"]
-
+CMD ["http-server", "-p", "8082"]

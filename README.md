@@ -1,3 +1,0 @@
-# IB Website
-
-TODO

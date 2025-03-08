@@ -1,0 +1,57 @@
+---
+layout: layouts/base.njk
+css:
+- articles.css
+- talk.css
+- slider.css
+---
+
+{% set eventCategories = ['HappyHours', 'Webinare', 'Ndryshe'] %}
+{% set bgColors = [
+  'rgba(244, 224, 124, 0.29)', 
+  'rgba(193, 225, 220, 0.29)', 
+  'rgba(231, 200, 221, 0.29)'
+] %}
+
+<section class="talks">
+  <header>
+    <h1><span id="count">Eventet</span></h1>
+  </header>
+
+  {% for slug, category in forum_posts %}
+    {% if slug in eventCategories %}
+      {% set index = eventCategories.indexOf(slug) %}
+      {% set bg = bgColors[index % bgColors.length] %}
+
+      <div class="event-section" style="background-color: {{ bg }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+        <div class="col" >
+          <!-- Right column: posts -->
+          <div style="flex: 1 1 45%;">
+            {% include "partials/forumEventCategory.njk" %}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<br><br><br>
+
+<section class="talks">
+  <div class="col">
+    {% for slug, category in forum_posts %}
+      {% if slug == 'Udhëzime' %}
+        <h2>{{ category.name }}</h2>
+        {% if category.description %}
+          <p>{{ category.description | safe }}</p>
+        {% endif %}
+        {% include "partials/forumTopic.njk" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+// your existing carousel logic remains unchanged
+document.addEventListener('DOMContentLoaded', updateCards);
+</script>

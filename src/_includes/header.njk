@@ -1,0 +1,17 @@
+
+<header id="menu">
+  <h1><a class="logo" aria-label="IB" href="/"><span class="visuallyhidden">IB</span></a></h1>
+  {% include "navigation.njk" %}
+
+  <div class="menu-controls">
+    <a id="open" class="snap" href="#menu"><span>Menu</span></a>
+  </div>
+</header>
+
+<script defer async>
+  document.querySelector('#open').onclick = e => {
+    e.preventDefault();
+    document.documentElement.classList.toggle('menu-open');
+  }
+  document.documentElement.classList.add('has-js');
+</script>

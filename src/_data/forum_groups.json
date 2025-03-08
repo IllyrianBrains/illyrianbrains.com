@@ -1,0 +1,788 @@
+{
+  "Mentorimi": {
+    "name": "Mentorimi",
+    "description": "Kontribues për programin e brendshëm të mentorimit të IB. Detyrat përfshijnë krijimi i një programi, thirrjet për mentorë dhe mentees, dhe materiale për mbështetjen e proçesit të mentorimit.",
+    "flair": "toolbox",
+    "members": [
+      {
+        "name": "Ariona Jupi",
+        "username": "ariona.jupi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/ariona.jupi/240/23_2.png",
+        "lastSeen": "2025-05-22"
+      },
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Isiona",
+        "username": "Isiona",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/8baadc/240.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Athina Dodbiba",
+        "username": "AthinaDodbiba",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/a8b319/240.png",
+        "lastSeen": "2025-05-26"
+      }
+    ]
+  },
+  "Atlas": {
+    "name": "Atlas",
+    "description": "Përmbledhja e informacionit mbi qytetet për t’u ndarë brenda/jashtë komunitetit shqiptar. Përfshin burime se ku të jetoni, ku të gjeni shërbime dhe çfarë të mos bëni. \nBashkohu ekipit si: \n\n<a href=\"https://forum.illyrianbrains.dev/t/kontribues-per-te-plotesuar-atlasin-e-gjermanise/477\">Kontribues&hellip;</a>",
+    "flair": "earth-europe",
+    "members": [
+      {
+        "name": "Maida Grazhdani",
+        "username": "maidagr",
+        "avatar": "/letter_avatar_proxy/v4/letter/m/bc8723/240.png",
+        "lastSeen": "2024-12-24"
+      },
+      {
+        "name": "Algert Pateqi",
+        "username": "algertpateqi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/240/84_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "Sadiona Abazaj",
+        "username": "Sadiona",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/b782af/240.png",
+        "lastSeen": "2025-06-05"
+      },
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Eneda ",
+        "username": "Eneda",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/7c8e57/240.png",
+        "lastSeen": "2025-02-03"
+      },
+      {
+        "name": "Gentiana Berisha",
+        "username": "6entianaberisha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/240/335_2.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  },
+  "Meso-Deutsch": {
+    "name": "Mëso-Deutsch",
+    "description": "Një pjesë e mirë e IB ndodhet në vende gjermanisht-folëse. Ky grup përpiqet ta bëjë sfidën për të mësuar gjermanisht më të lehtë.",
+    "flair": "book-open-reader",
+    "members": [
+      {
+        "name": "Gentjana Hoxha ",
+        "username": "GentjanaHoxha",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/c5a1d2/240.png",
+        "lastSeen": "2024-12-26"
+      },
+      {
+        "name": "Emel",
+        "username": "Emi007",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/9de053/240.png",
+        "lastSeen": "2025-04-29"
+      },
+      {
+        "name": "Albana Frroku",
+        "username": "albanafrroku",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/albanafrroku/240/100_2.png",
+        "lastSeen": "2025-03-26"
+      },
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      }
+    ]
+  },
+  "Dizajni": {
+    "name": "Dizajni",
+    "description": "Ekipi që punon në krijimin dhe zhvillimin e identitetit vizual të Illyrian Brains. Nga posterat për evente te grafikët për fushata digjitale. \nBashkohu ekipit si: \n\n<a href=\"https://forum.illyrianbrains.dev/t/dizajn-grafik-bashkohu-ekipit/474\">Graphic Designer</a>.",
+    "flair": "images",
+    "members": [
+      {
+        "name": "Algert Pateqi",
+        "username": "algertpateqi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/240/84_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "Silva Islami",
+        "username": "silvaislami",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/c89c15/240.png",
+        "lastSeen": "2025-02-13"
+      },
+      {
+        "name": "Gess Bendaj",
+        "username": "Gessbendaj",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/ea666f/240.png",
+        "lastSeen": "2025-06-02"
+      }
+    ]
+  },
+  "Eventet": {
+    "name": "Eventet",
+    "description": "Ekipi që punon në zhvillimi e eventeve si HappyHours apo Webinare, për të rritur cilësinë dhe për të dhënë mbështetje organizuesve.",
+    "flair": "ticket",
+    "members": [
+      {
+        "name": "Sindi Ramaliu",
+        "username": "sindiramaliu",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/90db22/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Genta Frroku",
+        "username": "gentafrroku",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/4bbf92/240.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Gentiana Berisha",
+        "username": "6entianaberisha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/240/335_2.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  },
+  "Komunikimi": {
+    "name": "Komunikimi",
+    "description": "Ekipi kontribuon me punime të vazhdueshme në materiale të komunikimit dhe mediave sociale. Bashkohu ekipit si: \n\n<a href=\"https://forum.illyrianbrains.dev/t/krijimi-dhe-redaktimi-i-teksteve-bashkohu-ekipit/475\">Redaktues/e</a>,\n<a href=\"https://forum.illyrianbrains.dev/t/menaxhimi-i-rrjeteve-sociale-bashkohu-ekipit/476\">Menaxhues/e e rrjeteve sociale</a>.",
+    "flair": "microphone-lines",
+    "members": [
+      {
+        "name": "Vullnet Veliaj",
+        "username": "VullnetVeliaj",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/vullnetveliaj/240/29_2.png",
+        "lastSeen": "2025-05-25"
+      },
+      {
+        "name": "Algert Pateqi",
+        "username": "algertpateqi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/240/84_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "Spartak Lalaj",
+        "username": "spartak",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/839c29/240.png",
+        "lastSeen": "2025-05-02"
+      },
+      {
+        "name": "Sindi Ramaliu",
+        "username": "sindiramaliu",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/90db22/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Silva Islami",
+        "username": "silvaislami",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/c89c15/240.png",
+        "lastSeen": "2025-02-13"
+      },
+      {
+        "name": "Gess Bendaj",
+        "username": "Gessbendaj",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/ea666f/240.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Gentiana Berisha",
+        "username": "6entianaberisha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/240/335_2.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  },
+  "Teknologet": {
+    "name": "Teknologet",
+    "description": "Grupi i teknologjise ka qellim zhvillimin e komunitetit, digjitalizimin e IB, dhe bashkepunimin per ndergjegjesim per temat e reja. \nBashkohu ekipit si: \n\n<a href=\"https://forum.illyrianbrains.dev/t/zhvillues-php-per-akademine/415\">Php Dev</a>",
+    "flair": "robot",
+    "members": [
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "ionianFury",
+        "username": "ionianFury",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/240/337_2.png",
+        "lastSeen": "2025-06-06"
+      },
+      {
+        "name": "Eralda",
+        "username": "erho",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/erho/240/43_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "Donald Gazidedja",
+        "username": "Gazidedjadoni",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/da6949/240.png",
+        "lastSeen": "2025-05-28"
+      },
+      {
+        "name": "Erjon",
+        "username": "ErjonGenova",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/97f17d/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Blend Dehari",
+        "username": "Blend",
+        "avatar": "/letter_avatar_proxy/v4/letter/b/ac8455/240.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  },
+  "AllStaff": {
+    "name": "AllStaff",
+    "description": "Organizatorë të HappyHours në vende të ndryshme dhe ambasadorë të kulturës dhe identitetit të profesionistëve shqipfolës në eventet e IB.",
+    "flair": "heart-circle-plus",
+    "members": [
+      {
+        "name": "Sindi Ramaliu",
+        "username": "sindiramaliu",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/90db22/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Endri Basha",
+        "username": "endribasha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/endribasha/240/24_2.png",
+        "lastSeen": "2025-02-23"
+      },
+      {
+        "name": "Viola",
+        "username": "Viola",
+        "avatar": "/letter_avatar_proxy/v4/letter/v/9e8a1a/240.png",
+        "lastSeen": "2025-02-16"
+      },
+      {
+        "name": "VilmaV",
+        "username": "VilmaV",
+        "avatar": "/letter_avatar_proxy/v4/letter/v/ea666f/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Spartak Lalaj",
+        "username": "spartak",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/839c29/240.png",
+        "lastSeen": "2025-05-02"
+      },
+      {
+        "name": "Silva Islami",
+        "username": "silvaislami",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/c89c15/240.png",
+        "lastSeen": "2025-02-13"
+      },
+      {
+        "name": "Shejla",
+        "username": "Shejla",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/f9ae1b/240.png",
+        "lastSeen": "2025-01-13"
+      },
+      {
+        "name": "Sadiona Abazaj",
+        "username": "Sadiona",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/b782af/240.png",
+        "lastSeen": "2025-06-05"
+      },
+      {
+        "name": "nardi",
+        "username": "nardi",
+        "avatar": "/letter_avatar_proxy/v4/letter/n/6f9a4e/240.png",
+        "lastSeen": "2025-01-16"
+      },
+      {
+        "name": "Marinela Shehaj",
+        "username": "MarinelaS",
+        "avatar": "/letter_avatar_proxy/v4/letter/m/71e660/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Mandalena Prelashi",
+        "username": "Mandalena",
+        "avatar": "/letter_avatar_proxy/v4/letter/m/7ea924/240.png",
+        "lastSeen": "2025-01-13"
+      },
+      {
+        "name": "Lirijeta",
+        "username": "Lirijeta",
+        "avatar": "/letter_avatar_proxy/v4/letter/l/e9a140/240.png",
+        "lastSeen": "2025-01-18"
+      },
+      {
+        "name": "Klaudia",
+        "username": "Klaudia",
+        "avatar": "/letter_avatar_proxy/v4/letter/k/6bbea6/240.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Jorgo",
+        "username": "Jorgo424",
+        "avatar": "/letter_avatar_proxy/v4/letter/j/e495f1/240.png",
+        "lastSeen": "2025-04-07"
+      },
+      {
+        "name": "Jonida",
+        "username": "Jonida",
+        "avatar": "/letter_avatar_proxy/v4/letter/j/ecae2f/240.png",
+        "lastSeen": "2025-02-25"
+      },
+      {
+        "name": "Joana",
+        "username": "joana.gjorgo",
+        "avatar": "/letter_avatar_proxy/v4/letter/j/7993a0/240.png",
+        "lastSeen": "2025-01-13"
+      },
+      {
+        "name": "Izabela Bakollari",
+        "username": "Izabela",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/7ab992/240.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "ionianFury",
+        "username": "ionianFury",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/240/337_2.png",
+        "lastSeen": "2025-06-06"
+      },
+      {
+        "name": "Inva Sela",
+        "username": "InvaSela",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/invasela/240/276_2.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Dorian Osmani",
+        "username": "IlliryanEagle",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/illiryaneagle/240/336_2.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Ili",
+        "username": "Ili",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/eb8c5e/240.png",
+        "lastSeen": "2025-01-14"
+      },
+      {
+        "name": "Klaudio Sula",
+        "username": "IBLondon",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/ce7236/240.png",
+        "lastSeen": "2025-05-20"
+      },
+      {
+        "name": "Gess Bendaj",
+        "username": "Gessbendaj",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/ea666f/240.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Genta Frroku",
+        "username": "gentafrroku",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/4bbf92/240.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Fiona Sanxhaktari",
+        "username": "Fiona_IB_NY",
+        "avatar": "/letter_avatar_proxy/v4/letter/f/278dde/240.png",
+        "lastSeen": "2025-01-14"
+      },
+      {
+        "name": "Fioralba Duma",
+        "username": "fiodu",
+        "avatar": "/letter_avatar_proxy/v4/letter/f/bb73d2/240.png",
+        "lastSeen": "2025-04-14"
+      },
+      {
+        "name": "Etla",
+        "username": "Eti",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/eti/240/192_2.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Ermal Dauti",
+        "username": "Ermali",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/7cd45c/240.png",
+        "lastSeen": "2025-01-30"
+      },
+      {
+        "name": "Erjon",
+        "username": "ErjonGenova",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/97f17d/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Ermira Repaj",
+        "username": "erepaj",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/a88e4f/240.png",
+        "lastSeen": "2025-01-30"
+      },
+      {
+        "name": "Erda Hoxha",
+        "username": "erda_hoxha",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/240.png",
+        "lastSeen": "2025-06-07"
+      },
+      {
+        "name": "Emiljano Hoxha",
+        "username": "Emiljano_Hoxha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/emiljano_hoxha/240/283_2.png",
+        "lastSeen": "2025-05-16"
+      },
+      {
+        "name": "Emel",
+        "username": "Emi007",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/9de053/240.png",
+        "lastSeen": "2025-04-29"
+      },
+      {
+        "name": "EglantinaA",
+        "username": "EglantinaA",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/240.png",
+        "lastSeen": "2025-02-03"
+      },
+      {
+        "name": "Dajana",
+        "username": "Dajana",
+        "avatar": "/letter_avatar_proxy/v4/letter/d/8baadc/240.png",
+        "lastSeen": "2025-05-29"
+      },
+      {
+        "name": "bianka",
+        "username": "bianka",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/bianka/240/334_2.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "Stela",
+        "username": "bermems",
+        "avatar": "/letter_avatar_proxy/v4/letter/b/a88e57/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Begart",
+        "username": "Bdajko",
+        "avatar": "/letter_avatar_proxy/v4/letter/b/d26b3c/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Auron",
+        "username": "Auron",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/ecd19e/240.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "Arjana Kastrati",
+        "username": "arjana",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/f07891/240.png",
+        "lastSeen": "2025-04-08"
+      },
+      {
+        "name": "Ariona Jupi",
+        "username": "ariona.jupi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/ariona.jupi/240/23_2.png",
+        "lastSeen": "2025-05-22"
+      },
+      {
+        "name": "Ardit",
+        "username": "ArditBuli",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/4af34b/240.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "Arbëreshë",
+        "username": "Arbereshe",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/f1d935/240.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "Arbër Islamaj",
+        "username": "Arber",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/a587f6/240.png",
+        "lastSeen": "2025-06-06"
+      },
+      {
+        "name": "Andi Memo",
+        "username": "Andi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/andi/240/154_2.png",
+        "lastSeen": "2024-12-03"
+      },
+      {
+        "name": "Algert Pateqi",
+        "username": "algertpateqi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/240/84_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "Gentiana Berisha",
+        "username": "6entianaberisha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/240/335_2.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  },
+  "perfaqesia": {
+    "name": "Përfaqësia",
+    "description": "Të zgjedhurit nga organizatorët për të ndjekur strategjinë e IB, vlerësuar propozimet nga brenda dhe jashtë, menaxhuar bashkëpunimet, dhe koordinimin me grupet teknike.",
+    "flair": "scale-unbalanced",
+    "members": [
+      {
+        "name": "Sindi Ramaliu",
+        "username": "sindiramaliu",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/90db22/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Sadiona Abazaj",
+        "username": "Sadiona",
+        "avatar": "/letter_avatar_proxy/v4/letter/s/b782af/240.png",
+        "lastSeen": "2025-06-05"
+      },
+      {
+        "name": "Marinela Shehaj",
+        "username": "MarinelaS",
+        "avatar": "/letter_avatar_proxy/v4/letter/m/71e660/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Izabela Bakollari",
+        "username": "Izabela",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/7ab992/240.png",
+        "lastSeen": "2025-05-09"
+      },
+      {
+        "name": "Dorian Osmani",
+        "username": "IlliryanEagle",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/illiryaneagle/240/336_2.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Klaudio Sula",
+        "username": "IBLondon",
+        "avatar": "/letter_avatar_proxy/v4/letter/i/ce7236/240.png",
+        "lastSeen": "2025-05-20"
+      },
+      {
+        "name": "Heridis Zeka Topi",
+        "username": "heridiszt",
+        "avatar": "/letter_avatar_proxy/v4/letter/h/df788c/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Genta Frroku",
+        "username": "gentafrroku",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/4bbf92/240.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Fiona Sanxhaktari",
+        "username": "Fiona_IB_NY",
+        "avatar": "/letter_avatar_proxy/v4/letter/f/278dde/240.png",
+        "lastSeen": "2025-01-14"
+      },
+      {
+        "name": "Erda Hoxha",
+        "username": "erda_hoxha",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/240.png",
+        "lastSeen": "2025-06-07"
+      },
+      {
+        "name": "Emiljano Hoxha",
+        "username": "Emiljano_Hoxha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/emiljano_hoxha/240/283_2.png",
+        "lastSeen": "2025-05-16"
+      }
+    ]
+  },
+  "ruajtesit": {
+    "name": "Ruajtësit",
+    "description": "Kujdesen për identitetin dhe vlerat thelbësore të komunitetit. Ata ndërhyjnë kur është e nevojshme për të ruajtur qëndrueshmërinë dhe thelbin e vizionit afatgjatë të nismës.",
+    "flair": "discourse-bell-exclamation",
+    "members": [
+      {
+        "name": "Endri Basha",
+        "username": "endribasha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/endribasha/240/24_2.png",
+        "lastSeen": "2025-02-23"
+      }
+    ]
+  },
+  "IB-Tech": {
+    "name": "IB-Tech",
+    "description": "Grup për të ndarë mundësi punësimi dhe zhvillimi me profesionistë të tjerë që punojnë në teknologji.",
+    "flair": "robot",
+    "members": [
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "ionianFury",
+        "username": "ionianFury",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/240/337_2.png",
+        "lastSeen": "2025-06-06"
+      },
+      {
+        "name": "Eralda",
+        "username": "erho",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/erho/240/43_2.png",
+        "lastSeen": "2025-05-31"
+      },
+      {
+        "name": "orestiffm",
+        "username": "orestiffm",
+        "avatar": "/letter_avatar_proxy/v4/letter/o/f4b2a3/240.png",
+        "lastSeen": "2025-04-20"
+      },
+      {
+        "name": "Judi",
+        "username": "Judi",
+        "avatar": "/letter_avatar_proxy/v4/letter/j/7993a0/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Dorian Osmani",
+        "username": "IlliryanEagle",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/illiryaneagle/240/336_2.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Gazmir Mazari",
+        "username": "GazmirMazari",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/35a633/240.png",
+        "lastSeen": "2025-05-28"
+      },
+      {
+        "name": "Donald Gazidedja",
+        "username": "Gazidedjadoni",
+        "avatar": "/letter_avatar_proxy/v4/letter/g/da6949/240.png",
+        "lastSeen": "2025-05-28"
+      },
+      {
+        "name": "Erlis Baruti",
+        "username": "erlisbaruti",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/85f322/240.png",
+        "lastSeen": "2025-04-23"
+      },
+      {
+        "name": "Erjon",
+        "username": "Erjon",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/a698b9/240.png",
+        "lastSeen": "2025-04-20"
+      },
+      {
+        "name": "DorianaH",
+        "username": "DorianaH",
+        "avatar": "/letter_avatar_proxy/v4/letter/d/d6d6ee/240.png",
+        "lastSeen": "2025-05-27"
+      },
+      {
+        "name": "Dita",
+        "username": "ditaa99",
+        "avatar": "/letter_avatar_proxy/v4/letter/d/e9c0ed/240.png",
+        "lastSeen": "2025-05-26"
+      },
+      {
+        "name": "Blend Dehari",
+        "username": "Blend",
+        "avatar": "/letter_avatar_proxy/v4/letter/b/ac8455/240.png",
+        "lastSeen": "2025-05-28"
+      },
+      {
+        "name": "Bjondina",
+        "username": "Bjondina",
+        "avatar": "/letter_avatar_proxy/v4/letter/b/8e8cbc/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "Arian Ajdari",
+        "username": "arian",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/51bf81/240.png",
+        "lastSeen": "n/a"
+      },
+      {
+        "name": "ajmu",
+        "username": "ajmu",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/d6d6ee/240.png",
+        "lastSeen": "2025-06-04"
+      },
+      {
+        "name": "Adrian Kodja",
+        "username": "adriankodja",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/65b543/240.png",
+        "lastSeen": "2025-02-13"
+      }
+    ]
+  },
+  "IB-Social": {
+    "name": "IB-Social",
+    "description": "Punime të ndryshme mbi psikologjinë organizative, shëndetin mendor, sociologjinë, burimet njerëzore dhe tema të ngjashme.",
+    "flair": "shield-heart",
+    "members": [
+      {
+        "name": "pomodoren",
+        "username": "pomodoren",
+        "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/240.png",
+        "lastSeen": "2025-06-08"
+      },
+      {
+        "name": "Valentin",
+        "username": "Valentino",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/valentino/240/271_2.png",
+        "lastSeen": "2025-06-02"
+      },
+      {
+        "name": "Fioralba Duma",
+        "username": "fiodu",
+        "avatar": "/letter_avatar_proxy/v4/letter/f/bb73d2/240.png",
+        "lastSeen": "2025-04-14"
+      },
+      {
+        "name": "Erda Hoxha",
+        "username": "erda_hoxha",
+        "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/240.png",
+        "lastSeen": "2025-06-07"
+      },
+      {
+        "name": "Endri Basha",
+        "username": "endribasha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/endribasha/240/24_2.png",
+        "lastSeen": "2025-02-23"
+      },
+      {
+        "name": "Alban Bytyqi",
+        "username": "alban.bytyqi",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/alban.bytyqi/240/105_2.png",
+        "lastSeen": "2025-04-15"
+      },
+      {
+        "name": "Alba Bakiasi",
+        "username": "albabakiasi94",
+        "avatar": "/letter_avatar_proxy/v4/letter/a/3bc359/240.png",
+        "lastSeen": "2025-04-14"
+      },
+      {
+        "name": "Gentiana Berisha",
+        "username": "6entianaberisha",
+        "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/240/335_2.png",
+        "lastSeen": "2025-05-28"
+      }
+    ]
+  }
+}

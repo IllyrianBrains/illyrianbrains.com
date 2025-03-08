@@ -1,0 +1,50 @@
+---
+layout: layouts/base.njk
+css:
+  - articles.css
+---
+
+{% set programStats = {
+  "Mentorimi": { Mentore: 10, Shtete: 5, Mentee: 10 },
+  "Atlas": { Kontribues: 6, Shtete: 5, Dokumenta: "20+" },
+  "Meso-Deutsch": { Kontribues: 5, SprachCafe: 2, Evente: 3},
+  "IB-Tech": { Kontribues: "10+", Takime: "10+", Nisma: 5 },
+  "IB-Social": { Kontribues: "10+", Fushata: 5, Evente: "2+" }
+} %}
+
+<section class="history">
+  <header>
+    <h1><span id="count">Nismat</span></h1>
+  </header>
+
+  {% set programs = ['Atlas', 'Mentorimi', 'Meso-Deutsch'] %}
+  {% set bgColors = [
+    'rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'
+  ] %}
+
+  {% for program in programs %}
+    {% set bg = bgColors[loop.index0 % bgColors.length] %}
+    {% set stats = programStats[program] %}
+        {% include 'partials/forumNismeExtended.njk' %}
+  {% endfor %}
+
+</section>
+
+<br><br><br>
+
+<section class="history">
+  <header>
+    <h1><span id="count">Grupet e profesionistëve</span></h1>
+  </header>
+
+  {% set programs = ['IB-Tech', 'IB-Social'] %}
+  {% set bgColors = [
+    'rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'
+  ] %}
+
+  {% for program in programs %}
+    {% set bg = bgColors[loop.index0 % bgColors.length] %}
+    {% set stats = programStats[program] %}
+        {% include 'partials/forumNismeExtended.njk' %}
+  {% endfor %}
+</section>

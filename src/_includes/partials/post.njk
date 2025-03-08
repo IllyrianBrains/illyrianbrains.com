@@ -1,0 +1,22 @@
+{% set postColors = [ 'rgba(247, 233, 183, 0.35)', 'rgba(216, 243, 220, 0.35)', 'rgba(253, 226, 228, 0.35)', 'rgba(224, 187, 247, 0.35)', 'rgba(199, 223, 255, 0.35)' ] %}
+{% set backupColor = '#f0f0f0' %}
+{% set color = postColors[loop.index0 % postColors.length]  or backupColor %}
+
+<div class="post-item" style="background-color: {{ color }}; border-radius: 10px; padding: 1rem; margin-bottom: 1.5rem;">
+  <header>
+    <img class="avatar" src="/assets/images/posts/avatars/{{ post.username | cleanUsername }}.jpg">
+    <strong><a href="{{ post.url }}" target="_blank">{{ post.username }}</a></strong>
+    <span class="pill">{{ post.date | format("D MMM YYYY") }}</span>
+  </header>
+
+  <div class="post">
+    {{ post.body | safe }}
+    {% if post.images.length > 0 %}
+    <div class="images images-{{ post.images.length }}">
+      {% for img in post.images %}
+      <img src="{{ img }}">
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

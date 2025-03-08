@@ -1,0 +1,69 @@
+
+    <div class="program-section" style="background-color: {{ bg }}; padding: 4rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
+      <div class="col" style="display: flex; flex-wrap: wrap; gap: 2rem;">
+
+        <!-- Left Column -->
+        <div style="flex: 1 1 45%;" class="col">
+          <h2>{{ program }}</h2>
+
+          {% for slug, group in forum_groups %}
+            {% if slug == program %}
+              {% if group.description %}
+                <p class="group-description">{{ group.description | safe }}</p>
+              {% endif %}
+
+              <p>
+                Grupi i punës:
+                {% for person in group.members %}
+                  {% if loop.index0 < 10 %}
+                    <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/u/{{ person.username }}">
+                      @{{ person.username }}</a>
+                    {% if group.members.length > loop.index %} - {% else %}. {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% if group.members.length > 10 %}
+                  <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/g/{{ group.slug }}">
+                    {{ group.members.length - 10 }}+</a>.
+                {% endif %}
+              </p>
+            {% endif %}
+          {% endfor %}
+
+
+          <div class="stats" style="display: flex; margin-bottom: 2rem; flex-wrap: wrap;">
+            {% for key, value in stats %}
+              <div style="text-align: center; flex: 1 1 30%;">
+                <div style="font-size: 3rem; font-weight: bold;">{{ value }}</div>
+                <div>{{ key | replace("_", " ") | capitalize }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div style="flex: 1 1 45%;" style="col">
+
+          <div>
+            {% for slug, category in forum_posts %}
+              {% if slug == program %}
+                <ul class="article-list">
+                  {% for topic in category.topics %}
+                    {% if not topic.title.startsWith("About the") and not topic.title.startsWith("Hyrje ") %}
+                      <li class="{{ topic.tags | join(' ') | slugify }}">
+                        <div>
+                          <a href="{{ topic.url }}">{{ topic.title }}</a>
+                        </div>
+                        <img src="https://forum.illyrianbrains.dev{{ topic.poster.avatar }}"
+                             alt="{{ topic.poster.name }}"
+                             width="32" style="border-radius: 50%;">
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+      </div>
+    </div>

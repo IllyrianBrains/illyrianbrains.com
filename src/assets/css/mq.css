@@ -1,0 +1,175 @@
+@media only screen and (min-width: 700px) {
+  .snap {
+    scroll-snap-align: none;
+  }
+
+  main.snap {
+    margin-top: inherit;
+    padding-top: inherit;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  .box {
+    border: solid 2px var(--light-grey);
+  }
+
+  .talk .media > * {
+    width: 440px;
+  }
+
+  .talk .links > * {
+    width: 440px;
+    padding: 25px 40px;
+    margin: 8px 0;
+  }
+
+  .talk .speaker-image img {
+    display: none;
+  }
+
+  .talk .media {
+    margin: 50px 0 60px 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .body > main {
+    padding: 40px;
+  }
+
+  .talks ul {
+    margin: -20px;
+  }
+
+  .back {
+    margin: 30px 0 70px 0;
+  }
+
+  header.with-filter {
+    padding: 0;
+  }
+
+  .filter {
+    top: 0;
+    right: 0;
+    padding: 15px 60px 15px 25px;
+    background-position: 85% center;
+  }
+
+  header.with-filter summary > span {
+    display: block;
+  }
+
+  .body > footer {
+    padding: 0 40px;
+  }
+
+  .body > footer p {
+    margin-right: 180px;
+    margin-bottom: 20px;
+  }
+
+  .body > footer > div {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #menu li.selected::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: var(--salmon);
+    width: 100%;
+    position: absolute;
+    bottom: -14px;
+  }
+
+  .newsletter {
+    margin: 0 40px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+  }
+
+  .newsletter > div {
+    padding: 80px 88px;
+    flex-direction: row;
+  }
+
+  .newsletter .form > div {
+    max-width: 380px;
+  }
+
+  .newsletter > div > * {
+    width: 48%;
+    max-width: 440px;
+    position: relative;
+  }
+
+  .with-filter details .body {
+    margin: 0 -40px 0 -80px;
+    padding: 40px;
+  }
+
+  .talk-card {
+    width: 45%;
+    margin: 20px; /* and that, will result in a 10px gap */
+    border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #menu {
+    background: white;
+    height: 80px;
+  }
+
+  .has-js #menu nav {
+    transform: none;
+    position: static;
+    border: 0;
+    width: auto;
+  }
+
+  #menu .menu-controls {
+    display: none;
+  }
+
+  #menu nav {
+    flex-grow: 0;
+    display: block;
+    width: auto;
+    margin-right: 40px;
+    margin-top: 0;
+    position: static;
+  }
+
+  #menu nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  #menu li {
+    margin: 0 10px;
+  }
+
+  #menu li:last-child {
+    margin-right: 0;
+  }
+
+  #menu .logo {
+    height: 96px;
+    width: 96px;
+    bottom: -40px;
+  }
+}
+
+@media only screen and (min-width: 840px) {
+  #menu li {
+    margin: 0 20px;
+  }
+}

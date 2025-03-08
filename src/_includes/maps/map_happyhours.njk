@@ -1,0 +1,45 @@
+
+<div id="map" style="height: 600px; width: 100%; border-radius: 10px;"></div>
+
+<script>
+    const cityData = {{ cities | default([]) | dump | safe }};
+    const map = L.map("map").setView([45.0, 10.0], 4);
+
+    // CartoDB Dark Matter basemap
+    const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    });
+    darkLayer.addTo(map);
+
+    // Scale radius function
+    const scaleRadius = (count) => {
+        const min = 8, max = 35;
+        const maxCount = Math.max(...cityData.map(c => c.count));
+        return Math.max(min, (count / maxCount) * max);
+    };
+
+    // Add city markers
+    cityData.forEach(city => {
+        const marker = L.circleMarker([city.lat, city.lon], {
+            radius: scaleRadius(city.count),
+            fillColor: "#f7941d",
+            color: "#ffffff",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.75
+        }).addTo(map);
+
+        const popupContent = `
+            <a href="${city.name}" target="_blank">${city.name}</a><br><hr>
+
+            ${city.count} anëtarë<br>
+            ${city.event_count}+ takime<br>
+            Avg. ${city.avg_participants_per_meeting}+ pjesëmarrës<br><br>
+        `;
+
+        marker.bindPopup(popupContent);
+    });
+
+</script>

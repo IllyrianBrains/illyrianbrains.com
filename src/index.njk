@@ -1,0 +1,129 @@
+---
+layout: layouts/base.njk
+home: true
+css:
+- history.css
+- posts.css
+- articles.css
+- talk.css
+- slider.css
+---
+
+{% set bgColors = ['rgba(244, 224, 124, 0.29)', 'rgba(193, 225, 220, 0.29)', 'rgba(219, 219, 219, 0.29)'] %}
+<section class="history">
+
+  <header>
+    <h1>
+      <span id="count">Rrjeti IllyrianBrains</span>
+    </h1>
+  </header>
+
+  <div class="program-section" style="background-color: {{ bgColors[0] }}; padding: 2rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+    <div class="col">
+
+      <div style="flex: 1 1 45%;">
+        <h2>Ne krijojmë komunitete të profesionistëve shqiptarë në qytetin tënd.</h2>
+        <p>
+          Çdo qytet është një hapësirë për ndërlidhje, mbështetje dhe zhvillim profesional mes anëtarëve që ndajnë gjuhën dhe vlerat.
+        </p>
+      </div>
+
+      <div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+{% set eventCategories = ['HappyHours'] %}
+
+<section class="talks">
+
+  <header>
+    <h1>
+      <span>Eventet</span></h1>
+  </header>
+  {% for slug, category in forum_posts %}
+    {% if slug in eventCategories %}
+      {% set index = eventCategories.indexOf(slug) %}
+      {% set bg = bgColors[index % bgColors.length] %}
+
+      <div class="event-section" style="background-color: {{ bgColors[0] }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+        <!-- Right column: posts -->
+        <div style="flex: 1 1 45%;">
+          {% include "partials/forumTopicCategory.njk" %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>
+
+<br><br><br>
+
+<section class="posts dark">
+
+  <header>
+    <h1>
+      <span>Kartolina nga Qytetet</span></h1>
+  </header>
+  <div class="program-section" style="background-color: {{ bgColors[1] }} ; padding: 2rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+    <div>
+      <div style="flex: 1 1 45%;">
+        <div class="post-list">
+          {% for post in posts_IB %}
+            {% include "partials/post.njk" %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br>
+
+<section class="history">
+  <header>
+    <h1>
+      <span>Bëhu Pjesë</span></h1>
+  </header>
+
+  <div class="program-section" style="background-color: {{ bgColors[2] }}; padding: 2rem 2rem; border-radius: 10px;">
+    <div class="col">
+
+      <div style="flex: 1 1 45%;">
+        <h2>Si pjesëmarrës</h2>
+        <p>
+          Mund të bëhesh pjesë e një grupi në qytetin tënd ose afër tij. Grupi lokal është vendi ku ndodhin takimet, diskutimet dhe shkëmbimi i përvojave.
+          <br><br>
+          Pjesëmarrësit kontribuojnë me praninë, mendimet dhe propozimet e tyre për të forcuar lidhjet në komunitet.
+        </p>
+
+        <h2>Si organizator</h2>
+        <p>
+          Nëse dëshiron të marrësh një rol më aktiv, mund të bëhesh organizator i një qyteti. Ky rol përfshin planifikimin e aktiviteteve, përfaqësimin e grupit dhe koordinimin me pjesën tjetër të rrjetit.
+        </p>
+      </div>
+
+      <div style="flex: 1 1 45%;">
+        <h2>Si kontribues</h2>
+        <p>
+          Kontribuesit janë ata që mbështesin nisma si <a href="#">Mentorimi</a>, <a href="#">Atlas</a>, <a href="#">Mëso-Deutsch</a> dhe të tjera – përmes kohës së tyre, ideve apo ndihmës teknike.
+          <br><br>
+          Mund të kontribuosh në dizajn, përmbajtje, teknologji apo komunikim – çdo ndihmë e sjell një hap më afër një komuniteti më të fortë.
+        </p>
+
+        <h2>Diskuto dhe vepro</h2>
+        <p>
+          Forumi është hapësira kryesore ku nisin diskutimet, lindin idetë dhe formohen ekipet. Duke u bashkuar në forum, ke mundësinë të përfshihesh në mënyrën që të përshtatet më shumë.
+        </p>
+
+        <div class="center" style="margin-top: 2rem;">
+          <a href="https://forum.illyrianbrains.dev" class="button primary">Hap Forumin</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

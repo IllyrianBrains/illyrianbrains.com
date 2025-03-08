@@ -1,0 +1,20 @@
+<div>
+  <h2>{{ category.name }}</h2>
+  {% if category.description %}
+    <p class="group-description">{{ category.description | safe }}</p>
+  {% endif %}
+
+  <ul class="article-list">
+    {% for topic in category.topics %}
+      {% if not topic
+        .title
+        .startsWith("About the")and not topic
+        .title
+        .startsWith('Hyrje ') %}
+        <li class="{{ topic.tags | join(' ') | slugify }}">
+          {% include "partials/forumTopic.njk" %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

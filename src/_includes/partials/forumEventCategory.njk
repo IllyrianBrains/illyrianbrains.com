@@ -1,0 +1,17 @@
+<div>
+  {% if category.topics.length > 0 %}
+    <h2 class="heading-m">{{ slug }}</h2>
+    <p>{{ category.description }}</p>
+    <div class="talk">
+      <ul>
+        {%- for event in category.topics %}
+          {% if not event
+            .title
+            .startsWith('About the') %}
+            {% include "partials/forumEvent.njk" %}
+          {% endif %}
+        {%- endfor %}
+      </ul>
+    </div>
+  {% endif %}
+</div>

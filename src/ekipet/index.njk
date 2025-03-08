@@ -1,0 +1,102 @@
+---
+layout: layouts/base.njk
+css:
+- history.css
+- articles.css
+- posts.css
+---
+
+
+{% set bgColors = [
+  'rgba(244, 224, 124, 0.49)',
+  'rgba(193, 225, 220, 0.49)',
+  'rgba(246, 214, 173, 0.49)',
+  'rgba(208, 231, 183, 0.49)',
+  'rgba(231, 200, 221, 0.49)'
+] %}
+
+
+<section class="history">
+  <header>
+    <h1><span>Organizatorët</span></h1>
+  </header>
+
+  <div class="program-section" style="background-color: {{ bgColors[2] }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+  <div class="col">
+      <div>
+
+      {% for slug, group in forum_groups %}
+        {% if slug in ['AllStaff'] %}
+          {% include 'partials/forumEkip.njk' %}
+        {% endif %}
+      {% endfor %}
+      </div>
+
+      <div>
+
+      {% for slug, group in forum_groups %}
+        {% if slug in ['perfaqesia']%}
+          {% include 'partials/forumEkip.njk' %}
+        {% endif %}
+      {% endfor %}
+      <br>
+      <br>
+      {% for slug, group in forum_groups %}
+        {% if slug in [ 'ruajtesit' ]%}
+          {% include 'partials/forumEkip.njk' %}
+        {% endif %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<br><br><br>
+<section class="history">
+  <header>
+    <h1><span>Ekipet teknike</span></h1>
+  </header>
+
+  <div class="program-section" style="background-color: {{ bgColors[3] }}; padding: 4rem 2rem; border-radius: 10px;">
+    <div class="col">
+      {% for slug, group in forum_groups %}
+        {% if slug in ['Dizajni', 'Eventet', 'Komunikimi', 'Teknologet'] %}
+          {% include 'partials/forumEkip.njk' %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<br><br><br>
+
+
+
+
+<section class="history">
+  <header>
+    <h1><span>Falenderime</span></h1>
+  </header>
+  <div class="program-section" style="background-color: {{ bgColors[4] }}; padding: 4rem 2rem; border-radius: 10px;">
+    <div class="col">
+
+      <div>
+        <h2>Kontribues afatgjatë!</h2>
+        <p>
+          Një falënderim i veçantë për të gjithë kontribueset dhe kontribuesit që kanë kontribuar me kohë, ide,
+          përkrahje dhe pasion në ndërtimin e IllyrianBrains. Pa ju, ky komunitet nuk do të
+          kishte formën dhe energjinë që ka sot.
+        </p>
+      </div>
+      <div>
+        <p>
+         Veçanërisht, falenderojmë:
+          <ul>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
