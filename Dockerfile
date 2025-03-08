@@ -12,7 +12,10 @@ WORKDIR /site
 COPY docs docs
 COPY theme theme
 COPY includes includes
+COPY index-generation.sh .
 COPY *.yml .
+
+RUN ./index-generation.sh
 
 EXPOSE 8082
 
