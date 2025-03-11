@@ -203,20 +203,37 @@ markdown_extensions:
 
 nav:
   - "Hyrje": "index.md"
-  - "Happy Hours":
+  - "HappyHours":
       - "happyhours/happyhours.md"
+      - "happyhours/qytetet.md"
+      - "happyhours/eventet.md"
+      - "Gjej qytetin tend":
+        - "happyhours/qytetet/Milano.md"
+        - "happyhours/qytetet/Berlin.md"
+        - "happyhours/qytetet/London.md"
+
+  - "Profesionistët":
+    - "profesionistet/profesionistet.md"
+    - "profesionistet/ib_tech.md"
+    - "profesionistet/ib_social.md"
+    - "profesionistet/ib_investments.md"
+
   - "Nismat":
       - "nismat/nismat.md"
-  - "Forumi":
-      - "https://forum.illyrianbrains.dev/"
-  - "Rreth Nesh":
-      - "about.md"
-      - "about/contributors.md"
-      - "about/criteria.md"
-      - "about/executive-policy.md"
-      - "about/notices.md"
-      - "about/privacy-policy.md"
+      - "nismat/rregullat.md"
+      - "Nismat aktive":
+        - "nismat/atlas.md"
+        - "nismat/mentorimi.md"
+        - "nismat/meso_gjermanisht.md"
+      - "Nisma te maturuara":
+        - "nismat/forumi.md"
 
+  - "Rreth Nesh":
+      - "rrethnesh/rrethnesh.md"
+      - "rrethnesh/historiku.md"
+      - "rrethnesh/vlerat.md"
+      - "rrethnesh/kontakt.md"
+    
 validation:
   nav:
     not_found: info
