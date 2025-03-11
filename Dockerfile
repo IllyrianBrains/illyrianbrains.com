@@ -19,10 +19,13 @@ WORKDIR /site
 COPY docs docs
 COPY theme theme
 COPY includes includes
-COPY index-generation.sh .
+COPY update_markdown.py .
 COPY *.yml .
 
-RUN ./index-generation.sh
+RUN python update_markdown.py \
+    --source="https://forum.illyrianbrains.dev/top.json?period=yearly" \
+    --destination="./docs/index.base.md" \
+    --destination_final="./docs/index.md"
 
 EXPOSE 8082
 

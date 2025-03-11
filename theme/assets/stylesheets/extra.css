@@ -20,11 +20,12 @@
 /// DEALINGS
 */
 
-@font-face {
+/*@font-face {
     font-family: 'Bagnard';
     src: url("../brand/fonts/Bagnard/Bold.woff") format("woff");
     font-display: swap;
 }
+*/
 
 /* Define brand */
 :root, [data-md-color-scheme="default"] {

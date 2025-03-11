@@ -35,7 +35,7 @@ schema:
 ---
 
 
-## Happy Hours 
+## 🌍 Happy Hours 
 --------
 
 <div class="gallery-grid">
@@ -135,7 +135,22 @@ schema:
 <br><br>
 
 
-## Ndër diskutimet e fundit!
+## 🌍 Ndër diskutimet e fundit!
 
+<div class="grid cards" markdown>
+
+<div class="card" markdown>
+### [IB-Tech Anniversary Celebration](https://forum.illyrianbrains.dev/t/367)
+**👤 Author:** adriankodja  
+**👀 Views:** 41  ❤️ Likes: 1   💬 Replies: 1
+</div>
+
+<div class="card" markdown>
+### [Berlin meetup - Meso Gjermanisht](https://forum.illyrianbrains.dev/t/378)
+**👤 Author:** pomodoren  
+**👀 Views:** 21  ❤️ Likes: 0   💬 Replies: 1
+</div>
+
+</div>
 
 <br><br>
