@@ -1,5 +1,8 @@
-# IB Website
+# IllyrianBrains Website
 
-### Licensing Notice
+Shënime:
 
-This code has started from privacyguides.org, mostly because of its integration with their own discourse forum, and is being developed on its own. 
+- Ky website është reflektim i vlerave të tanishme të IB.
+- Ky website përpiqet të reflektojë punën e bërë nga organizatorët e qyteteve dhe ekipet e punës.
+- Ky website përdor informacionet e ndara në forum.
+

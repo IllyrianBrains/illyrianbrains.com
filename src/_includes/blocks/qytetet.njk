@@ -1,0 +1,67 @@
+
+{% set regions = {
+  "southwest": "South-West",
+  "americas": "Americas",
+  "nordics": "Nordics",
+  "germanics": "Germanics",
+  "west-central": "West-Central"
+} %}
+
+<style>
+
+.highlight-happyhour {
+  border: 2px solid #ffc107;
+  box-shadow: 0 0 10px #ffc107;
+}
+
+.flag-image[title]::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2em;
+}
+
+</style>
+
+    <section class="section without-top">
+        <div class="container w-container">
+            {% for regionKey, regionLabel in regions %}
+            <h3 class="heading-l region-title">{{ regionLabel }}</h3>
+            
+            <div class="w-dyn-list">
+                <div role="list" class="group-grid w-dyn-items">
+                {% set hasCities = false %}
+                {% for city in cities %}
+                    {% if city.region == regionKey %}
+                    {% set hasCities = true %}
+                    <div role="listitem" class="group-item w-dyn-item">
+                        <a href="{{ city.next_event_link }}" class="group-image"
+                        style="background-image:url('/assets/img/favicon.png')"> <!--regionKey-->
+                        {% if city.happyhour %}
+                            <div class="flag-image no-happyhour" title="Happy Hour Active!"></div>
+                        {% else %}
+                            <div class="flag-image no-happyhour"></div>
+                        {% endif %}
+                        </a>
+                        <div class="text">
+                        <h3 class="body-p">
+                            {{ city.name }} 
+                            <span class="city-link-icon">&nbsp;›</span>
+                        </h3>
+                        <!--
+                        <p class="body-s">
+                            {{ city.event_count }}+ events <br>
+                        </p> -->
+                        </div>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+                {% if not hasCities %}
+                    <p class="body-s">No cities in this region.</p>
+                {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>

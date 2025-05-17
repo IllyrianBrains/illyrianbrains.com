@@ -1,0 +1,71 @@
+
+    <div class="section new-home-hero">
+        <div class="container w-container">
+            <div class="text center b32 _360-mobile">
+                <h2 class="heading-xxl">HappyHour në  <span class="green">qytetin tënd</span>?</h2>
+            </div>
+            <div class="text center _640">
+                <p class="body-p large">Gjej qytetin tënd në listën e qyteteve, informohu mbi organizimet, dhe bashkohu në takimin e ardhshëm.</p>
+            </div>
+            <br><br>
+        </div>
+
+        
+
+        <div class="container w-container">
+
+            <div id="map" style="height: 600px; width: 100%; border-radius: 10px;"></div>
+
+            <script>
+                const cityData = {{ cities | default([]) | dump | safe }};
+                const map = L.map("map").setView([45.0, 10.0], 4);
+
+                // CartoDB Dark Matter basemap
+                const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+                    attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+                    subdomains: 'abcd',
+                    maxZoom: 19
+                });
+                darkLayer.addTo(map);
+
+                // Scale radius function
+                const scaleRadius = (count) => {
+                    const min = 8, max = 35;
+                    const maxCount = Math.max(...cityData.map(c => c.count));
+                    return Math.max(min, (count / maxCount) * max);
+                };
+
+                // Add city markers
+                cityData.forEach(city => {
+                    const marker = L.circleMarker([city.lat, city.lon], {
+                        radius: scaleRadius(city.count),
+                        fillColor: "#f7941d",
+                        color: "#ffffff",
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.75
+                    }).addTo(map);
+
+                    const popupContent = `
+                        <strong>${city.name}</strong><br>
+                        ${city.count} anëtarë<br>
+                        ${city.event_count}+ takime<br>
+                        Mesatarisht ${city.avg_participants_per_meeting} pjesëmarrës për takim<br><br>
+                        <strong>Kontakt:</strong> <a href="mailto:${city.email}">${city.email}</a><br>
+                        <br>
+                        <a href="${city.next_event_link}" target="_blank">Eventi i ardhshëm</a>
+                    `;
+
+                    marker.bindPopup(popupContent);
+                });
+
+            </script>
+
+        </div>
+
+    </section>
+    
+  <br><br><br><br>
+
+  {% include "blocks/qytetet.njk" %}
+

@@ -1,0 +1,29 @@
+{
+  "name": "ib.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
+    "lint:js": "eslint src/**/*.js",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "lint:html": "htmlhint src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.27.0",
+    "html-minifier": "^4.0.0",
+    "html-minifier-terser": "^7.2.0",
+    "htmlhint": "^1.1.4",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.19.1"
+  }
+}

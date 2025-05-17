@@ -1,2 +1,0 @@
-# Gjej kolegët
-

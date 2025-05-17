@@ -1,0 +1,36 @@
+<section class="section without-top">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items">
+        {% for item in ibContent %}
+        <div role="listitem" class="w-dyn-item">
+          <div class="podcast-div">
+            <div class="podcast-text-wrapper">
+              <div class="text secondary">
+                <p class="pretitle">{{ item.subtitle }}</p>
+              </div>
+              <div class="text">
+                <h2 class="heading-md">{{ item.title }}</h2>
+              </div>
+              <div class="text">
+                <p class="body-p">{{ item.description }}</p>
+              </div>
+              <div class="button-wrapper t8 hidden">
+                <a href="/content" class="text-button dark w-inline-block">
+                  <div class="button-text">Explore more content</div>
+                  <div class="button-icon chevron-right">
+                    <img src="/assets/icons/chevron-right.svg" alt="More" class="image" />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <a href="{{ item.videoUrl }}" style="background-image:url('{{ item.image }}')" class="podcast-image w-inline-block w-lightbox">
+              <img src="/assets/icons/play_circle.svg" alt="Play" class="play-video-icon" loading="lazy" />
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

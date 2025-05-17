@@ -1,0 +1,41 @@
+<section class="section extra-bottom">
+  <div class="container w-container">
+    <div class="text center b32">
+      <h2 class="heading-xxl">Bashkohuni me ekipin</h2>
+    </div>
+    <div class="text center _640">
+      <p class="body-p large">
+        IllyrianBrains është krijuar dhe mirëmbahet nga kontributet e vullnetarëve.
+        Bashkohuni ekipeve të punës që kontribuojnë në vazhdimësinë e mëtejshme të kësaj iniciative.
+      </p>
+    </div>
+
+    <br><br>
+    <div class="press-list-wrapper">
+      <div role="list" class="w-dyn-items">
+        {% for post in forum_ekipi %}
+          <div role="listitem" class="w-dyn-item">
+            <a href="{{ post.url }}" target="_blank" class="press-item-wrapper w-inline-block">
+              <div class="text green">
+                <h2 class="pretitle">Ftesë</h2>
+              </div>
+              <div class="text linked b8">
+                <h2 class="heading-md">{{ post.title }}</h2>
+              </div>
+              <div class="text secondary">
+                <div class="heading-sm" style="float: right">
+                  Publikuar nga: {{ post.username }} &nbsp;  <!-- më {{ post.created_at }} -->
+                </div>
+              </div>
+            </a>
+            <br>
+          </div>
+        {% else %}
+          <div class="text center">
+            <p>Aktualisht nuk ka ftesa të reja. Qëndro në kontakt!</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

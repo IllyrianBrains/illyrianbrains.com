@@ -1,0 +1,55 @@
+
+<div class="section">
+  <div class="container w-container">
+      <div class="text center b32 _360-mobile">
+          <h2 class="heading-xxl">Evente me <span class="green">ekspertë</span> </h2>
+      </div>
+      <div class="text center _640">
+          <p class="body-p large">Kontribuoni në zhvillimin e mëtejshëm të profesionistëve dhe në integrimin më 
+          lehtazi në hapësirat ku jetojnë dhe punojnë.</p>
+      </div>
+    </div>
+    </div>
+</div>
+
+<style>
+.event-card-image {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 320px; /* adjust as needed */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.event-card-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay with transparency */
+  z-index: 1;
+}
+
+</style>
+    
+<div class="collection-slider w-dyn-list">
+  <div role="list" class="slider-items-wrapper w-dyn-items">
+    {% for event in forum_evente %}
+    <div role="listitem" class="w-dyn-item">
+      <a href="{{ event.url }}" target="_blank" class="event-card">
+        <div class="event-card-image" style="background-image:url('{{ event.image }}')">
+          <div class="event-card-overlay"></div>
+        </div>
+
+        <div class="event-card-content">
+          <div class="text-div white">
+            <div class="heading-sm">{{ event.title }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

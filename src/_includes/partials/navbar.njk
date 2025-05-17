@@ -1,0 +1,132 @@
+    <style>
+/* ===== Improve Navigation Typography and Spacing ===== */
+.nav-dropdown-section {
+  font-size: 1.15rem;
+  color: #ffffff;
+}
+
+
+/* ===== Dropdown Menu Styling ===== */
+.dropdown-menu {
+  background-color: #111820; /* slightly lighter dark tone */
+  padding: 0.5rem 0;
+  border-radius: 6px;
+}
+
+.nav-section {
+  padding: 12px 20px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #ffffff;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-section:hover {
+  background-color: #1e1e1e;
+  color: #00ffd1;
+}
+
+/* ===== Button Styling (Bashkohu) ===== */
+.button.w-button {
+  font-size: 1rem;
+  padding: 12px 24px;
+  font-weight: 600;
+  background-color: #12b488; /* or your preferred green */
+  border-radius: 8px;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.button.w-button:hover {
+  background-color: #0e9771;
+}
+
+/* ===== Responsive Improvements (Desktop Focused) ===== */
+@media (min-width: 1024px) {
+  .nav-dropdown-section {
+    font-size: 1.25rem;
+  }
+
+  .nav-section {
+    font-size: 1.1rem;
+  }
+
+  .button.w-button {
+    font-size: 1.1rem;
+  }
+}
+
+    </style>
+
+    <section class="new-nav">
+        <div class="new-nav-content">
+            <a href="/" aria-current="page" class="nav-block logo w-inline-block w--current">
+                <img src="/assets/img/logo.png" loading="lazy" alt="IllyrianBrains Logo" class="nav-logo" height="100px"/>
+            </a>
+            <div class="nav-block">
+                <div class="nav-sections">
+
+                    <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                        <div class="dropdown-content w-dropdown-toggle">
+                            <div class="nav-dropdown-section">Rrjeti</div>
+                            <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                        </div>
+                        <nav class="dropdown-menu w-dropdown-list">
+                            <a href="/content/rrjeti#qytetet" class="nav-section w-dropdown-link">Qytetet e IB</a>
+                            <a href="/content/rrjeti#profesionistet" class="nav-section w-dropdown-link">Profesionistët</a>
+                            <a href="/content/rrjeti#nismat" class="nav-section w-dropdown-link">Nismat</a>
+                        </nav>
+                    </div>
+
+                    <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                        <div class="dropdown-content w-dropdown-toggle">
+                            <div class="nav-dropdown-section" >Evente</div>
+                            <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                        </div>
+                        <nav class="dropdown-menu w-dropdown-list">
+                            <a href="/content/evente#happyhours" class="nav-section w-dropdown-link">HappyHours</a>
+                            <a href="/content/evente#webinare" class="nav-section w-dropdown-link">Webinare</a>
+                            <a href="/content/evente#speciale" class="nav-section w-dropdown-link">Speciale</a>
+                        </nav>
+                    </div>
+
+                    <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                        <div class="dropdown-content w-dropdown-toggle">
+                            <div class="nav-dropdown-section" >Komunikime</div>
+                            <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                        </div>
+                        <nav class="dropdown-menu w-dropdown-list">
+                            <a href="/content/evente#happyhours" class="nav-section w-dropdown-link">Forumi</a>
+                            <a href="/content/evente#happyhours" class="nav-section w-dropdown-link">Publikime</a>
+                            <a href="/content/evente#webinare" class="nav-section w-dropdown-link">Fushata Informimi</a>
+                        </nav>
+                    </div>
+
+                    <div data-hover="true" data-delay="0" class="nav-dropdown w-dropdown">
+                        <div class="dropdown-content w-dropdown-toggle">
+                            <div class="nav-dropdown-section">Rreth Nesh</div>
+                            <div class="nav-dropdown-icon w-icon-dropdown-toggle"></div>
+                        </div>
+                        
+                        <nav class="dropdown-menu w-dropdown-list">
+                            <a href="/content/rreth-nesh#misioni" class="nav-section w-dropdown-link">Manifesto</a>
+                            <a href="/content/rreth-nesh#historiku" class="nav-section w-dropdown-link">Historiku</a>
+                            <a href="/content/rreth-nesh#perfaqesia" class="nav-section w-dropdown-link">Përfaqësia</a>
+                            <a href="/content/rreth-nesh#perfaqesia" class="nav-section w-dropdown-link">Vendimmarrja</a>
+                            <a href="/content/rreth-nesh#ekipet" class="nav-section w-dropdown-link">Ekipet</a>
+                            <a href="/content/rreth-nesh#falenderime" class="nav-section w-dropdown-link">Falenderime</a>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="small">
+                    <a href="/content/bashkohu" class="button w-button">Bashkohu </a>
+                </div>
+                
+                <a data-w-id="menu-button" href="#" class="menu-button w-inline-block">
+                    <img src="/path/to/menu-icon.svg" loading="lazy" alt="Menu" />
+                </a>
+
+            </div>
+        </div>
+    </section>
