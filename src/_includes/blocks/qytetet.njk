@@ -1,67 +1,79 @@
 
 {% set regions = {
-  "southwest": "South-West",
-  "americas": "Americas",
-  "nordics": "Nordics",
-  "germanics": "Germanics",
-  "west-central": "West-Central"
+  "germanics": "Europe Germanics",
+  "nordics": "Europe Nordics",
+  "southwest": "Europe South-West",
+  "west-central": "Europe West-Central",
+  "americas": "North America"
 } %}
 
 <style>
+  .involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+  }
 
-.highlight-happyhour {
-  border: 2px solid #ffc107;
-  box-shadow: 0 0 10px #ffc107;
-}
+  .involved-grid li {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
-.flag-image[title]::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  font-size: 1.2em;
-}
+  .city-happyhour {
+    color: #ffc107;
+    font-size: 1.2em;
+  }
 
+  .city-small {
+    font-size: 0.85em;
+    color: #666;
+  }
+
+  .city-name a {
+    font-weight: bold;
+    color: salmon;
+    text-decoration: none;
+  }
+
+  .city-name a:hover {
+    text-decoration: underline;
+  }
+
+  .region-title {
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:rgb(129, 129, 129);
+  }
 </style>
 
-    <section class="section without-top">
-        <div class="container w-container">
-            {% for regionKey, regionLabel in regions %}
-            <h3 class="heading-l region-title">{{ regionLabel }}</h3>
-            
-            <div class="w-dyn-list">
-                <div role="list" class="group-grid w-dyn-items">
-                {% set hasCities = false %}
-                {% for city in cities %}
-                    {% if city.region == regionKey %}
-                    {% set hasCities = true %}
-                    <div role="listitem" class="group-item w-dyn-item">
-                        <a href="{{ city.next_event_link }}" class="group-image"
-                        style="background-image:url('/assets/img/favicon.png')"> <!--regionKey-->
-                        {% if city.happyhour %}
-                            <div class="flag-image no-happyhour" title="Happy Hour Active!"></div>
-                        {% else %}
-                            <div class="flag-image no-happyhour"></div>
-                        {% endif %}
-                        </a>
-                        <div class="text">
-                        <h3 class="body-p">
-                            {{ city.name }} 
-                            <span class="city-link-icon">&nbsp;›</span>
-                        </h3>
-                        <!--
-                        <p class="body-s">
-                            {{ city.event_count }}+ events <br>
-                        </p> -->
-                        </div>
-                    </div>
-                    {% endif %}
-                {% endfor %}
-                {% if not hasCities %}
-                    <p class="body-s">No cities in this region.</p>
-                {% endif %}
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
+<section>
+  <div>
+    {% for regionKey, regionLabel in regions %}
+      <h3 class="region-title">{{ regionLabel }}</h3>
+      <ul class="involved-grid">
+        {% set hasCities = false %}
+        {% for city in cities | sort(attribute='name') %}
+          {% if city.region == regionKey %}
+            {% set hasCities = true %}
+            <li>
+              <div class="city-name">
+                <a href="#" target="_blank">{{ city.name }} >> </a>
+              </div>
+              <div class="city-small">{{ city.event_count }} evente</div>
+              <div class="city-small">{{ city.avg_participants_per_meeting }}+ pjesëmarrës </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% if not hasCities %}
+          <li style="opacity: 0.6; text-align: center;">Asnjë qytet aktualisht</li>
+        {% endif %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>

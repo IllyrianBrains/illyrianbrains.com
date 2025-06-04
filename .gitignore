@@ -1,3 +1,12 @@
+node_modules
+dist
+tmp
+.vscode
+src/_data/jobs.json
+unused_sratic/
+.DS_Store
+src/_data/*
+
 # Logs
 logs
 *.log

@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+css: article.css
+---
+
+<section class="article">
+  <header>
+    <a class="back" href="/articles">Back to all Articles</a>
+    {% if updated %}<span class="pill active">Updated: {{ updated | format("MMM D YYYY") }}</span>{% else %}
+    <span class="pill active">{{ date | format("MMM D YYYY") }}</span>{%endif%}{% for tag in tags %}<span class="pill active">{{ tag }}</span>{% endfor %}
+    <h1>{{ title }}</h1>
+  </header>
+
+  <div class="body {% for tag in tags %}tag-{{tag}} {% endfor %}">
+    {{ content | safe}}
+  </div>
+</section>

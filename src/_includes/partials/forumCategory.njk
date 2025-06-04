@@ -1,0 +1,30 @@
+{# _includes/partials/forumCategory.njk #}
+
+{% if posts.length > 0 %}
+  <h2 class="heading-m">{{ label }}</h2>
+
+  <div class="talk-list">
+    <ul>
+      {%- for event in posts %}
+        {{event.category_id}}
+        {% set isoDate = event.bumped_at or event.created_at %}
+        {% set year = isoDate.slice(0, 4) %}
+        <li
+          class="talk-card"
+          style="background-image: url({{ event.image_url or '/assets/images/default-bg.jpg' }})"
+          data-image="{{ event.image_url or '/assets/images/default-bg.jpg' }}"
+          data-year="{{ year }}"
+          data-tags="{% if event.tags %}{{ event.tags | join(' ') }}{% endif %}"
+        >
+          <a href="{{ event.url }}" target="_blank">
+            <header>
+              <h2>{{ event.title }}</h2>
+              <p>{{ event.last_poster_username }}</p>
+            </header>
+            <span class="pill">{{ year }}</span>
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{% endif %}

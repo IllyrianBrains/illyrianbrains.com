@@ -1,0 +1,110 @@
+.article {
+  max-width: 800px;
+  margin: 0 32px;
+}
+
+.article > header h1 {
+  margin: 24px 0 48px 0;
+}
+
+.article .body a {
+  color: var(--primary);
+  transition: color 150ms ease-out;
+}
+
+.article .body a:hover {
+  color: var(--salmon);
+}
+
+.article .body .pill-cta {
+  font-size: 16px;
+  border-radius: 999px;
+  background-color: var(--salmon);
+  display: block;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 18px;
+  color: var(--white);
+  padding: 15px 28px;
+  cursor: pointer;
+  text-decoration: none;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.article .body .pill-cta:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.27;
+  letter-spacing: normal;
+  color: var(--primary);
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 700px) {
+  .article {
+    margin: 0 auto;
+  }
+}
+
+.article a[href*='coupon='] {
+  color: var(--salmon);
+}
+
+.video {
+  position: relative;
+  padding-top: 62%;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.image-and-text {
+  background: #f9f9f9;
+  /* align-items: center; */
+  padding: 24px;
+}
+
+.image-and-text p:has(img) {
+  margin: 0;
+  grid-area: img;
+}
+
+@media only screen and (min-width: 700px) {
+  .image-and-text p:has(img) {
+    margin-top: 28px;
+    align-self: flex-start;
+  }
+
+  .image-and-text {
+    padding: 24px 36px;
+    display: grid;
+    gap: 0 48px;
+    grid-template-areas:
+      'img text'
+      'img text';
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 12px;
+  font-style: italic;
+  color: var(--dark-grey);
+}

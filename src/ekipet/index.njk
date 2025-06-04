@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+css:
+- articles.css
+- history.css
+---
+
+
+<style>
+  .group-block {
+    margin-bottom: 1rem;
+  }
+
+  .involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .involved-grid li {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1);
+  }
+
+  .involved-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+</style>
+
+
+<section class="history">
+  <header>
+    <h1><span>Orga e qyteteve</span></h1>
+  </header>
+
+  <div class="col">
+    <div>
+      <h2>Origjina e organizatorëve!</h2>
+      <p>
+      Te gjithe ne vijme nga zona te ndryshme shqipfolese. Kjo na ka dhene nje kulture te
+      perbashket, dicka qe na lejon te bashkepunojme e ti besojme gjykimit te njeri-tjetrit. 
+      <br>
+      </p>
+        {% include 'blocks/map_origin.njk' %}
+    </div>
+
+    {% for slug, group in forum_groups %}
+      {% if slug in ['AllStaff'] %}
+      {% include 'partials/forumEkip.njk' %}
+      {% endif %}
+    {% endfor %}
+
+
+  </div>
+</section>
+
+<br><br><br>
+
+<section class="history">
+  <header>
+    <h1><span>Ekipet teknike</span></h1>
+  </header>
+
+  <div class="col">
+
+    {% for slug, group in forum_groups %}
+      {% if slug in ['Dizajni', 'Eventet', 'Komunikimi', 'Teknologet'] %}
+      {% include 'partials/forumEkip.njk' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<br><br><br>
+
+

@@ -1,0 +1,137 @@
+#home main {
+  position: relative;
+}
+
+#home main header {
+  padding: 32px;
+  background-color:  #800000;
+  background-position: top left, top center, top right;
+  background-size: 34%, 34%, 34%;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  padding-top: 30%;
+}
+
+#home main header * {
+  color: var(--white);
+}
+
+#home main h2 {
+  font-size: 22px;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* Enable common ligatures and contextual alternates */
+  font-variant-ligatures: no-common-ligatures;
+
+  font-weight: 500;
+  line-height: 1.27;
+  border-bottom: 1px solid var(--white);
+  padding-bottom: 32px;
+}
+
+#home main .next-icon {
+  font-size: 18px;
+  background: url(/assets/images/calendar.svg) no-repeat;
+  background-size: 30px;
+  line-height: 36px;
+  padding-left: 46px;
+}
+
+#home main .post-icon {
+  font-size: 18px;
+  background: url(/assets/images/post.svg) no-repeat;
+  background-size: 30px;
+  line-height: 36px;
+  padding-left: 46px;
+}
+
+#home main header a {
+  text-decoration: none;
+}
+
+#home main header .url {
+  font-size: 22px;
+  background: url(/assets/images/arrow-white.svg) no-repeat;
+  background-position: right;
+  padding-right: 65px;
+  display: block;
+}
+
+a.block {
+  display: block;
+}
+
+#home main header a p {
+  margin-bottom: 8px;
+  margin-top: 36px;
+}
+
+#home main header .url:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+@media only screen and (min-width: 700px) {
+  #home main header {
+    background-image: none;
+    padding: 80px 100px;
+  }
+
+  #home main {
+    /* background-color: var(--salmon); */
+    background-image: url(/assets/images/img/gallery/val2.jpeg), url(/assets/images/img/gallery/val5.png),
+      url(/assets/images/img/gallery/val4.jpeg), url(/assets/images/img/gallery/val7.jpeg),
+       url(/assets/images/img/gallery/val8.png);
+    background-position: top left, top center, top right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 34%, 34%, 34%;
+    padding-top: 16.666%;
+  }
+
+  #home main:before {
+    background-color: var(--salmon);
+    content: '';
+    height: 62%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+  }
+
+  #home main h2 {
+    font-size: 42px;
+  }
+
+  #home main header .url {
+    font-size: 32px;
+    display: inline;
+  }
+
+  .talk-text-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -10px;
+  }
+
+  .talk-text-cards:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 10vh;
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #home main h2 {
+    font-size: 56px;
+  }
+}
+
+#home main h2.summary a {
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: underline;
+  padding: 0;
+  background: none;
+}

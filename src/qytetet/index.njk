@@ -1,0 +1,93 @@
+---
+layout: layouts/base.njk
+css:
+- photos.css
+- history.css
+- articles.css
+---
+
+
+<section class="history">
+  <header>
+    <h1><span id="count">Roli i Qyteteve</span></h1>
+  </header>
+
+  <div class="col">
+  
+    <div>
+      <h2>Qytetet</h2>
+      <p>
+      Qytetet e IB janë hapësira ku lindin <b>mikro-komunitete</b>,
+      të mbështetura nga anëtarët që ndajnë interesa dhe vlera të përbashkëta.
+      Ato krijojnë hapësira miqësore për takime, bashkëbisedime dhe bashkëpunime, duke
+      nxitur zhvillimin profesional në mënyrë të natyrshme dhe të afërt.
+
+      <br><br>
+
+      </p>
+
+    </div>
+  
+
+    <div>
+      <h2>Statistika</h2>
+      <p>
+      <br>
+
+      </p>
+    </div>
+ 
+  </div>
+</section>
+
+
+<section class="history">
+    <div class="container">
+      {% include 'blocks/map_happyhours.njk' %}
+    </div>
+</section>
+  
+<br><br>
+  
+
+<section class="history">
+    <div class="container">
+      {% include "blocks/qytetet.njk" %}
+    </div>
+</section>
+  
+
+
+
+
+<br><br><br>
+
+<section class="photos">
+  <header class="with-filter">
+    <h1><span id="count">Foto nga organizimet tona</span></h1>
+  </header>
+
+  <div id="photo-grid">
+  {% for photo in photos | shuffle %}
+  <div class="grid-item">
+    <a target="_blank">
+      <img loading="lazy" src="/assets/images/img/gallery-IB/{{ photo }}">
+    </a>
+  </div>
+  {% endfor %}
+
+  </div>
+</section>
+<script src="https://unpkg.com/macy@2.5.0/dist/macy.js"></script>
+<script >
+Macy({
+    container: '#photo-grid',
+    trueOrder: false,
+    waitForImages: false,
+    margin: 24,
+    columns: 3,
+    breakAt: {
+        900: 2,
+        420: 1,
+    }
+});</script>

@@ -1,0 +1,42 @@
+
+<div class="container">
+<div id="map_origin" style="height: 500px; width: 100%; border-radius: 10px;"></div>
+</div>
+
+
+<script>
+    const cityData = {{ cities_origin | default([]) | dump | safe }};
+    const map = L.map("map_origin").setView([41.5, 20.5], 7);
+
+    const darkLayer = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+        attribution: '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    });
+    darkLayer.addTo(map);
+
+    const scaleRadius = (count) => {
+        const min = 8, max = 35;
+        const maxCount = Math.max(...cityData.map(c => c.participants));
+        return Math.max(min, (count / maxCount) * max);
+    };
+
+    cityData.forEach(city => {
+        const marker = L.circleMarker([city.lat, city.lon], {
+            radius: scaleRadius(city.participants),
+            fillColor: city.happyhour ? "#00b894" : "#d63031", // green if happyhour, red if not
+            color: "#ffffff",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.75
+        }).addTo(map);
+
+        const popupContent = `
+            <strong>${city.name}</strong><br><hr>
+            👥 ${city.participants} pjesëmarrës<br>
+            🙋‍♂️ ${city.organizers} organizatorë<br>
+            🍻 Happy Hour: ${city.happyhour ? "Po" : "Jo"}<br>
+        `;
+        marker.bindPopup(popupContent);
+    });
+</script>

@@ -1,0 +1,101 @@
+---
+layout: layouts/base.njk
+css:
+  - articles.css
+  - history.css
+---
+
+<style>
+  .group-block {
+    margin-bottom: 1rem;
+  }
+
+  .involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .involved-grid li {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.1);
+  }
+
+  .involved-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+</style>
+
+{% set programet_nismat = [
+  { label: "Atlas", slug: "Atlas" },
+  { label: "Mentorimi", slug: "Mentorimi" },
+  { label: "Meso-Deutsch", slug: "Meso-Deutsch" }
+] %}
+
+{% set programet_profesionistet = [
+  { label: "IB-Tech", slug: "IB-Tech" },
+  { label: "IB-Social", slug: "IB-Social" }
+] %}
+
+
+
+<section class="history">
+  <header>
+    <h1><span>Profesionistet</span></h1>
+  </header>
+
+  <div class="col">
+  {% for program in programet_profesionistet %}
+
+    {% for slug, category in forum_posts %}
+      {% if slug == program.slug %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  </div>
+</section>
+
+<br><br><br>
+
+
+<section class="history">
+  <header>
+    <h1><span>Nismat</span></h1>
+  </header>
+
+  {% for program in programet_nismat %}
+
+  <div class="col">
+    {% for slug, category in forum_posts %}
+      {% if slug == program.slug %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+
+    {% for slug, group in forum_groups %}
+      {% if slug == program.label %}
+        {% include "partials/forumEkip.njk" %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+  <br><br>
+  {% endfor %}
+
+</section>
+
+<br><br><br>
+

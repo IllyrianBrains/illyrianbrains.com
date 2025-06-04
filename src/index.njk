@@ -1,22 +1,24 @@
 ---
-layout: layout.njk
-title: Kryefaqja
+id: home
+layout: layouts/base
+css:
+- home.css
 ---
 
-  <br><br><br><br><br><br>
+<section>
+  <header class="vevent">
+    <br><br>
+    <h2 class="summary">IllyrianBrains, nje rrjet qe bashkon profesionistet shqipfoles.</h2>
 
-  {% include "blocks/hero.njk" %}
+    <br><br><br>
+    <a href="{{ next.url }}" class="block" target="_blank">
+      <p class="next-icon">Eventi pasardhes</p>
+      <h3><abbr class="url dtstart" title="{{ next.date }}">{{ next.date | format }}</abbr></h3>
+    </a>
+    <a href="{{ collections.posts.url }}" class="next">
+      <p class="post-icon">Postimi i fundit ne forum</p>
+      <h3 class="url">{{ collections.posts.data.title }}</h3>
+    </a>
+  </header>
 
-  <br><br><br><br>
-
-  {% include "blocks/map.njk" %}
-
-  <br><br><br><br>
-  
-  {% include "blocks/forum_evente.njk" %}
-
-  <br><br><br><br>
-
-  {% include "blocks/faq.njk" %}
-
-  <br><br><br><br>
+</section>

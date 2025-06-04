@@ -1,0 +1,57 @@
+
+<section class="talks">
+  <header class="with-filter">
+    <h1><span id="count">{%if forum_happyhours %}{{ forum_happyhours | length }} postime për HappyHours{% endif %}</span></h1>
+    <details>
+      <summary class="pill-button filter"><span class="label">Filtro HH</span></summary>
+      <div class="body">
+        <!-- Tag filters -->
+        <div class="pill-list">
+          {% set allTagsHH = [] %}
+          {% for event in forum_happyhours %}
+            {% for tag in event.tags %}
+              {% if tag not in allTagsHH %}
+                {% set allTagsHH = allTagsHH.concat([tag]) %}
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+
+          {% for tag in allTagsHH %}
+            <label tabindex="0" class="checkbox-pill">
+              <input value="{{ tag }}" type="checkbox">
+              <span class="pill">{{ tag }}</span>
+            </label>
+          {% endfor %}
+        </div>
+
+      </div>
+    </details>
+  </header>
+
+  <div class="talk-list">
+    <ul>
+      {%- for event in forum_happyhours %}
+
+        {% set isoDate = event.bumped_at or event.created_at %}
+        {% set year = isoDate.slice(0, 4) %}
+        <li
+          class="talk-card"
+          style="background-image: url({{ event.image_url }})" 
+          data-image="{{ event.image_url }}"
+          data-year="{{ year }}"
+          data-tags="{% if event.tags %}{{ event.tags | join(' ') }}{% endif %}"
+        >
+          <a href="https://forum.illyrianbrains.dev/t/{{ event.slug }}/{{ event.id }}" target="_blank">
+            <header>
+              <h2>{{ event.title }}</h2>
+              <p>{{ event.last_poster_username }}</p>
+            </header>
+            <span class="pill">{{ year }}</span>
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<br><br><br>

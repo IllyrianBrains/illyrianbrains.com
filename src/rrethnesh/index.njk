@@ -1,0 +1,207 @@
+---
+layout: layouts/base.njk
+css:
+- history.css
+- articles.css
+---
+
+<style>
+  .group-block {
+    margin-bottom: 3rem;
+  }
+
+  .involved-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .involved-grid li {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+
+  .involved-grid img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+  }
+
+</style>
+
+<section class="history">
+  <header>
+    <h1><span id="count">Rreth nesh</span></h1>
+  </header>
+
+  <div class="col">
+  
+    <div>
+      <h2>Manifesto</h2>
+      <p>
+      IllyrianBrains është një komunitet i profesionistëve shqipfolës që ka lindur nga një nevojë e
+      thellë për lidhje me kuptim — jo vetëm profesionale, por edhe njerëzore. Si një lumë me
+      burime të ndryshme, jetojmë realitete të ndryshme, por ndajmë një horizont të përbashkët:
+      një kulturë që nxit rritjen, bashkëpunimin dhe mirëkuptimin.
+      <br><br>
+
+      Ky nuk është vetëm një rrjet për zhvillim profesional — është një hapësirë ku mund të
+      gjesh miq, të ndash hobe, të informohesh mbi integrimin, të përdorësh gjuhën shqipe,
+      veçanërisht kur jeton e punon në diasporë.
+      
+      <br><br>
+      Ne besojmë se profesionistët e së nesërmes nuk janë vetëm ekspertë në fushën e vet,
+      por persona të lidhur me komunitetin, të hapur për të mësuar dhe për të dhënë, dhe të
+      aftë të ndërtojnë ura — mes disiplinash, brezash, dhe vendndodhjesh.
+      <br><br>
+      
+      IllyrianBrains është ftesë për tu zhvilluar, për të ndarë dije, por edhe për të
+      ndërtuar një jetë më të pasur e më të plotë bashkë me të tjerët që ndajnë të njëjtat vlera.
+      </p>
+
+    </div>
+  
+
+    <div>
+      <h2>Origjina</h2>
+      <p>
+      Kontribuesit e IB ndajne origjinen shqipfolese. Kjo na ka dhene nje kulture te
+      perbashket, dicka qe na lejon te bashkepunojme e ti besojme gjykimit te njeri-tjetrit. 
+      <br>
+      </p>
+        {% include 'blocks/map_origin.njk' %}
+    </div>
+ 
+  </div>
+</section>
+
+
+<br><br><br>
+
+
+<section class="history">
+  <header>
+    <h1><span>Vendimmarrja</span></h1>
+  </header>
+
+  <div class="col">
+    <div>
+     <h2>Rolet</h2>
+      <p>
+      Vendimmarrja në IllyrianBrains bazohet në parime të autonomisë, përfaqësimit dhe kontributit vullnetar.
+      <br><br>
+      <a href="#">Organizatorët</a> veprojnë në mënyrë autonome në qytetet e tyre,
+      duke organizuar aktivitete dhe duke sjellë në fokus sfidat dhe mundësitë lokale.
+      Roli i tyre përfshin dhe moderimin dhe zhvillimin e komunitetit.
+      <br><br>
+      <a href="#">Përfaqësuesit</a> caktojnë strategjinë dhe japin direktiva të përgjithshme mbi
+       organizimet, dhe marrin përsipër problematika të përbashkëta për grupet.
+      <br><br>
+      <a href="#">Ekipet teknike</a> përqendrohen në mirëmbajtjen dhe zhvillimin e rrjetit
+      në mënyrë të qëndrueshme dhe të vazhdueshme.
+      <br><br>
+      <a href="#">Kontribuesit</a> mund të marrin pjesë në vendimmarrje me anë të propozimeve
+      direkte, duke sugjeruar ndërhyrje organizative apo përmbajtjeje.
+    </div>
+    
+    <div>
+
+     <h2>Propozimet</h2>
+      <p>
+      
+      Propozimet nga anëtarët e komunitetit vlerësohen në varësi të natyrës dhe përmbajtjes së tyre.
+      Nëse një propozim mund të ketë ndikim pozitiv në të gjithë rrjetin, ai shqyrtohet nga
+      Përfaqësia dhe transmetohet tek qytetet.
+      <br><br>
+      Personat që propozojnë pritet që ta ndjekin adaptimin e propozimit</a>,
+      duke kontribuar që të krijohen <a href="#">nisma</a> apo ekipe.
+      <br><br>
+      Rrjeti organizohet në mënyrë vullnetare, që e bën shpeshherë pranimin dhe
+      aplikimin propozimeve të ngadaltë. Gjithësesi, propozimet ruhen në forum,
+      dhe nëse ka kapacitet nga komuniteti ato aplikohen.
+    </div>
+
+    {% for slug, group in forum_groups %}
+      {% if slug in ['ruajtesit'] %}
+      {% include 'partials/forumEkip.njk' %}
+      {% endif %}
+    {% endfor %}
+
+
+
+    </div>
+    
+    <br><br><br>
+
+  <div class="col">
+
+    {% for slug, group in forum_groups %}
+      {% if slug in ['AllStaff', 'perfaqesia'] %}
+      {% include 'partials/forumEkip.njk' %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<br><br><br>
+
+
+<section class="history">
+  <header>
+    <h1><span>Ekipet teknike</span></h1>
+  </header>
+
+  <div class="col">
+    {% for slug, group in forum_groups %}
+      {% if slug in ['Dizajni', 'Eventet', 'Komunikimi', 'Teknologet'] %}
+      {% include 'partials/forumEkip.njk' %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+
+
+</section>
+
+<br><br><br>
+
+
+
+<section class="history">
+  <header>
+    <h1><span>Info</span></h1>
+  </header>
+  <div class="col">
+
+
+    {% for slug, category in forum_posts %}
+      {% if slug == 'Kontribuesit' %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+    
+      <div>
+        <h2>Na kontakto!</h2>
+        <p>
+          Kjo faqe është ende në zhvillim, por nëse ke një pyetje rreth IllyrianBrains -
+          për mënyrën si funksionon komuniteti, si të përfshihesh, apo ndonjë temë tjetër -
+            mos hezito të na kontaktosh me <a href="mailto:illyrianbrains@gmail.com">email</a>
+            ose përmes <a href="https://www.linkedin.com/company/illyrian-brains">LinkedIn</a>.
+        </p>
+      </div>
+
+    </div>
+
+</section>
+
+<br><br><br>
