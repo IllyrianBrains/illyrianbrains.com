@@ -2,19 +2,6 @@ const fs = require("fs").promises;
 const path = require("path");
 const fetch = require("node-fetch");
 
-const CATEGORIES = [
-  { slug: "allstaff/qytetet-e-reja", id: 27, override_name: "Qytetet e reja" },
-  { slug: "allstaff/kontribues", id: 70, override_name: "Kontribues" },
-  { slug: "tech/ib-tech", id: 94, override_name: "IB-Tech" },
-  { slug: "nismat/social", id: 103, override_name: "IB-Social" },
-  { slug: "qytetet/atlas", id: 144, override_name: "Atlas" },
-  { slug: "qytetet/happyhour", id: 145, override_name: "HappyHour" },
-  { slug: "mentorimi/mnt-materiale", id: 111, override_name: "Mentorimi" },
-  { slug: "nismat/meso-deutsch", id: 60, override_name: "Meso-Deutsch" },
-];
-
-const CACHE_FILE = path.join(__dirname, "forum_posts.json");
-
 async function fetchCategorySummary(id, override_name) {
   const url = `https://forum.illyrianbrains.dev/c/${id}/show.json`;
   const res = await fetch(url);
@@ -59,6 +46,42 @@ async function fetchCategoryTopics(id) {
     };
   });
 }
+
+
+const CATEGORIES = [
+  // Qytetet
+
+  { slug: "qytetet/germanics", id: 149, override_name: "Germanics"},
+  { slug: "qytetet/north-america", id: 146, override_name: "North America"},
+  { slug: "qytetet/nordics", id: 147, override_name: "Northern Europe" },
+  { slug: "qytetet/southern-europe", id: 148, override_name: "Southern Europe" },
+  { slug: "qytetet/western-europe", id: 150, override_name: "Western Europe" },
+
+  { slug: "qytetet/qytetet-e-reja", id: 27, override_name: "Qytetet e reja" },
+
+  // Eventet
+  { slug: "eventet/happyhours", id: 145, override_name: "HappyHours" },
+  { slug: "eventet/webinare", id: 155, override_name: "Webinare" },
+  { slug: "eventet/ndryshe", id: 156, override_name: "Ndryshe" },
+  { slug: "eventet/njoftime", id: 99, override_name: "Njoftime" },
+
+  { slug: "eventet/udhezime", id: 159, override_name: "Udhëzime" },
+
+  // Nismat
+  { slug: "nismat/atlas", id: 144, override_name: "Atlas" },
+  { slug: "nismat/mentorimi", id: 111, override_name: "Mentorimi" },
+  { slug: "nismat/meso-deutsch", id: 158, override_name: "Mëso Deutsch" },
+  { slug: "nismat/sociale", id: 103, override_name: "Sociale" },
+  { slug: "nismat/tech", id: 94, override_name: "Tech" },
+
+  { slug: "nismat/propozime", id: 66, override_name: "Propozime" },
+
+  // Orga
+  { slug: "orga/njoftime", id: 70, override_name: "Njoftime" },
+  { slug: "orga/udhezime", id: 153, override_name: "Udhëzime" },
+];
+
+const CACHE_FILE = path.join(__dirname, "forum_posts.json");
 
 module.exports = async function () {
   const forceRefresh = process.env.REFETCH === "true";

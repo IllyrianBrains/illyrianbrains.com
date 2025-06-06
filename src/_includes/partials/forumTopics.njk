@@ -6,7 +6,7 @@
 
         <ul class="article-list">
           {% for topic in category.topics %}
-            {% if not topic.title.startsWith("About the") %}
+            {% if not topic.title.startsWith("About the") and not topic.title.startsWith('Hyrje ') %}
             <li class="{{ topic.tags | join(' ') | slugify }}">
               <div>
                 <a href="{{ topic.url }}">{{ topic.title }}</a>

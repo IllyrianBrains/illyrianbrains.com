@@ -9,7 +9,7 @@ css:
 
 <section class="history">
   <header>
-    <h1><span id="count">Roli i Qyteteve</span></h1>
+    <h1><span id="count">Rrjeti</span></h1>
   </header>
 
   <div class="col">
@@ -27,19 +27,17 @@ css:
       </p>
 
     </div>
-  
 
-    <div>
-      <h2>Statistika</h2>
-      <p>
-      <br>
-
-      </p>
-    </div>
+    {% for slug, category in forum_posts %}
+      {% if slug == 'Qytetet e reja' %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
  
   </div>
 </section>
 
+<br><br>
 
 <section class="history">
     <div class="container">
@@ -50,13 +48,38 @@ css:
 <br><br>
   
 
-<section class="history">
-    <div class="container">
-      {% include "blocks/qytetet.njk" %}
-    </div>
-</section>
-  
 
+<section class="history">
+  <div class="col">
+
+    {% for slug, category in forum_posts %}
+      {% if slug in ['Germanics', 'Western Europe' ] %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+  <br><br><br><br>
+  <div class="col">
+
+    {% for slug, category in forum_posts %}
+      {% if slug in ['Northern Europe', 'Southern Europe'] %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+  
+  <br><br><br><br>
+
+  <div class="col">
+    {% for slug, category in forum_posts %}
+      {% if slug in ['North America'] %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
 
 
 
@@ -64,7 +87,7 @@ css:
 
 <section class="photos">
   <header class="with-filter">
-    <h1><span id="count">Foto nga organizimet tona</span></h1>
+    <h1><span id="count">Foto nga qytetet tona</span></h1>
   </header>
 
   <div id="photo-grid">
@@ -85,7 +108,7 @@ Macy({
     trueOrder: false,
     waitForImages: false,
     margin: 24,
-    columns: 3,
+    columns: 4,
     breakAt: {
         900: 2,
         420: 1,

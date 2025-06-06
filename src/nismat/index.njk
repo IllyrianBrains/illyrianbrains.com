@@ -39,23 +39,51 @@ css:
 </style>
 
 {% set programet_nismat = [
-  { label: "Atlas", slug: "Atlas" },
-  { label: "Mentorimi", slug: "Mentorimi" },
-  { label: "Meso-Deutsch", slug: "Meso-Deutsch" }
+  { category: "Mëso Deutsch", group: "Meso-Deutsch" },
+  { category: "Atlas", group: "Atlas" },
+  { category: "Mentorimi", group: "Mentorimi" }
 ] %}
 
 {% set programet_profesionistet = [
-  { label: "IB-Tech", slug: "IB-Tech" },
-  { label: "IB-Social", slug: "IB-Social" }
+  { category: "Tech", group: "IB-Tech" },
+  { category: "Social", group: "IB-Social" }
 ] %}
 
 
 
 <section class="history">
-  <header>
-    <h1><span>Profesionistet</span></h1>
-  </header>
+<header>
+  <h1><span>Nismat</span></h1>
+</header>
 
+</section>
+
+
+<section class="history">
+  {% for program in programet_nismat %}
+
+  <div class="col">
+    {% for slug, category in forum_posts %}
+      {% if slug == program.category %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+
+    {% for slug, group in forum_groups %}
+      {% if slug == program.group %}
+        {% include "partials/forumEkip.njk" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+  <br><br><br>
+  {% endfor %}
+
+</section>
+
+<br><br><br>
+
+
+<section class="history">
   <div class="col">
   {% for program in programet_profesionistet %}
 
@@ -69,33 +97,3 @@ css:
 </section>
 
 <br><br><br>
-
-
-<section class="history">
-  <header>
-    <h1><span>Nismat</span></h1>
-  </header>
-
-  {% for program in programet_nismat %}
-
-  <div class="col">
-    {% for slug, category in forum_posts %}
-      {% if slug == program.slug %}
-        {% include "partials/forumTopics.njk" %}
-      {% endif %}
-    {% endfor %}
-
-    {% for slug, group in forum_groups %}
-      {% if slug == program.label %}
-        {% include "partials/forumEkip.njk" %}
-      {% endif %}
-    {% endfor %}
-
-  </div>
-  <br><br>
-  {% endfor %}
-
-</section>
-
-<br><br><br>
-

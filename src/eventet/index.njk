@@ -3,5 +3,81 @@ layout: layouts/base.njk
 css:
 - articles.css
 - history.css
+- photos.css
 ---
 
+
+
+<section class="history">
+
+  <header>
+    <h1><span>Eventet</span></h1>
+  </header>
+  <div class="col">
+  
+    <div>
+      <h2>HappyHours</h2>
+      <p>
+      Qytetet e IB janë hapësira ku lindin <b>mikro-komunitete</b>,
+      të mbështetura nga anëtarët që ndajnë interesa dhe vlera të përbashkëta.
+      Ato krijojnë hapësira miqësore për takime, bashkëbisedime dhe bashkëpunime, duke
+      nxitur zhvillimin profesional në mënyrë të natyrshme dhe të afërt.
+
+      <br><br>
+
+      </p>
+
+    </div>
+
+    {% for slug, category in forum_posts %}
+      {% if slug == 'HappyHours' %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+ 
+  </div>
+</section>
+
+
+
+<br><br><br>
+
+<section class="history">
+  <div class="col">
+
+    {% for slug, category in forum_posts %}
+      {% if slug in ['Webinare', 'Ndryshe'] %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</section>
+
+<br><br><br>
+
+<section class="history">
+  <div class="col">
+
+      <div>
+        <h2>Na kontakto!</h2>
+        <p>
+          Kjo faqe është ende në zhvillim, por nëse ke një pyetje rreth IllyrianBrains -
+          për mënyrën si funksionon komuniteti, si të përfshihesh, apo ndonjë temë tjetër -
+            mos hezito të na kontaktosh me <a href="mailto:illyrianbrains@gmail.com">email</a>
+            ose përmes <a href="https://www.linkedin.com/company/illyrian-brains">LinkedIn</a>.
+        </p>
+      </div>
+
+
+    {% for slug, category in forum_posts %}
+      {% if slug == 'Udhëzime' %}
+        {% include "partials/forumTopics.njk" %}
+      {% endif %}
+    {% endfor %}
+ 
+    </div>
+
+</section>
+
+<br><br><br>
