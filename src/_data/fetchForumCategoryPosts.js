@@ -29,7 +29,7 @@ async function fetchCategoryTopics(id) {
     };
   }
 
-  return (data.topic_list.topics || []).slice(0, 5).map((topic) => {
+  return (data.topic_list.topics || []).slice(0, 12).map((topic) => {
     const poster = usersById[topic.posters?.[0]?.user_id] || {
       name: topic.last_poster_username,
       avatar: `https://forum.illyrianbrains.dev/user_avatar/forum.illyrianbrains.dev/${topic.last_poster_username}/120/1.png`,

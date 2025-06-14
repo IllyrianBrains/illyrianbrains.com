@@ -18,16 +18,37 @@ css:
 } %}
 
 {% set regionStats = {
-  'Germanics': { qytete: 8, "Pjesëmarrës":"1000+", evente: "40+" },
-  'Western Europe': { qytete: 7, "Pjesëmarrës":"500+", evente: "40+"},
-  'Northern Europe': { qytete: 5, "Pjesëmarrës":"500+", evente: "40+" },
-  'Southern Europe': { qytete: 9, "Pjesëmarrës":"1000+", evente: "50+" },
-  'North America': { qytete: 10, "Pjesëmarrës":"500+", evente: "30+" }
+  'Germanics': {
+    qytete: 8,
+    "Pjesëmarrës": "1000+",
+    evente: "40+"
+  },
+  'Western Europe': {
+    qytete: 7,
+    "Pjesëmarrës": "500+",
+    evente: "40+"
+  },
+  'Northern Europe': {
+    qytete: 5,
+    "Pjesëmarrës": "500+",
+    evente: "40+"
+  },
+  'Southern Europe': {
+    qytete: 9,
+    "Pjesëmarrës": "1000+",
+    evente: "50+"
+  },
+  'North America': {
+    qytete: 10,
+    "Pjesëmarrës": "500+",
+    evente: "30+"
+  }
 } %}
 
 <section class="history">
   <header>
-    <h1><span id="count">Rrjeti</span></h1>
+    <h1>
+      <span id="count">Rrjeti</span></h1>
   </header>
 
   <div class="container">
@@ -37,27 +58,25 @@ css:
 
 <br><br><br>
 
-{% for region in ['Germanics', 'Western Europe', 'Northern Europe', 'Southern Europe', 'North America'] %}
-<section class="history" >
+{% for region in['Germanics', 'Western Europe', 'Northern Europe', 'Southern Europe', 'North America'] %}
+  <section class="history" >
 
-  <header>
-    <h1><span id="count">{{region}}</span></h1>
-  </header>
-  <div class="container" style="display: flex; flex-wrap: wrap; gap: 2rem; background-color: {{ regionColors[region] }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+    <header>
+      <h1>
+        <span id="count">{{region}}</span></h1>
+    </header>
+    <div class="container" style="display: flex; flex-wrap: wrap; gap: 2rem;
+      background-color: {{ regionColors[region] }}; padding: 4rem 2rem;
+      border-radius: 10px; margin-bottom: 3rem;"
+    >
 
-    <!-- Left column: region name, stats, people placeholder -->
-    <div class="col" style="flex: 1 1 45%;">
- 
-      {% for slug, category in forum_posts %}
-        {% if slug == region %}
-          {% include "partials/forumTopicCategory.njk" %}
-        {% endif %}
-      {% endfor %}
+      <!-- Left column: region name, stats, people placeholder -->
+      <div style="flex: 1 1 45%;">
 
-      <h3>Anëtarë aktivë:</h3>
-      <p>— (për t'u shtuar)</p>
+        <h3>Anëtarë aktivë:</h3>
+        <p>— (për t'u shtuar)</p>
 
-      {% set stats = regionStats[region] %}
+        {% set stats = regionStats[region] %}
         <div class="stats" style="display: flex; margin-bottom: 2rem; flex-wrap: wrap;">
           {% for key, value in stats %}
             <div style="text-align: center; flex: 1 1 30%;">
@@ -66,20 +85,17 @@ css:
             </div>
           {% endfor %}
         </div>
+      </div>
 
+      <!-- Right column: forum posts -->
+      <div  style="flex: 1 1 45%;">
+        {% for slug, category in forum_posts %}
+          {% if slug == region %}
+            {% include "partials/forumTopicCategory.njk" %}
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
-
-    <!-- Right column: forum posts -->
-    <div style="flex: 1 1 45%;">
-
-    <div class="post-list" id="grid">
-      {% for post in posts | sortBy("-date") %}
-        {% include "partials/post.njk" %}
-      {% endfor %}
-
-    </div>
-    </div>
-  </div>
-</section>
-<br><br>
+  </section>
+  <br><br>
 {% endfor %}

@@ -19,9 +19,24 @@
         }
       },
       {
-        "title": "Mirëseerdhët në IB-Berlin 🇩🇪",
-        "slug": "mireseerdhet-ne-ib-berlin",
-        "url": "https://forum.illyrianbrains.dev/t/mireseerdhet-ne-ib-berlin/571",
+        "title": "Mirësevini në IB-Düsseldorf",
+        "slug": "miresevini-ne-ib-dusseldorf",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-dusseldorf/579",
+        "created_at": "2025-06-14T19:32:31.856Z",
+        "tags": [
+          "dusseldorf"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Andi",
+          "name": "Andi Memo",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/andi/120/154_2.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Berlin",
+        "slug": "miresevini-ne-ib-berlin",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-berlin/571",
         "created_at": "2025-06-06T15:24:28.386Z",
         "tags": [
           "berlin"
@@ -31,6 +46,66 @@
           "username": "ionianFury",
           "name": "ionianFury",
           "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/120/337_2.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Vjenë",
+        "slug": "miresevini-ne-ib-vjene",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-vjene/583",
+        "created_at": "2025-06-14T19:52:25.122Z",
+        "tags": [
+          "vjene"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "IlliryanEagle",
+          "name": "Dorian Osmani",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/illiryaneagle/120/336_2.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Munich",
+        "slug": "miresevini-ne-ib-munich",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-munich/580",
+        "created_at": "2025-06-14T19:38:30.200Z",
+        "tags": [
+          "munich"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Dionis",
+          "name": "Dionis",
+          "avatar": "/letter_avatar_proxy/v4/letter/d/ba9def/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Frankfurt",
+        "slug": "miresevini-ne-ib-frankfurt",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-frankfurt/581",
+        "created_at": "2025-06-14T19:41:42.636Z",
+        "tags": [
+          "frankfurt"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "arjana",
+          "name": "Arjana Kastrati",
+          "avatar": "/letter_avatar_proxy/v4/letter/a/f07891/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Hamburg",
+        "slug": "miresevini-ne-ib-hamburg",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-hamburg/582",
+        "created_at": "2025-06-14T19:47:05.058Z",
+        "tags": [
+          "hamburg"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
         }
       },
       {
@@ -89,6 +164,36 @@
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
         }
+      },
+      {
+        "title": "Mirësevini në IB-Helsinki",
+        "slug": "miresevini-ne-ib-helsinki",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-helsinki/588",
+        "created_at": "2025-06-14T20:45:57.246Z",
+        "tags": [
+          "helsinki"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Sadiona",
+          "name": "Sadiona Abazaj",
+          "avatar": "/letter_avatar_proxy/v4/letter/s/b782af/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Prague",
+        "slug": "miresevini-ne-ib-prague",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-prague/589",
+        "created_at": "2025-06-14T20:48:51.424Z",
+        "tags": [
+          "prague"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Izabela",
+          "name": "Izabela Bakollari",
+          "avatar": "/letter_avatar_proxy/v4/letter/i/7ab992/120.png"
+        }
       }
     ]
   },
@@ -112,16 +217,78 @@
         }
       },
       {
-        "title": "Kartolina nga Trento :books:",
-        "slug": "kartolina-nga-trento",
-        "url": "https://forum.illyrianbrains.dev/t/kartolina-nga-trento/545",
+        "title": "Mirësevini në IB-Genova",
+        "slug": "miresevini-ne-ib-genova",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-genova/587",
+        "created_at": "2025-06-14T20:42:41.921Z",
+        "tags": [
+          "genova"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "ErjonGenova",
+          "name": "Erjon",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/97f17d/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Parma",
+        "slug": "miresevini-ne-ib-parma",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-parma/586",
+        "created_at": "2025-06-14T20:35:48.133Z",
+        "tags": [
+          "parma"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "EglantinaA",
+          "name": "EglantinaA",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Bologna",
+        "slug": "miresevini-ne-ib-bologna",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-bologna/585",
+        "created_at": "2025-06-14T20:24:22.000Z",
+        "tags": [
+          "bologna"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Trento",
+        "slug": "miresevini-ne-ib-trento",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-trento/545",
         "created_at": "2025-05-27T05:47:47.025Z",
-        "tags": [],
+        "tags": [
+          "trento"
+        ],
         "image_url": null,
         "poster": {
           "username": "6entianaberisha",
           "name": "Gentiana Berisha",
           "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/120/335_2.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Tiranë",
+        "slug": "miresevini-ne-ib-tirane",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-tirane/584",
+        "created_at": "2025-06-14T20:09:11.439Z",
+        "tags": [
+          "tirane"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "erda_hoxha",
+          "name": "Erda Hoxha",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/120.png"
         }
       }
     ]
@@ -143,6 +310,36 @@
           "username": "pomodoren",
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Bruksel",
+        "slug": "miresevini-ne-ib-bruksel",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-bruksel/591",
+        "created_at": "2025-06-14T21:03:33.889Z",
+        "tags": [
+          "bruksel"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "spartak",
+          "name": "Spartak Lalaj",
+          "avatar": "/letter_avatar_proxy/v4/letter/s/839c29/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-London",
+        "slug": "miresevini-ne-ib-london",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-london/590",
+        "created_at": "2025-06-14T20:59:30.645Z",
+        "tags": [
+          "london"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Klaudia",
+          "name": "Klaudia",
+          "avatar": "/letter_avatar_proxy/v4/letter/k/6bbea6/120.png"
         }
       }
     ]
@@ -421,6 +618,19 @@
           "name": "Emiljano Hoxha",
           "avatar": "/user_avatar/forum.illyrianbrains.dev/emiljano_hoxha/120/283_2.png"
         }
+      },
+      {
+        "title": "Ajo GUXON! Bëhu mentore nga diaspora!",
+        "slug": "ajo-guxon-behu-mentore-nga-diaspora",
+        "url": "https://forum.illyrianbrains.dev/t/ajo-guxon-behu-mentore-nga-diaspora/356",
+        "created_at": "2025-01-25T20:20:46.805Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/1f740e9fbc9fdd74c0dfa79cf07a892ab34c94ba_2_1024x1024.jpeg",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
       }
     ]
   },
@@ -478,6 +688,19 @@
         }
       },
       {
+        "title": "Mirësevini në Francë! :fr:",
+        "slug": "miresevini-ne-france",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-france/292",
+        "created_at": "2024-12-18T10:28:43.102Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/e2d92f946350b8338d580a7b138448efbee5e5dc.jpeg",
+        "poster": {
+          "username": "Eneda",
+          "name": "Eneda ",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/7c8e57/120.png"
+        }
+      },
+      {
         "title": "Mirësevini në Trento! :italy:",
         "slug": "miresevini-ne-trento",
         "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-trento/506",
@@ -527,6 +750,19 @@
           "username": "maidagr",
           "name": "Maida Grazhdani",
           "avatar": "/letter_avatar_proxy/v4/letter/m/bc8723/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në Austri! :austria:",
+        "slug": "miresevini-ne-austri",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-austri/293",
+        "created_at": "2024-12-19T23:34:22.711Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/56a788b3ef7527c84a8eb0f2ab3ee5efdb6f7284.jpeg",
+        "poster": {
+          "username": "Arber",
+          "name": "Arbër Islamaj",
+          "avatar": "/letter_avatar_proxy/v4/letter/a/a587f6/120.png"
         }
       }
     ]
@@ -601,13 +837,26 @@
           "name": "Isiona",
           "avatar": "/letter_avatar_proxy/v4/letter/i/8baadc/120.png"
         }
+      },
+      {
+        "title": "Prioritetet - nje template per zhvillimin e mentee",
+        "slug": "prioritetet-nje-template-per-zhvillimin-e-mentee",
+        "url": "https://forum.illyrianbrains.dev/t/prioritetet-nje-template-per-zhvillimin-e-mentee/119",
+        "created_at": "2024-10-26T11:12:16.970Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
       }
     ]
   },
   "Meso-Deutsch": {
     "slug": "nismat/meso-deutsch",
     "id": 158,
-    "name": "Mëso Deutsch",
+    "name": "Meso-Deutsch",
     "description": "Orientim për të mësimin e gjuhës gjerme. Kjo bëhet përmes takimeve online, SprachCafe dhe burimeve.",
     "topics": [
       {
@@ -621,6 +870,21 @@
           "username": "pomodoren",
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "SprachCafe në Berlin",
+        "slug": "sprachcafe-ne-berlin",
+        "url": "https://forum.illyrianbrains.dev/t/sprachcafe-ne-berlin/578",
+        "created_at": "2025-06-12T09:15:28.510Z",
+        "tags": [
+          "berlin"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/5690d4f41e1d19c1786fb905eda38a860b7f78ec_2_1024x1024.jpeg",
+        "poster": {
+          "username": "albanafrroku",
+          "name": "Albana Frroku",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/albanafrroku/120/100_2.png"
         }
       },
       {
@@ -680,7 +944,7 @@
   "IB-Social": {
     "slug": "nismat/sociale",
     "id": 103,
-    "name": "Sociale",
+    "name": "IB-Social",
     "description": "Për profesionistët e shkencave sociale që duan të kontribuojnë në IB me ekspertizën e tyre.",
     "topics": [
       {
@@ -743,7 +1007,7 @@
   "IB-Tech": {
     "slug": "nismat/tech",
     "id": 94,
-    "name": "Tech",
+    "name": "IB-Tech",
     "description": "Për profesionistët e teknologjisë që duan të njihen, të ndajnë burime info, dhe të zhvillojnë së bashku mjete për komunitetin.",
     "topics": [
       {
@@ -814,6 +1078,109 @@
           "username": "xheidi.bajraktari",
           "name": "Xheidi",
           "avatar": "/letter_avatar_proxy/v4/letter/x/e0b2c6/120.png"
+        }
+      },
+      {
+        "title": "[2025] Status Update",
+        "slug": "2025-status-update",
+        "url": "https://forum.illyrianbrains.dev/t/2025-status-update/450",
+        "created_at": "2025-04-28T19:35:20.129Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/c4c9bcc128b5e79afa9a9230cb74f5d6292dcea7_2_1024x449.png",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "DataLab - ndajme eksperimentimet me AI",
+        "slug": "datalab-ndajme-eksperimentimet-me-ai",
+        "url": "https://forum.illyrianbrains.dev/t/datalab-ndajme-eksperimentimet-me-ai/429",
+        "created_at": "2025-04-21T18:05:09.612Z",
+        "tags": [
+          "onhold"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Building an open source Phishing Simulator",
+        "slug": "building-an-open-source-phishing-simulator",
+        "url": "https://forum.illyrianbrains.dev/t/building-an-open-source-phishing-simulator/420",
+        "created_at": "2025-04-16T13:40:19.698Z",
+        "tags": [
+          "todo",
+          "contribution-welcome"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "orestiffm",
+          "name": "orestiffm",
+          "avatar": "/letter_avatar_proxy/v4/letter/o/f4b2a3/120.png"
+        }
+      },
+      {
+        "title": "Zhvillues Php për akademinë",
+        "slug": "zhvillues-php-per-akademine",
+        "url": "https://forum.illyrianbrains.dev/t/zhvillues-php-per-akademine/415",
+        "created_at": "2025-04-15T06:24:24.301Z",
+        "tags": [
+          "onhold",
+          "bashkohu-ekipit"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "ionianFury",
+          "name": "ionianFury",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/120/337_2.png"
+        }
+      },
+      {
+        "title": "[2025] IB-Tech Meetups",
+        "slug": "2025-ib-tech-meetups",
+        "url": "https://forum.illyrianbrains.dev/t/2025-ib-tech-meetups/367",
+        "created_at": "2025-02-13T21:52:19.172Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/dfcadad27941cde6cc409ce5640ac92dc917912a_2_1024x1024.jpeg",
+        "poster": {
+          "username": "adriankodja",
+          "name": "Adrian Kodja",
+          "avatar": "/letter_avatar_proxy/v4/letter/a/65b543/120.png"
+        }
+      },
+      {
+        "title": "Komunitete dhe hapësira shqipfolëse mbi teknologjinë",
+        "slug": "komunitete-dhe-hapesira-shqipfolese-mbi-teknologjine",
+        "url": "https://forum.illyrianbrains.dev/t/komunitete-dhe-hapesira-shqipfolese-mbi-teknologjine/398",
+        "created_at": "2025-03-30T15:22:35.053Z",
+        "tags": [
+          "onhold"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "[2024] Takimet e IB-Tech - lista",
+        "slug": "2024-takimet-e-ib-tech-lista",
+        "url": "https://forum.illyrianbrains.dev/t/2024-takimet-e-ib-tech-lista/27",
+        "created_at": "2024-09-15T17:36:58.675Z",
+        "tags": [
+          "event"
+        ],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/ed788b4e8fb81e1c3dafd4ce0380a341240e6ea4_2_1024x350.jpeg",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
         }
       }
     ]

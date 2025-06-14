@@ -3,10 +3,9 @@ layout: layouts/base.njk
 home: true
 css:
 - history.css
-- posts.css
 - articles.css
 - talk.css
-- slider.css
+- posts.css
 ---
 
 {% set bgColors = ['rgba(244, 224, 124, 0.29)', 'rgba(193, 225, 220, 0.29)', 'rgba(219, 219, 219, 0.29)'] %}
@@ -22,14 +21,13 @@ css:
     <div class="col">
 
       <div style="flex: 1 1 45%;">
-        <h2>Ne krijojmë komunitete të profesionistëve shqiptarë në qytetin tënd.</h2>
+        <h2>Ne mbështesim krijimin e komuniteteve të profesionistëve shqiptarë.</h2>
         <p>
           Çdo qytet është një hapësirë për ndërlidhje, mbështetje dhe zhvillim profesional mes anëtarëve që ndajnë gjuhën dhe vlerat.
         </p>
       </div>
 
-      <div>
-      </div>
+      <div></div>
 
     </div>
   </div>
@@ -37,27 +35,21 @@ css:
 
 <br><br><br>
 
-{% set eventCategories = ['HappyHours'] %}
+{% set programs = ['HappyHours', 'Webinare'] %}
 
-<section class="talks">
+<section class="history">
 
   <header>
     <h1>
       <span>Eventet</span></h1>
   </header>
-  {% for slug, category in forum_posts %}
-    {% if slug in eventCategories %}
-      {% set index = eventCategories.indexOf(slug) %}
-      {% set bg = bgColors[index % bgColors.length] %}
-
-      <div class="event-section" style="background-color: {{ bgColors[0] }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
-        <!-- Right column: posts -->
-        <div style="flex: 1 1 45%;">
-          {% include "partials/forumTopicCategory.njk" %}
-        </div>
-      </div>
-    {% endif %}
+  <div class="event-section" >
+  {% for program in programs %}
+    {% set bg = bgColors[loop.index0 % bgColors.length] %}
+    {% set stats = programStats[program] %}
+        {% include 'partials/forumNismeExtended.njk' %}
   {% endfor %}
+  </div>
 </section>
 
 <br><br><br>
