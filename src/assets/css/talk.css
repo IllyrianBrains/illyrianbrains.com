@@ -3,7 +3,7 @@
 }
 
 .talk .back {
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .talk h1 {
@@ -39,8 +39,9 @@
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 2px;
-  margin-right: 20px;
-  max-height: 20px;
+  margin-right: 8px;
+  aspect-ratio: 1.6;
+  /* max-height: 328px; */
 }
 
 .speaker-image img {
@@ -57,21 +58,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
-  width: 10px;
+  width: 22px;
   height: 22px;
   margin-right: 16px;
-}
-
-.audio h2::before {
-  background-image: url(/assets/images/audio.svg);
-}
-
-.video h2::before {
-  background-image: url(/assets/images/video.svg);
-}
-
-.slide h2::before {
-  background-image: url(/assets/images/slides.svg);
 }
 
 .talk .links > * {
@@ -119,10 +108,25 @@
   list-style: none;
   padding: 0;
 }
-
-
 .talk-card {
   width: 100%;
+}
+
+.talk .session-summary details .content {
+  padding: 20px;
+  margin: 40px 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 4px;
+}
+
+.talk .session-summary h2:first-child {
+  /* font-size: 1.5rem; */
+  /* text-align: right; */
+}
+
+.talk .session-summary details h1 {
+  font-size: 2rem;
+  text-wrap: balance;
 }
 
 @media only screen and (min-width: 700px) {
@@ -131,4 +135,3 @@
     padding: 0;
   }
 }
-

@@ -22,7 +22,7 @@ css:
       {% set index = eventCategories.indexOf(slug) %}
       {% set bg = bgColors[index % bgColors.length] %}
 
-      <div class="event-section" style="background-color: {{ bg }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+      <div class="event-section" style="background-color: {{ bg }}; padding: 3rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
         <div class="col" >
           <!-- Right column: posts -->
           <div style="flex: 1 1 45%;">
@@ -30,23 +30,21 @@ css:
           </div>
         </div>
       </div>
+      <br><br>
     {% endif %}
   {% endfor %}
 </section>
 
 <br><br><br>
 
-<section class="talks">
+<section class="history">
   <div class="col">
-    {% for slug, category in forum_posts %}
-      {% if slug == 'Udhëzime' %}
-        <h2>{{ category.name }}</h2>
-        {% if category.description %}
-          <p>{{ category.description | safe }}</p>
-        {% endif %}
-        {% include "partials/forumTopic.njk" %}
-      {% endif %}
-    {% endfor %}
+    {% set category = forum_posts['Udhëzime'] %}
+    {% include 'partials/forumTopicCategory.njk' %}
+  </div>
+  <div class="col">
+    {% set category = forum_posts['Njoftime'] %}
+    {% include 'partials/forumTopicCategory.njk' %}
   </div>
 </section>
 

@@ -11,7 +11,7 @@
         .startsWith("About the")and not topic
         .title
         .startsWith('Hyrje ') %}
-        <li class="{{ topic.tags | join(' ') | slugify }}">
+        <li class="{{ topic.tags | join(' ') | slugify }}" style="border-radius: 10px;">
           {% include "partials/forumTopic.njk" %}
         </li>
       {% endif %}

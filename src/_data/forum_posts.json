@@ -3,7 +3,7 @@
     "slug": "qytetet/germanics",
     "id": 149,
     "name": "Germanics",
-    "description": "Berlin, Dusseldorf, Frankfurt, Hamburg, Lugano, Munich, Wien, Zurich",
+    "description": "Qytetet gjermanofone janë shpesh destinacione kyçe për profesionistët shqiptarë që kërkojnë zhvillim akademik dhe karrierë. Komunitetet këtu fokusohen në mirëpritjen e pjesëmarrësve të rinj përmes aktiviteteve orientuese, ndihmës me dokumentacionin lokal (si regjistrimi, sigurimet, etj.), si dhe ndërtimit të një rrjeti kontakti për punësim dhe integrim social.",
     "topics": [
       {
         "title": "About the Germanics category",
@@ -114,7 +114,8 @@
         "url": "https://forum.illyrianbrains.dev/t/1-vjetori-i-ib-berlin-bookclub/361",
         "created_at": "2025-02-03T22:01:46.686Z",
         "tags": [
-          "berlin"
+          "berlin",
+          "vjene"
         ],
         "image_url": null,
         "poster": {
@@ -129,7 +130,7 @@
     "slug": "qytetet/north-america",
     "id": 146,
     "name": "North America",
-    "description": "Boston, Chicago, Miami, Minnesota, New Jersey, New York, Philadelphia, Tampa Bay, Toronto, Washington",
+    "description": "Në Amerikën e Veriut, largësitë gjeografike dhe stili i jetesës mund ta bëjnë sfidues integrimin. Komunitetet IB këtu mundohet të ofrojnë struktura mbështetëse virtuale dhe fizike për të ndihmuar në orientimin e profesionistëve të rinj.",
     "topics": [
       {
         "title": "About the North America category",
@@ -143,6 +144,36 @@
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
         }
+      },
+      {
+        "title": "Mirësevini në IB-Philadelphia",
+        "slug": "miresevini-ne-ib-philadelphia",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-philadelphia/595",
+        "created_at": "2025-06-16T19:32:06.889Z",
+        "tags": [
+          "philadelphia"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "lpire",
+          "name": "linda",
+          "avatar": "/letter_avatar_proxy/v4/letter/l/c4cdca/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-New York",
+        "slug": "miresevini-ne-ib-new-york",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-new-york/594",
+        "created_at": "2025-06-16T19:22:01.727Z",
+        "tags": [
+          "new-york"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "Fiona_IB_NY",
+          "name": "Fiona Sanxhaktari",
+          "avatar": "/letter_avatar_proxy/v4/letter/f/278dde/120.png"
+        }
       }
     ]
   },
@@ -150,7 +181,7 @@
     "slug": "qytetet/nordics",
     "id": 147,
     "name": "Northern Europe",
-    "description": "Copenhagen, Helsinki, Krakov, Malmo, Prague",
+    "description": "Kjo zonë njihet për strukturën sociale të organizuar dhe për standardin e lartë të jetesës, por edhe për një klimë më të rezervuar sociale. Komunitetet shqiptare në këto qytete tenton të ndihmojnë në thyerjen e barrierave fillestare përmes takimeve të hapura, darkave kulturore, dhe ndarjes së përvojave jetësore në grup.",
     "topics": [
       {
         "title": "About the Northern Europe category",
@@ -201,7 +232,7 @@
     "slug": "qytetet/southern-europe",
     "id": 148,
     "name": "Southern Europe",
-    "description": "Bologna, Genova, Luxemburg, Malta, Milano, Parma, Roma, Tirane, Trento",
+    "description": "Në jug të Evropës, ngjashmëritë kulturore me trevat shqiptare janë më të mëdha, por komunitetet lokale bëjnë përpjekje të qëllimshme për të ndihmuar pjesëmarrësit të ndërtojnë lidhje profesionale dhe të marrin pjesë në jeten publike të qyteteve.",
     "topics": [
       {
         "title": "About the Southern Europe category",
@@ -209,51 +240,6 @@
         "url": "https://forum.illyrianbrains.dev/t/about-the-southern-europe-category/541",
         "created_at": "2025-05-26T13:25:19.735Z",
         "tags": [],
-        "image_url": null,
-        "poster": {
-          "username": "pomodoren",
-          "name": "pomodoren",
-          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
-        }
-      },
-      {
-        "title": "Mirësevini në IB-Genova",
-        "slug": "miresevini-ne-ib-genova",
-        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-genova/587",
-        "created_at": "2025-06-14T20:42:41.921Z",
-        "tags": [
-          "genova"
-        ],
-        "image_url": null,
-        "poster": {
-          "username": "ErjonGenova",
-          "name": "Erjon",
-          "avatar": "/letter_avatar_proxy/v4/letter/e/97f17d/120.png"
-        }
-      },
-      {
-        "title": "Mirësevini në IB-Parma",
-        "slug": "miresevini-ne-ib-parma",
-        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-parma/586",
-        "created_at": "2025-06-14T20:35:48.133Z",
-        "tags": [
-          "parma"
-        ],
-        "image_url": null,
-        "poster": {
-          "username": "EglantinaA",
-          "name": "EglantinaA",
-          "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/120.png"
-        }
-      },
-      {
-        "title": "Mirësevini në IB-Bologna",
-        "slug": "miresevini-ne-ib-bologna",
-        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-bologna/585",
-        "created_at": "2025-06-14T20:24:22.000Z",
-        "tags": [
-          "bologna"
-        ],
         "image_url": null,
         "poster": {
           "username": "pomodoren",
@@ -277,6 +263,51 @@
         }
       },
       {
+        "title": "Mirësevini në IB-Parma",
+        "slug": "miresevini-ne-ib-parma",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-parma/586",
+        "created_at": "2025-06-14T20:35:48.133Z",
+        "tags": [
+          "parma"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "eliradomi",
+          "name": "Elira ",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/ac91a4/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Genova",
+        "slug": "miresevini-ne-ib-genova",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-genova/587",
+        "created_at": "2025-06-14T20:42:41.921Z",
+        "tags": [
+          "genova"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "ErjonGenova",
+          "name": "Erjon",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/97f17d/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Bologna",
+        "slug": "miresevini-ne-ib-bologna",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-bologna/585",
+        "created_at": "2025-06-14T20:24:22.000Z",
+        "tags": [
+          "bologna"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
         "title": "Mirësevini në IB-Tiranë",
         "slug": "miresevini-ne-ib-tirane",
         "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-tirane/584",
@@ -297,7 +328,7 @@
     "slug": "qytetet/western-europe",
     "id": 150,
     "name": "Western Europe",
-    "description": "Amsterdam, Barcelona, Bruksel, Londer, Madrid, Manchester, Paris",
+    "description": "Qytetet në Evropën Perëndimore janë qendra të rëndësishme për profesionistë dhe studentë nga diaspora. Komunitetet IB ndihmojnë me krijimin e rrjeteve, organizimin e seminareve informuese mbi tregun e punës dhe sistemin akademik, si dhe aktivitete që nxisin lidhje të forta njerëzore.",
     "topics": [
       {
         "title": "About the Western Europe category",
@@ -310,6 +341,21 @@
           "username": "pomodoren",
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në IB-Paris",
+        "slug": "miresevini-ne-ib-paris",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-ib-paris/592",
+        "created_at": "2025-06-15T14:19:06.333Z",
+        "tags": [
+          "paris"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "MarinelaS",
+          "name": "Marinela Shehaj",
+          "avatar": "/letter_avatar_proxy/v4/letter/m/71e660/120.png"
         }
       },
       {
@@ -385,18 +431,18 @@
         }
       },
       {
-        "title": "2025-05 HappyHour në Tiranë",
-        "slug": "2025-05-happyhour-ne-tirane",
-        "url": "https://forum.illyrianbrains.dev/t/2025-05-happyhour-ne-tirane/559",
+        "title": "The power of You, me Tomorr Kokona",
+        "slug": "the-power-of-you-me-tomorr-kokona",
+        "url": "https://forum.illyrianbrains.dev/t/the-power-of-you-me-tomorr-kokona/559",
         "created_at": "2025-05-30T12:12:37.996Z",
         "tags": [
           "tirane"
         ],
         "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/99d63dde00692a6d19bad388c37d3e63eddfe7c9_2_819x1024.jpeg",
         "poster": {
-          "username": "pomodoren",
-          "name": "pomodoren",
-          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+          "username": "erda_hoxha",
+          "name": "Erda Hoxha",
+          "avatar": "/letter_avatar_proxy/v4/letter/e/ee59a6/120.png"
         }
       },
       {
@@ -518,8 +564,8 @@
         "url": "https://forum.illyrianbrains.dev/t/ib-global-ii-vienna-infosheet/385",
         "created_at": "2025-03-22T20:18:09.808Z",
         "tags": [
-          "vjene2025",
-          "vjene"
+          "vjene",
+          "vjene2025"
         ],
         "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/2514803763d9fe8aa3cd4f1d26f88948593845f6.jpeg",
         "poster": {
@@ -787,6 +833,19 @@
         }
       },
       {
+        "title": "Takimi Peer2Peer për programin e Mentorimit",
+        "slug": "takimi-peer2peer-per-programin-e-mentorimit",
+        "url": "https://forum.illyrianbrains.dev/t/takimi-peer2peer-per-programin-e-mentorimit/599",
+        "created_at": "2025-06-17T20:42:45.518Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/6ab7a36c4bb930edc062e6f5aae6fa3a7f4cb80b_2_1024x1024.jpeg",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
         "title": "Programi i mentorimit per Tech - v1",
         "slug": "programi-i-mentorimit-per-tech-v1",
         "url": "https://forum.illyrianbrains.dev/t/programi-i-mentorimit-per-tech-v1/427",
@@ -870,6 +929,19 @@
           "username": "pomodoren",
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "SprachCafe Online - 23. Juni",
+        "slug": "sprachcafe-online-23-juni",
+        "url": "https://forum.illyrianbrains.dev/t/sprachcafe-online-23-juni/600",
+        "created_at": "2025-06-17T21:17:25.894Z",
+        "tags": [],
+        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/79841f8c20d66d14409cae34ad4830eba686a73a_2_1024x1024.jpeg",
+        "poster": {
+          "username": "GentjanaHoxha",
+          "name": "Gentjana Hoxha ",
+          "avatar": "/letter_avatar_proxy/v4/letter/g/c5a1d2/120.png"
         }
       },
       {

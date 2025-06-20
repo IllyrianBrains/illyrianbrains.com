@@ -5,10 +5,11 @@ css:
 - photos.css
 - history.css
 - articles.css
-- posts.css
 ---
 
 {% set regionColors = {
+
+  'Qytetet': 'rgba(255, 211, 204, 0.49)',
   'Germanics': 'rgba(244, 224, 124, 0.49)',
   'Western Europe': 'rgba(193, 225, 220, 0.49)',
   'Northern Europe': 'rgba(246, 214, 173, 0.49)',
@@ -18,84 +19,143 @@ css:
 } %}
 
 {% set regionStats = {
+  'Qytetet': {
+    "Qytete aktive": "30+",
+    "Organizatorë": "120+",
+    evente: "100+",
+    "Pjesëmarrës": "4000+",
+    "Mikrokomunitete": "60+"
+  },
   'Germanics': {
     qytete: 8,
+    "Organizatorë": "20+",
+    evente: "40+",
     "Pjesëmarrës": "1000+",
-    evente: "40+"
+    "Mikrokomunitete": "20+"
   },
   'Western Europe': {
     qytete: 7,
+    "Organizatorë": "20+",
+    evente: "40+",
     "Pjesëmarrës": "500+",
-    evente: "40+"
+    "Mikrokomunitete": "10+"
   },
   'Northern Europe': {
     qytete: 5,
+    "Organizatorë": "10+",
+    evente: "40+",
     "Pjesëmarrës": "500+",
-    evente: "40+"
+    "Mikrokomunitete": "10+"
   },
   'Southern Europe': {
     qytete: 9,
+    "Organizatorë": "20+",
+    evente: "50+",
     "Pjesëmarrës": "1000+",
-    evente: "50+"
+    "Mikrokomunitete": "10+"
   },
   'North America': {
     qytete: 10,
+    "Organizatorë": "10+",
+    evente: "30+",
     "Pjesëmarrës": "500+",
-    evente: "30+"
+    "Mikrokomunitete": "10+"
   }
 } %}
 
 <section class="history">
   <header>
     <h1>
-      <span id="count">Rrjeti</span></h1>
+      <span id="count">Qytetet</span></h1>
   </header>
 
-  <div class="container">
-    {% include 'maps/map_happyhours.njk' %}
-  </div>
-</section>
+  <div class="program-section" style="background-color:{{ regionColors["Qytetet"] }}; padding: 2rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
 
-<br><br><br>
+    <div style="flex: 1 1 45%;">
+      <p>
+           Qytetet ku organizohen evente të IB mbështesin rrjetin lokal të profesionistëve
+           shqiptarë. Këto qytete janë pika takimi për profesionistët shqiptarë që jetojnë
+           dhe punojnë në qytete të ndryshme për të gjetur miq, krijuar një projekt, apo 
+            thjesht për të kaluar një kohë të mirë së bashku. 
+                   
+          <br><br>
+           Qytetet kanë ose një grup komunikimi, ose zhvillohen në komunitete
+           lokale, me mikro-komunitete për interesa të ndryshme - volleyball, bookclub, hiking,
+           e të ngjashme. Sa më shumë komunitete lokale të krijohen, aq më shumë mundësi
+           ka për të organizuar evente dhe për të ndarë përvoja.
+        </p>
 
-{% for region in['Germanics', 'Western Europe', 'Northern Europe', 'Southern Europe', 'North America'] %}
-  <section class="history" >
-
-    <header>
-      <h1>
-        <span id="count">{{region}}</span></h1>
-    </header>
-    <div class="container" style="display: flex; flex-wrap: wrap; gap: 2rem;
-      background-color: {{ regionColors[region] }}; padding: 4rem 2rem;
-      border-radius: 10px; margin-bottom: 3rem;"
-    >
-
-      <!-- Left column: region name, stats, people placeholder -->
-      <div style="flex: 1 1 45%;">
-
-        <h3>Anëtarë aktivë:</h3>
-        <p>— (për t'u shtuar)</p>
-
-        {% set stats = regionStats[region] %}
-        <div class="stats" style="display: flex; margin-bottom: 2rem; flex-wrap: wrap;">
-          {% for key, value in stats %}
-            <div style="text-align: center; flex: 1 1 30%;">
-              <div style="font-size: 3rem; font-weight: bold;">{{ value }}</div>
-              <div>{{ key | replace("_", " ") | capitalize }}</div>
-            </div>
-          {% endfor %}
-        </div>
-      </div>
-
-      <!-- Right column: forum posts -->
-      <div  style="flex: 1 1 45%;">
-        {% for slug, category in forum_posts %}
-          {% if slug == region %}
-            {% include "partials/forumTopicCategory.njk" %}
-          {% endif %}
+      <br>
+      {% set stats = regionStats["Qytetet"] %}
+      <div class="stats" style="display: flex; margin-bottom: 2rem; flex-wrap: wrap;">
+        {% for key, value in stats %}
+          <div style="text-align: center; flex: 1 1 20%;">
+            <div style="font-size: 3rem; font-weight: bold;">{{ value }}</div>
+            <div>{{ key | replace("_", " ") | capitalize }}</div>
+          </div>
         {% endfor %}
       </div>
+      </div>
+      <br>
+
+      <div class="container">
+        {% include 'maps/map_happyhours.njk' %}
+      </div>
+
     </div>
   </section>
-  <br><br>
-{% endfor %}
+
+  <br><br><br>
+
+  {% for region in['Germanics', 'Western Europe', 'Northern Europe', 'Southern Europe', 'North America'] %}
+    <section class="history">
+      <header>
+        <h1>
+          <span id="count">{{ region }}</span></h1>
+      </header>
+
+      <div class="program-section" style="background-color:{{ regionColors[region] }}; padding: 2rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
+
+        <!-- Left column: region name, stats, people placeholder -->
+        <div style="flex: 1 1 45%;">
+          {% set desc = forum_posts[region].description or '' %}
+          <p>
+            {{desc}}
+          </p>
+          <br>
+          {% set stats = regionStats[region] %}
+          <div class="stats" style="display: flex; margin-bottom: 2rem; flex-wrap: wrap;">
+            {% for key, value in stats %}
+              <div style="text-align: center; flex: 1 1 20%;">
+                <div style="font-size: 3rem; font-weight: bold;">{{ value }}</div>
+                <div>{{ key | replace("_", " ") | capitalize }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <br>
+
+        <!-- Right column: forum posts -->
+        <div style="flex: 1 1 45%;" class="col">
+          {% if forum_posts[region] %}
+            {% set category = forum_posts[region] %}
+
+            <ul class="article-list">
+              {% for topic in category.topics %}
+                {% if not topic
+                  .title
+                  .startsWith("About the")and not topic
+                  .title
+                  .startsWith('Hyrje ') %}
+                  <li class="{{ topic.tags | join(' ') | slugify }}">
+                    {% include "partials/forumTopic.njk" %}
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+  {% endfor %}
