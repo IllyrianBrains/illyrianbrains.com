@@ -2,6 +2,7 @@
 layout: layouts/base.njk
 css:
   - articles.css
+  - history.css
 ---
 
 {% set programStats = {
@@ -14,18 +15,17 @@ css:
 
 <section class="history">
   <header>
-    <h1><span id="count">Nismat</span></h1>
+    <h1>
+      <span id="count">Nismat</span></h1>
   </header>
 
   {% set programs = ['Atlas', 'Mentorimi', 'Meso-Deutsch'] %}
-  {% set bgColors = [
-    'rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'
-  ] %}
+  {% set bgColors = ['rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'] %}
 
   {% for program in programs %}
     {% set bg = bgColors[loop.index0 % bgColors.length] %}
     {% set stats = programStats[program] %}
-        {% include 'partials/forumNismeExtended.njk' %}
+    {% include 'partials/forumNismeExtended.njk' %}
   {% endfor %}
 
 </section>
@@ -34,17 +34,16 @@ css:
 
 <section class="history">
   <header>
-    <h1><span id="count">Grupet e profesionistëve</span></h1>
+    <h1>
+      <span id="count">Grupet e profesionistëve</span></h1>
   </header>
 
   {% set programs = ['IB-Tech', 'IB-Social'] %}
-  {% set bgColors = [
-    'rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'
-  ] %}
+  {% set bgColors = ['rgba(244, 224, 124, 0.49)', 'rgba(193, 225, 220, 0.49)', 'rgba(246, 214, 173, 0.49)', 'rgba(208, 231, 183, 0.49)', 'rgba(231, 200, 221, 0.49)'] %}
 
   {% for program in programs %}
     {% set bg = bgColors[loop.index0 % bgColors.length] %}
     {% set stats = programStats[program] %}
-        {% include 'partials/forumNismeExtended.njk' %}
+    {% include 'partials/forumNismeExtended.njk' %}
   {% endfor %}
 </section>

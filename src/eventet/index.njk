@@ -6,15 +6,12 @@ css:
 ---
 
 {% set eventCategories = ['HappyHours', 'Webinare', 'Ndryshe'] %}
-{% set bgColors = [
-  'rgba(244, 224, 124, 0.29)', 
-  'rgba(193, 225, 220, 0.29)', 
-  'rgba(231, 200, 221, 0.29)'
-] %}
+{% set bgColors = ['rgba(244, 224, 124, 0.29)', 'rgba(193, 225, 220, 0.29)', 'rgba(231, 200, 221, 0.29)'] %}
 
 <section class="talks">
   <header>
-    <h1><span id="count">Eventet</span></h1>
+    <h1>
+      <span id="count">Eventet</span></h1>
   </header>
 
   {% for slug, category in forum_posts %}
@@ -37,18 +34,7 @@ css:
 
 <br><br><br>
 
-<section class="history">
-  <div class="col">
-    {% set category = forum_posts['Udhëzime'] %}
-    {% include 'partials/forumTopicCategory.njk' %}
-  </div>
-  <div class="col">
-    {% set category = forum_posts['Njoftime'] %}
-    {% include 'partials/forumTopicCategory.njk' %}
-  </div>
-</section>
-
 <script>
-// your existing carousel logic remains unchanged
-document.addEventListener('DOMContentLoaded', updateCards);
+  // your existing carousel logic remains unchanged
+  document.addEventListener('DOMContentLoaded', updateCards);
 </script>

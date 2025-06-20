@@ -8,9 +8,8 @@ css:
 - posts.css
 ---
 
-{% set bgColors = ['rgba(244, 224, 124, 0.29)', 'rgba(193, 225, 220, 0.29)', 'rgba(219, 219, 219, 0.29)'] %}
+{% set bgColors = ['rgba(250, 184, 163, 0.29)', 'rgba(246, 253, 202, 0.29)', 'rgba(204, 217, 255, 0.29)', 'rgba(253, 207, 255, 0.29)'] %}
 <section class="history">
-
   <header>
     <h1>
       <span id="count">Rrjeti IllyrianBrains</span>
@@ -26,16 +25,11 @@ css:
           Çdo qytet është një hapësirë për ndërlidhje, mbështetje dhe zhvillim profesional mes anëtarëve që ndajnë gjuhën dhe vlerat.
         </p>
       </div>
-
-      <div></div>
-
     </div>
   </div>
 </section>
 
 <br><br><br>
-
-{% set programs = ['HappyHours', 'Webinare'] %}
 
 <section class="history">
 
@@ -43,24 +37,75 @@ css:
     <h1>
       <span>Eventet</span></h1>
   </header>
-  <div class="event-section" >
-  {% for program in programs %}
-    {% set bg = bgColors[loop.index0 % bgColors.length] %}
-    {% set stats = programStats[program] %}
-        {% include 'partials/forumNismeExtended.njk' %}
-  {% endfor %}
+  <div class="program-section" style="background-color: {{ bgColors[1] }} ; padding: 2rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+
+    <div class="col">
+      <div>
+
+        <h2>HappyHours</h2>
+        <p>
+          <ul class="article-list">
+            {% for topic in forum_posts['HappyHours'].topics%}
+              {% if not topic
+                .title
+                .startsWith("About the")and not topic
+                .title
+                .startsWith("Hyrje ") %}
+                {% if loop.index0 < 7 %}
+                  <li class="{{ topic.tags | join(' ') | slugify }}">
+                    <div>
+                      <a href="{{ topic.url }}">{{ topic.title }}</a>
+                    </div>
+                    <img src="https://forum.illyrianbrains.dev{{ topic.poster.avatar }}"
+                             alt="{{ topic.poster.name }}"
+                             width="32" style="border-radius: 50%;">
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </p>
+      </div>
+      <div>
+        <h2>Webinare</h2>
+        <p>
+          <ul class="article-list">
+            {% for topic in forum_posts['Webinare'].topics%}
+              {% if not topic
+                .title
+                .startsWith("About the")and not topic
+                .title
+                .startsWith("Hyrje ") %}
+                {% if loop.index0 < 7 %}
+                  <li class="{{ topic.tags | join(' ') | slugify }}">
+                    <div>
+                      <a href="{{ topic.url }}">{{ topic.title }}</a>
+                    </div>
+                    <img src="https://forum.illyrianbrains.dev{{ topic.poster.avatar }}"
+                             alt="{{ topic.poster.name }}"
+                             width="32" style="border-radius: 50%;">
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </p>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <br><br><br>
 
 <section class="posts dark">
-
   <header>
     <h1>
       <span>Kartolina nga Qytetet</span></h1>
   </header>
-  <div class="program-section" style="background-color: {{ bgColors[1] }} ; padding: 2rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+  <div
+    class="program-section"
+    style="background-color: {{ bgColors[2] }} ; padding: 2rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
     <div>
       <div style="flex: 1 1 45%;">
         <div class="post-list">
@@ -81,7 +126,7 @@ css:
       <span>Bëhu Pjesë</span></h1>
   </header>
 
-  <div class="program-section" style="background-color: {{ bgColors[2] }}; padding: 2rem 2rem; border-radius: 10px;">
+  <div class="program-section" style="background-color: {{ bgColors[3] }}; padding: 2rem 2rem; border-radius: 10px;">
     <div class="col">
 
       <div style="flex: 1 1 45%;">
@@ -119,3 +164,4 @@ css:
     </div>
   </div>
 </section>
+<br><br><br>

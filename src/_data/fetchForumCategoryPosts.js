@@ -47,15 +47,14 @@ async function fetchCategoryTopics(id) {
   });
 }
 
-
 const CATEGORIES = [
   // Qytetet
 
-  { slug: "qytetet/germanics", id: 149, override_name: "Germanics"},
-  { slug: "qytetet/north-america", id: 146, override_name: "North America"},
-  { slug: "qytetet/nordics", id: 147, override_name: "Northern Europe" },
-  { slug: "qytetet/southern-europe", id: 148, override_name: "Southern Europe" },
-  { slug: "qytetet/western-europe", id: 150, override_name: "Western Europe" },
+  { slug: "qytetet/germanics", id: 149, override_name: "Gjermanikët"},
+  { slug: "qytetet/north-america", id: 146, override_name: "Amerika e Veriut"},
+  { slug: "qytetet/nordics", id: 147, override_name: "Europa Veriore" },
+  { slug: "qytetet/southern-europe", id: 148, override_name: "Europa Jugore" },
+  { slug: "qytetet/western-europe", id: 150, override_name: "Europa Perëndimore" },
 
   { slug: "qytetet/qytetet-e-reja", id: 27, override_name: "Qytetet e reja" },
 
@@ -65,14 +64,12 @@ const CATEGORIES = [
   { slug: "eventet/ndryshe", id: 156, override_name: "Ndryshe" },
   { slug: "eventet/njoftime", id: 99, override_name: "Njoftime" },
 
-  { slug: "eventet/udhezime", id: 159, override_name: "Udhëzime" },
-
   // Nismat
   { slug: "nismat/atlas", id: 144, override_name: "Atlas" },
-  { slug: "nismat/mentorimi", id: 111, override_name: "Mentorimi" },
+  { slug: "mentorimi", id: 111, override_name: "Mentorimi" },
   { slug: "nismat/meso-deutsch", id: 158, override_name: "Meso-Deutsch" },
   { slug: "nismat/sociale", id: 103, override_name: "IB-Social" },
-  { slug: "nismat/tech", id: 94, override_name: "IB-Tech" },
+  { slug: "ib-tech", id: 94, override_name: "IB-Tech" },
 
   { slug: "nismat/propozime", id: 66, override_name: "Propozime" },
 

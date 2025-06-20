@@ -1,14 +1,14 @@
 {
-  "Germanics": {
+  "Gjermanikët": {
     "slug": "qytetet/germanics",
     "id": 149,
-    "name": "Germanics",
+    "name": "Gjermanikët",
     "description": "Qytetet gjermanofone janë shpesh destinacione kyçe për profesionistët shqiptarë që kërkojnë zhvillim akademik dhe karrierë. Komunitetet këtu fokusohen në mirëpritjen e pjesëmarrësve të rinj përmes aktiviteteve orientuese, ndihmës me dokumentacionin lokal (si regjistrimi, sigurimet, etj.), si dhe ndërtimit të një rrjeti kontakti për punësim dhe integrim social.",
     "topics": [
       {
-        "title": "About the Germanics category",
-        "slug": "about-the-germanics-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-germanics-category/542",
+        "title": "About the Gjermanikët category",
+        "slug": "about-the-gjermaniket-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-gjermaniket-category/542",
         "created_at": "2025-05-26T13:25:44.753Z",
         "tags": [],
         "image_url": null,
@@ -16,6 +16,21 @@
           "username": "pomodoren",
           "name": "pomodoren",
           "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Rregullorja e IB-Berlin Bookclub",
+        "slug": "rregullorja-e-ib-berlin-bookclub",
+        "url": "https://forum.illyrianbrains.dev/t/rregullorja-e-ib-berlin-bookclub/606",
+        "created_at": "2025-06-20T15:24:13.721Z",
+        "tags": [
+          "berlin"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "albanafrroku",
+          "name": "Albana Frroku",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/albanafrroku/120/100_2.png"
         }
       },
       {
@@ -126,16 +141,16 @@
       }
     ]
   },
-  "North America": {
+  "Amerika e Veriut": {
     "slug": "qytetet/north-america",
     "id": 146,
-    "name": "North America",
+    "name": "Amerika e Veriut",
     "description": "Në Amerikën e Veriut, largësitë gjeografike dhe stili i jetesës mund ta bëjnë sfidues integrimin. Komunitetet IB këtu mundohet të ofrojnë struktura mbështetëse virtuale dhe fizike për të ndihmuar në orientimin e profesionistëve të rinj.",
     "topics": [
       {
-        "title": "About the North America category",
-        "slug": "about-the-north-america-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-north-america-category/539",
+        "title": "About the Amerika e Veriut category",
+        "slug": "about-the-amerika-e-veriut-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-amerika-e-veriut-category/539",
         "created_at": "2025-05-26T13:23:28.945Z",
         "tags": [],
         "image_url": null,
@@ -177,16 +192,16 @@
       }
     ]
   },
-  "Northern Europe": {
+  "Europa Veriore": {
     "slug": "qytetet/nordics",
     "id": 147,
-    "name": "Northern Europe",
+    "name": "Europa Veriore",
     "description": "Kjo zonë njihet për strukturën sociale të organizuar dhe për standardin e lartë të jetesës, por edhe për një klimë më të rezervuar sociale. Komunitetet shqiptare në këto qytete tenton të ndihmojnë në thyerjen e barrierave fillestare përmes takimeve të hapura, darkave kulturore, dhe ndarjes së përvojave jetësore në grup.",
     "topics": [
       {
-        "title": "About the Northern Europe category",
-        "slug": "about-the-northern-europe-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-northern-europe-category/540",
+        "title": "About the Europa Veriore category",
+        "slug": "about-the-europa-veriore-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-europa-veriore-category/540",
         "created_at": "2025-05-26T13:24:12.015Z",
         "tags": [],
         "image_url": null,
@@ -228,16 +243,16 @@
       }
     ]
   },
-  "Southern Europe": {
+  "Europa Jugore": {
     "slug": "qytetet/southern-europe",
     "id": 148,
-    "name": "Southern Europe",
+    "name": "Europa Jugore",
     "description": "Në jug të Evropës, ngjashmëritë kulturore me trevat shqiptare janë më të mëdha, por komunitetet lokale bëjnë përpjekje të qëllimshme për të ndihmuar pjesëmarrësit të ndërtojnë lidhje profesionale dhe të marrin pjesë në jeten publike të qyteteve.",
     "topics": [
       {
-        "title": "About the Southern Europe category",
-        "slug": "about-the-southern-europe-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-southern-europe-category/541",
+        "title": "About the Europa Jugore category",
+        "slug": "about-the-europa-jugore-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-europa-jugore-category/541",
         "created_at": "2025-05-26T13:25:19.735Z",
         "tags": [],
         "image_url": null,
@@ -324,16 +339,16 @@
       }
     ]
   },
-  "Western Europe": {
+  "Europa Perëndimore": {
     "slug": "qytetet/western-europe",
     "id": 150,
-    "name": "Western Europe",
+    "name": "Europa Perëndimore",
     "description": "Qytetet në Evropën Perëndimore janë qendra të rëndësishme për profesionistë dhe studentë nga diaspora. Komunitetet IB ndihmojnë me krijimin e rrjeteve, organizimin e seminareve informuese mbi tregun e punës dhe sistemin akademik, si dhe aktivitete që nxisin lidhje të forta njerëzore.",
     "topics": [
       {
-        "title": "About the Western Europe category",
-        "slug": "about-the-western-europe-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-western-europe-category/543",
+        "title": "About the Europa Perëndimore category",
+        "slug": "about-the-europa-perendimore-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-europa-perendimore-category/543",
         "created_at": "2025-05-26T13:26:31.182Z",
         "tags": [],
         "image_url": null,
@@ -401,6 +416,19 @@
         "slug": "hyrje-ne-kategorine-ib-qytetet-e-reja",
         "url": "https://forum.illyrianbrains.dev/t/hyrje-ne-kategorine-ib-qytetet-e-reja/59",
         "created_at": "2024-09-30T19:44:44.968Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "erho",
+          "name": "Eralda",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/erho/120/43_2.png"
+        }
+      },
+      {
+        "title": "HappyHours - çfarë duhet të dimë?",
+        "slug": "happyhours-cfare-duhet-te-dime",
+        "url": "https://forum.illyrianbrains.dev/t/happyhours-cfare-duhet-te-dime/62",
+        "created_at": "2024-09-30T20:42:36.796Z",
         "tags": [],
         "image_url": null,
         "poster": {
@@ -593,16 +621,16 @@
     ]
   },
   "Njoftime": {
-    "slug": "eventet/njoftime",
-    "id": 99,
+    "slug": "orga/njoftime",
+    "id": 70,
     "name": "Njoftime",
-    "description": "Informime në lidhje me çështje sociale, profesionale, apo interesante për rrjetin e IB.",
+    "description": "Për njoftime të përgjithshme, komunikime të ekipeve të punës, dhe mundësi bashkëpunimi.",
     "topics": [
       {
-        "title": "About the Njoftime category",
-        "slug": "about-the-njoftime-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-njoftime-category/355",
-        "created_at": "2025-01-25T19:05:16.483Z",
+        "title": "About the Bashkohu Ekipit category",
+        "slug": "about-the-bashkohu-ekipit-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-bashkohu-ekipit-category/203",
+        "created_at": "2024-11-28T21:52:14.931Z",
         "tags": [],
         "image_url": null,
         "poster": {
@@ -612,39 +640,28 @@
         }
       },
       {
-        "title": "Looking for diaspora mentors for circular economy",
-        "slug": "looking-for-diaspora-mentors-for-circular-economy",
-        "url": "https://forum.illyrianbrains.dev/t/looking-for-diaspora-mentors-for-circular-economy/492",
-        "created_at": "2025-05-19T08:39:21.535Z",
+        "title": "Zhvillues Php për akademinë",
+        "slug": "zhvillues-php-per-akademine",
+        "url": "https://forum.illyrianbrains.dev/t/zhvillues-php-per-akademine/415",
+        "created_at": "2025-04-15T06:24:24.301Z",
         "tags": [
-          "mentoring"
+          "bashkohu-ekipit"
         ],
-        "image_url": "https://forum.illyrianbrains.dev/uploads/default/original/1X/f9bd144cd2aebb8cf6e18800f6497e4c7757b59a.png",
-        "poster": {
-          "username": "pomodoren",
-          "name": "pomodoren",
-          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
-        }
-      },
-      {
-        "title": "Webinar mbi Hekurudhën Durrës-Prishtinë - AES",
-        "slug": "webinar-mbi-hekurudhen-durres-prishtine-aes",
-        "url": "https://forum.illyrianbrains.dev/t/webinar-mbi-hekurudhen-durres-prishtine-aes/403",
-        "created_at": "2025-04-08T07:37:39.582Z",
-        "tags": [],
         "image_url": null,
         "poster": {
-          "username": "Emiljano_Hoxha",
-          "name": "Emiljano Hoxha",
-          "avatar": "/user_avatar/forum.illyrianbrains.dev/emiljano_hoxha/120/283_2.png"
+          "username": "ionianFury",
+          "name": "ionianFury",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/120/337_2.png"
         }
       },
       {
-        "title": "Pyetësor socio-linguistik për gjuhën shqiptare në Itali",
-        "slug": "pyetesor-socio-linguistik-per-gjuhen-shqiptare-ne-itali",
-        "url": "https://forum.illyrianbrains.dev/t/pyetesor-socio-linguistik-per-gjuhen-shqiptare-ne-itali/362",
-        "created_at": "2025-02-04T20:33:52.785Z",
-        "tags": [],
+        "title": "Kontribues për të plotësuar Atlasin e Gjermanisë",
+        "slug": "kontribues-per-te-plotesuar-atlasin-e-gjermanise",
+        "url": "https://forum.illyrianbrains.dev/t/kontribues-per-te-plotesuar-atlasin-e-gjermanise/477",
+        "created_at": "2025-05-15T22:38:19.368Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
         "image_url": null,
         "poster": {
           "username": "pomodoren",
@@ -653,63 +670,48 @@
         }
       },
       {
-        "title": "Ftesë për pjesëmarrje në webinaret e AES-it (Albanian Engineering of Switzerland)",
-        "slug": "ftese-per-pjesemarrje-ne-webinaret-e-aes-it-albanian-engineering-of-switzerland",
-        "url": "https://forum.illyrianbrains.dev/t/ftese-per-pjesemarrje-ne-webinaret-e-aes-it-albanian-engineering-of-switzerland/359",
-        "created_at": "2025-01-30T13:17:47.491Z",
-        "tags": [],
+        "title": "Menaxhues/e për rrjetet sociale",
+        "slug": "menaxhues-e-per-rrjetet-sociale",
+        "url": "https://forum.illyrianbrains.dev/t/menaxhues-e-per-rrjetet-sociale/476",
+        "created_at": "2025-05-15T21:32:53.676Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
         "image_url": null,
         "poster": {
-          "username": "Emiljano_Hoxha",
-          "name": "Emiljano Hoxha",
-          "avatar": "/user_avatar/forum.illyrianbrains.dev/emiljano_hoxha/120/283_2.png"
+          "username": "VullnetVeliaj",
+          "name": "Vullnet Veliaj",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/vullnetveliaj/120/29_2.png"
         }
       },
       {
-        "title": "Ajo GUXON! Bëhu mentore nga diaspora!",
-        "slug": "ajo-guxon-behu-mentore-nga-diaspora",
-        "url": "https://forum.illyrianbrains.dev/t/ajo-guxon-behu-mentore-nga-diaspora/356",
-        "created_at": "2025-01-25T20:20:46.805Z",
-        "tags": [],
-        "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/1f740e9fbc9fdd74c0dfa79cf07a892ab34c94ba_2_1024x1024.jpeg",
-        "poster": {
-          "username": "pomodoren",
-          "name": "pomodoren",
-          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
-        }
-      }
-    ]
-  },
-  "Udhëzime": {
-    "slug": "eventet/udhezime",
-    "id": 159,
-    "name": "Udhëzime",
-    "description": "Udhëzime mbi eventet e IllyrianBrains.",
-    "topics": [
-      {
-        "title": "About the Udhëzime category",
-        "slug": "about-the-udhezime-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-udhezime-category/570",
-        "created_at": "2025-06-06T14:51:54.664Z",
-        "tags": [],
+        "title": "Redaktues/e dhe krijues/e për komunikimet",
+        "slug": "redaktues-e-dhe-krijues-e-per-komunikimet",
+        "url": "https://forum.illyrianbrains.dev/t/redaktues-e-dhe-krijues-e-per-komunikimet/475",
+        "created_at": "2025-05-15T21:30:23.287Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
         "image_url": null,
         "poster": {
-          "username": "pomodoren",
-          "name": "pomodoren",
-          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+          "username": "VullnetVeliaj",
+          "name": "Vullnet Veliaj",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/vullnetveliaj/120/29_2.png"
         }
       },
       {
-        "title": "Happy Hour - cfare duhet te dime?",
-        "slug": "happy-hour-cfare-duhet-te-dime",
-        "url": "https://forum.illyrianbrains.dev/t/happy-hour-cfare-duhet-te-dime/62",
-        "created_at": "2024-09-30T20:42:36.796Z",
-        "tags": [],
+        "title": "Kontribues/e për dizajnin grafik",
+        "slug": "kontribues-e-per-dizajnin-grafik",
+        "url": "https://forum.illyrianbrains.dev/t/kontribues-e-per-dizajnin-grafik/474",
+        "created_at": "2025-05-15T21:27:37.267Z",
+        "tags": [
+          "bashkohu-ekipit"
+        ],
         "image_url": null,
         "poster": {
-          "username": "erho",
-          "name": "Eralda",
-          "avatar": "/user_avatar/forum.illyrianbrains.dev/erho/120/43_2.png"
+          "username": "algertpateqi",
+          "name": "Algert Pateqi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/algertpateqi/120/84_2.png"
         }
       }
     ]
@@ -814,7 +816,7 @@
     ]
   },
   "Mentorimi": {
-    "slug": "nismat/mentorimi",
+    "slug": "mentorimi",
     "id": 111,
     "name": "Mentorimi",
     "description": "Krijimi i nje programi qe lejon ndarjen e dijes midis profesionistesh. E bazuar ne employee development plans.",
@@ -825,6 +827,21 @@
         "url": "https://forum.illyrianbrains.dev/t/about-the-mentorimi-category/424",
         "created_at": "2025-04-18T11:34:04.059Z",
         "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Nisma e Mentorimit - linqet per mentoret dhe te mentoruarit",
+        "slug": "nisma-e-mentorimit-linqet-per-mentoret-dhe-te-mentoruarit",
+        "url": "https://forum.illyrianbrains.dev/t/nisma-e-mentorimit-linqet-per-mentoret-dhe-te-mentoruarit/306",
+        "created_at": "2024-12-26T16:42:31.120Z",
+        "tags": [
+          "njoftim"
+        ],
         "image_url": null,
         "poster": {
           "username": "pomodoren",
@@ -859,11 +876,75 @@
         }
       },
       {
+        "title": "Data Analyst ne kerkim te nje mentori ne Machine Learning, IT",
+        "slug": "data-analyst-ne-kerkim-te-nje-mentori-ne-machine-learning-it",
+        "url": "https://forum.illyrianbrains.dev/t/data-analyst-ne-kerkim-te-nje-mentori-ne-machine-learning-it/428",
+        "created_at": "2025-04-18T12:22:22.584Z",
+        "tags": [
+          "mentor-needed",
+          "todo"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
         "title": "Draft: Sugjerime per takimet",
         "slug": "draft-sugjerime-per-takimet",
         "url": "https://forum.illyrianbrains.dev/t/draft-sugjerime-per-takimet/472",
         "created_at": "2025-05-12T07:42:25.885Z",
         "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Guest mentors per Tech nga UK/DE/AU",
+        "slug": "guest-mentors-per-tech-nga-uk-de-au",
+        "url": "https://forum.illyrianbrains.dev/t/guest-mentors-per-tech-nga-uk-de-au/423",
+        "created_at": "2025-04-18T11:28:53.173Z",
+        "tags": [
+          "mentor-needed",
+          "doing"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Business Admin. graduate ne kerkim te nje mentoreje ne DE",
+        "slug": "business-admin-graduate-ne-kerkim-te-nje-mentoreje-ne-de",
+        "url": "https://forum.illyrianbrains.dev/t/business-admin-graduate-ne-kerkim-te-nje-mentoreje-ne-de/426",
+        "created_at": "2025-04-18T11:42:12.300Z",
+        "tags": [
+          "mentor-needed",
+          "todo"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "E diplomuar ne psikologji ne kerkim te mentoreve ne DE",
+        "slug": "e-diplomuar-ne-psikologji-ne-kerkim-te-mentoreve-ne-de",
+        "url": "https://forum.illyrianbrains.dev/t/e-diplomuar-ne-psikologji-ne-kerkim-te-mentoreve-ne-de/425",
+        "created_at": "2025-04-18T11:38:02.791Z",
+        "tags": [
+          "mentor-needed",
+          "doing"
+        ],
         "image_url": null,
         "poster": {
           "username": "pomodoren",
@@ -1077,15 +1158,15 @@
     ]
   },
   "IB-Tech": {
-    "slug": "nismat/tech",
+    "slug": "ib-tech",
     "id": 94,
     "name": "IB-Tech",
     "description": "Për profesionistët e teknologjisë që duan të njihen, të ndajnë burime info, dhe të zhvillojnë së bashku mjete për komunitetin.",
     "topics": [
       {
-        "title": "About the Tech category",
-        "slug": "about-the-tech-category",
-        "url": "https://forum.illyrianbrains.dev/t/about-the-tech-category/325",
+        "title": "About the IB-Tech category",
+        "slug": "about-the-ib-tech-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-ib-tech-category/325",
         "created_at": "2025-01-07T22:11:38.550Z",
         "tags": [],
         "image_url": null,
@@ -1197,22 +1278,6 @@
         }
       },
       {
-        "title": "Zhvillues Php për akademinë",
-        "slug": "zhvillues-php-per-akademine",
-        "url": "https://forum.illyrianbrains.dev/t/zhvillues-php-per-akademine/415",
-        "created_at": "2025-04-15T06:24:24.301Z",
-        "tags": [
-          "onhold",
-          "bashkohu-ekipit"
-        ],
-        "image_url": null,
-        "poster": {
-          "username": "ionianFury",
-          "name": "ionianFury",
-          "avatar": "/user_avatar/forum.illyrianbrains.dev/ionianfury/120/337_2.png"
-        }
-      },
-      {
         "title": "[2025] IB-Tech Meetups",
         "slug": "2025-ib-tech-meetups",
         "url": "https://forum.illyrianbrains.dev/t/2025-ib-tech-meetups/367",
@@ -1249,6 +1314,167 @@
           "event"
         ],
         "image_url": "https://forum.illyrianbrains.dev/uploads/default/optimized/1X/ed788b4e8fb81e1c3dafd4ce0380a341240e6ea4_2_1024x350.jpeg",
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Mirësevini në forum",
+        "slug": "miresevini-ne-forum",
+        "url": "https://forum.illyrianbrains.dev/t/miresevini-ne-forum/240",
+        "created_at": "2024-12-08T17:28:15.756Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      }
+    ]
+  },
+  "Propozime": {
+    "slug": "nismat/propozime",
+    "id": 66,
+    "name": "Propozime",
+    "description": "Ketu mund te kete propozime nga IB per permiresimin e funksionimit te IB, kryesisht per te sheruar problematika qe komunitetet lokale apo profesionale kane.",
+    "topics": [
+      {
+        "title": "About the Propozime category",
+        "slug": "about-the-propozime-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-propozime-category/191",
+        "created_at": "2024-11-28T11:09:01.467Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Kartolina nga Studentet :books:",
+        "slug": "kartolina-nga-studentet",
+        "url": "https://forum.illyrianbrains.dev/t/kartolina-nga-studentet/509",
+        "created_at": "2025-05-23T18:08:24.554Z",
+        "tags": [
+          "studentet"
+        ],
+        "image_url": null,
+        "poster": {
+          "username": "6entianaberisha",
+          "name": "Gentiana Berisha",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/6entianaberisha/120/335_2.png"
+        }
+      },
+      {
+        "title": "Propozim: Të Dhëna Faktike për të Gjithë",
+        "slug": "propozim-te-dhena-faktike-per-te-gjithe",
+        "url": "https://forum.illyrianbrains.dev/t/propozim-te-dhena-faktike-per-te-gjithe/124",
+        "created_at": "2024-10-27T21:28:07.928Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "alban.bytyqi",
+          "name": "Alban Bytyqi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/alban.bytyqi/120/105_2.png"
+        }
+      },
+      {
+        "title": "Propozim: Mentorimi - prezantimi i pare i programit per rrjetin IB",
+        "slug": "propozim-mentorimi-prezantimi-i-pare-i-programit-per-rrjetin-ib",
+        "url": "https://forum.illyrianbrains.dev/t/propozim-mentorimi-prezantimi-i-pare-i-programit-per-rrjetin-ib/64",
+        "created_at": "2024-10-01T12:56:21.673Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "ariona.jupi",
+          "name": "Ariona Jupi",
+          "avatar": "/user_avatar/forum.illyrianbrains.dev/ariona.jupi/120/23_2.png"
+        }
+      },
+      {
+        "title": "Propozim: Meso-Deutsch per profesionistet",
+        "slug": "propozim-meso-deutsch-per-profesionistet",
+        "url": "https://forum.illyrianbrains.dev/t/propozim-meso-deutsch-per-profesionistet/207",
+        "created_at": "2024-11-29T10:43:08.154Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Propozim: Atlas - orientim për integrim",
+        "slug": "propozim-atlas-orientim-per-integrim",
+        "url": "https://forum.illyrianbrains.dev/t/propozim-atlas-orientim-per-integrim/208",
+        "created_at": "2024-11-29T11:15:07.798Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "maidagr",
+          "name": "Maida Grazhdani",
+          "avatar": "/letter_avatar_proxy/v4/letter/m/bc8723/120.png"
+        }
+      }
+    ]
+  },
+  "Udhëzime": {
+    "slug": "orga/udhezime",
+    "id": 153,
+    "name": "Udhëzime",
+    "description": "Përshkrime të vlerave që IB mbështet dhe promovon në evente.",
+    "topics": [
+      {
+        "title": "About the Udhëzime category",
+        "slug": "about-the-udhezime-category",
+        "url": "https://forum.illyrianbrains.dev/t/about-the-udhezime-category/556",
+        "created_at": "2025-05-30T11:22:48.801Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Vendimmarrja në IB",
+        "slug": "vendimmarrja-ne-ib",
+        "url": "https://forum.illyrianbrains.dev/t/vendimmarrja-ne-ib/562",
+        "created_at": "2025-06-03T23:04:13.960Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Përfshirja sa më e gjerë",
+        "slug": "perfshirja-sa-me-e-gjere",
+        "url": "https://forum.illyrianbrains.dev/t/perfshirja-sa-me-e-gjere/557",
+        "created_at": "2025-05-30T11:41:31.901Z",
+        "tags": [],
+        "image_url": null,
+        "poster": {
+          "username": "pomodoren",
+          "name": "pomodoren",
+          "avatar": "/letter_avatar_proxy/v4/letter/p/8edcca/120.png"
+        }
+      },
+      {
+        "title": "Kodi i sjelljes për IB",
+        "slug": "kodi-i-sjelljes-per-ib",
+        "url": "https://forum.illyrianbrains.dev/t/kodi-i-sjelljes-per-ib/558",
+        "created_at": "2025-05-30T11:48:29.488Z",
+        "tags": [],
+        "image_url": null,
         "poster": {
           "username": "pomodoren",
           "name": "pomodoren",
