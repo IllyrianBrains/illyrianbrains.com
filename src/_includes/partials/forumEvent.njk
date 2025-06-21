@@ -2,7 +2,7 @@
 {% set year = isoDate.slice(0, 7) %}
 <li
   class="talk-card"
-  style="background-image: url({{ event.image_url or '/assets/images/default-bg.jpg' }}); max-height: 100px;"
+  style="background-image: url({{ event.image_url or '/assets/images/default-bg.jpg' }}); height: 100px;"
   data-image="{{ event.image_url or '/assets/images/default-bg.jpg' }}"
   data-year="{{ year }}"
   data-tags="{% if event.tags %}{{ event.tags | join(' ') }}{% endif %}"

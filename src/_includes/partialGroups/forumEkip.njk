@@ -3,7 +3,7 @@
         <h2>{{ group.name }}</h2>
         <p class="group-description">{{ group.description | safe }}</p>
 
-        <ul class="involved-grid">
+        <ul class="card-s-grid">
             {% for person in group.members %}
                 {% if loop.index0 < 19%}
                     <li>

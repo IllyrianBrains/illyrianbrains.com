@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="cardDetails">
+    <h3>{{ title }}</h3>
+    <ul class="card-base-event">
+      {% for topic in topics %}
+        {% if not topic.title.startsWith("About the") and not topic.title.startsWith("Hyrje ") %}
+          <li>
+            <header>
+              <img src="https://forum.illyrianbrains.dev{{ topic.poster.avatar }}" alt="{{ topic.poster.name }}">
+              <a href="{{ topic.url }}">{{ topic.title }}</a>
+            </header>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

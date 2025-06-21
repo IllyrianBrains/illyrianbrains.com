@@ -13,9 +13,9 @@ css:
   "IB-Social": { Kontribues: "10+", Fushata: 5, Evente: "2+" }
 } %}
 
-<section class="history">
+<section card="card-block">
   <header>
-    <h1>
+  <h1 class="sectionTitle" data-content="Nismat">
       <span id="count">Nismat</span></h1>
   </header>
 
@@ -25,17 +25,17 @@ css:
   {% for program in programs %}
     {% set bg = bgColors[loop.index0 % bgColors.length] %}
     {% set stats = programStats[program] %}
-    {% include 'partials/forumNismeExtended.njk' %}
+    {% include 'partialGroups/forumNismeExtended.njk' %}
   {% endfor %}
 
 </section>
 
 <br><br><br>
 
-<section class="history">
+<section card="card-block">
   <header>
-    <h1>
-      <span id="count">Grupet e profesionistëve</span></h1>
+  <h1 class="sectionTitle" data-content="Për profesionistët">
+      <span id="count">Për profesionistët</span></h1>
   </header>
 
   {% set programs = ['IB-Tech', 'IB-Social'] %}
@@ -44,6 +44,6 @@ css:
   {% for program in programs %}
     {% set bg = bgColors[loop.index0 % bgColors.length] %}
     {% set stats = programStats[program] %}
-    {% include 'partials/forumNismeExtended.njk' %}
+    {% include 'partialGroups/forumNismeExtended.njk' %}
   {% endfor %}
 </section>

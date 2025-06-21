@@ -10,8 +10,8 @@ css:
 
 <section class="talks">
   <header>
-    <h1>
-      <span id="count">Eventet</span></h1>
+    <h1 class="sectionTitle" data-content="Eventet">
+    <span id="count">Eventet</span></h1>
   </header>
 
   {% for slug, category in forum_posts %}
@@ -19,13 +19,11 @@ css:
       {% set index = eventCategories.indexOf(slug) %}
       {% set bg = bgColors[index % bgColors.length] %}
 
-      <div class="event-section" style="background-color: {{ bg }}; padding: 3rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
-        <div class="col" >
+      <div class="card-wrapper" style="background-color: {{ bg }};">
           <!-- Right column: posts -->
-          <div style="flex: 1 1 45%;">
-            {% include "partials/forumEventCategory.njk" %}
+          <div>
+            {% include "partialGroups/forumEventCategory.njk" %}
           </div>
-        </div>
       </div>
       <br><br>
     {% endif %}
@@ -33,8 +31,3 @@ css:
 </section>
 
 <br><br><br>
-
-<script>
-  // your existing carousel logic remains unchanged
-  document.addEventListener('DOMContentLoaded', updateCards);
-</script>

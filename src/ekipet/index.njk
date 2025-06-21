@@ -16,18 +16,18 @@ css:
 ] %}
 
 
-<section class="history">
+<section card="card-block">
   <header>
     <h1><span>Organizatorët</span></h1>
   </header>
 
-  <div class="program-section" style="background-color: {{ bgColors[2] }}; padding: 4rem 2rem; border-radius: 10px; margin-bottom: 3rem;">
+  <div class="card-wrapper" style="background-color: {{ bgColors[2] }};">
   <div class="col">
       <div>
 
       {% for slug, group in forum_groups %}
         {% if slug in ['AllStaff'] %}
-          {% include 'partials/forumEkip.njk' %}
+          {% include 'partialGroups/forumEkip.njk' %}
         {% endif %}
       {% endfor %}
       </div>
@@ -36,14 +36,14 @@ css:
 
       {% for slug, group in forum_groups %}
         {% if slug in ['perfaqesia']%}
-          {% include 'partials/forumEkip.njk' %}
+          {% include 'partialGroups/forumEkip.njk' %}
         {% endif %}
       {% endfor %}
       <br>
       <br>
       {% for slug, group in forum_groups %}
         {% if slug in [ 'ruajtesit' ]%}
-          {% include 'partials/forumEkip.njk' %}
+          {% include 'partialGroups/forumEkip.njk' %}
         {% endif %}
       {% endfor %}
       </div>
@@ -55,16 +55,16 @@ css:
 
 
 <br><br><br>
-<section class="history">
+<section card="card-block">
   <header>
     <h1><span>Ekipet teknike</span></h1>
   </header>
 
-  <div class="program-section" style="background-color: {{ bgColors[3] }}; padding: 4rem 2rem; border-radius: 10px;">
+  <div class="card-wrapper" style="background-color: {{ bgColors[3] }};">
     <div class="col">
       {% for slug, group in forum_groups %}
         {% if slug in ['Dizajni', 'Eventet', 'Komunikimi', 'Teknologet'] %}
-          {% include 'partials/forumEkip.njk' %}
+          {% include 'partialGroups/forumEkip.njk' %}
         {% endif %}
       {% endfor %}
     </div>
@@ -75,11 +75,11 @@ css:
 
 
 
-<section class="history">
+<section card="card-block">
   <header>
     <h1><span>Falenderime</span></h1>
   </header>
-  <div class="program-section" style="background-color: {{ bgColors[4] }}; padding: 4rem 2rem; border-radius: 10px;">
+  <div class="card-wrapper" style="background-color: {{ bgColors[4] }};">
     <div class="col">
 
       <div>

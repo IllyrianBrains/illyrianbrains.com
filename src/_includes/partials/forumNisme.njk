@@ -30,24 +30,24 @@
 </div>
 
 <div>
-<p>
-    {% for slug, group in forum_groups %}
-        {% if slug == program %}
+    <p>
+        {% for slug, group in forum_groups %}
+            {% if slug == program %}
 Grupi i punës: 
 {% for person in group.members %}
-        {% if loop.index0 < 10 %}
-            <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/u/{{ person.username }}">
+                    {% if loop.index0 < 10 %}
+                        <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/u/{{ person.username }}">
                 @{{ person.username }}</a>
-            {% if group.members.length > loop.index %} - {% else %}. {% endif %}
-        {% endif %}
-    {% endfor %}
+                        {% if group.members.length > loop.index %} - {% else %}. {% endif %}
+                    {% endif %}
+                {% endfor %}
 
-            {% if group.members.length > 10 %}
-                <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/g/{{ group.slug }}">
-                    {{group.members.length - 10}}+</a>.
+                {% if group.members.length > 10 %}
+                    <a style="text-decoration: none" href="https://forum.illyrianbrains.dev/g/{{ group.slug }}">
+                        {{group.members.length - 10}}+</a>.
 {% endif %}
 
-        {% endif %}
-    {% endfor %}
-</p>
+            {% endif %}
+        {% endfor %}
+    </p>
 </div>

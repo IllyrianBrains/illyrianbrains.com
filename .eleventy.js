@@ -135,11 +135,11 @@ module.exports = function (eleventyConfig) {
 
   // Universal Shortcodes (Adds to Liquid, Nunjucks, Handlebars)
   eleventyConfig.addShortcode(
-    'involved',
+    'card-base-event',
     function (name, url, image, sub, what) {
       return `
     <header>
-      <img src="/images/involved/${image}" />
+      <img src="/images/card-base-event/${image}" />
       <span>${url ? `<a href="${url}">${name}</a>` : name}<br />
         ${sub}</span>
     </header>

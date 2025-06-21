@@ -63,13 +63,13 @@ css:
   }
 } %}
 
-<section class="history">
+<section card="card-block">
   <header>
-    <h1>
+    <h1  class="sectionTitle" data-content="Qytetet">
       <span id="count">Qytetet</span></h1>
   </header>
 
-  <div class="program-section" style="background-color:{{ regionColors["Qytetet"] }}; padding: 2rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
+  <div class="card-wrapper" style="background-color:{{ regionColors["Qytetet"] }};">
 
     <div style="flex: 1 1 45%;">
       <p>
@@ -103,16 +103,15 @@ css:
 <br><br><br>
 
 {% for region in['Gjermanikët', 'Amerika e Veriut', 'Europa Perëndimore', 'Europa Jugore', 'Europa Veriore'] %}
-  <section class="history">
-    <header>
-      <h1>
-        <span id="count">{{ region }}</span></h1>
+  <section card="card-block">
+    <header >
+      <h1 class="sectionTitle" data-content="{{ region }}"><span id="count">{{ region }}</span></h1>
     </header>
 
-    <div class="program-section" style="background-color:{{ regionColors[region] }}; padding: 2rem 2rem; border-radius: 8px; margin-bottom: 2rem;">
+    <div class="card-wrapper" style="background-color:{{ regionColors[region] }}; ">
 
-      <!-- Left column: region name, stats, people placeholder -->
-        <div style="flex: 1 1 45%;">
+      <!-- Region name, stats, people placeholder -->
+        <div>
           {% set desc = forum_posts[region].description or '' %}
           <p>
             {{desc}}
@@ -130,7 +129,7 @@ css:
         </div>
         <br>
 
-        <!-- Right column: forum posts -->
+        <!-- Forum posts -->
         <div class="col">
           {% if forum_posts[region] %}
             {% set category = forum_posts[region] %}

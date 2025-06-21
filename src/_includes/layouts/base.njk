@@ -9,6 +9,8 @@
     <title>IllyrianBrains Network</title>
 
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/newsletter.css">
+    <link rel="stylesheet" href="/assets/css/cards.css">
 
     {% if css %}
       {% if css.length %}
@@ -47,10 +49,6 @@
 
   </head>
 <body style="max-width: 1200px;">
-    {% if home %}
-      {% include 'partials/introhero.njk' %}
-    {% endif %}
-
     <a href="#main-content" class="skip">Skip to main content</a>
 
     <network-graph background="/assets/images/network-bg.jpg"></network-graph>
